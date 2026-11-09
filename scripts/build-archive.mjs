@@ -6,12 +6,14 @@ import {providerDefaults,publicBenchmark,costCategories} from '../lib/provider-e
 import {settlementMarkup,subtotalMarkup,floorMarkup,settlementLatex} from '../lib/equations.mjs';
 const equationStyle=fs.readFileSync(new URL('../app/equations.css',import.meta.url),'utf8')+'body{font-size:1.0625rem}h1{font-size:2.25rem}h2{font-size:1.5rem}small{font-size:.875rem}.example-table{overflow-x:auto;max-width:100%;padding-bottom:.5rem}.example-table:focus-visible{outline:3px solid #245bc3;outline-offset:4px}';
 const equationHtml=`<p class="inline-equation">${subtotalMarkup}</p><div class="equation-card"><div class="equation-scroll" tabindex="0" role="region" aria-label="Bill equation; scroll horizontally if needed">${settlementMarkup}</div><p class="equation-hint">Scroll sideways if the full equation is not visible.</p></div>`;
+// Use TeX comparison commands so GitHub cannot interpret conditions as HTML.
+const markdownSettlementLatex=settlementLatex.replaceAll('<',String.raw`\lt `).replaceAll('>',String.raw`\gt `);
 const equationMarkdown=`$$
 S=20+M
 $$
 
 $$
-${settlementLatex}
+${markdownSettlementLatex}
 $$`;
 const chapterMarkdown=c=>c.paragraphs.map((p,i)=>p+(c.id==='billing'&&i===2?`
 

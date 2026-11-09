@@ -11,10 +11,10 @@ $$
 $$
 B(S)=\begin{cases}
 20, & 20\le S\le60,\\
-100, & 60<S\le150,\\
-200, & 150<S\le350,\\
-500, & 350<S\le500,\\
-50\left\lfloor\dfrac{S+25}{50}\right\rfloor, & S>500.
+100, & 60\lt S\le150,\\
+200, & 150\lt S\le350,\\
+500, & 350\lt S\le500,\\
+50\left\lfloor\dfrac{S+25}{50}\right\rfloor, & S\gt 500.
 \end{cases}
 $$
 

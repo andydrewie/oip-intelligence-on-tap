@@ -32,7 +32,7 @@ The production build produces a Cloudflare Worker bundle. `npm run start` serves
 | Equation typography | [equations.mjs](../lib/equations.mjs) |
 | Provider worksheet | [provider-economics.mjs](../lib/provider-economics.mjs), [economics.tsx](../app/economics.tsx) |
 | Shared scenarios and loading | [scenarios.mjs](../lib/scenarios.mjs), [async-state.mjs](../lib/async-state.mjs) |
-| Interaction contract | [interaction-states.md](../public/archive/interaction-states.md) |
+| Interaction states and contract | [GitHub state map](INTERACTIONS.md), [machine-readable contract](../public/archive/interaction-states.json) |
 | Regression tests | [tests](../tests/) |
 
 Billing links use schema v2; economics links use v5. Legacy links disclose migration. Invalid cost drafts remain invalid through sharing and restoration. Blank differs from explicit zero. Any accepted usage change requires renewed cost review. Donation changes do not certify or invalidate service-cost assumptions.

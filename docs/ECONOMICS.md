@@ -11,10 +11,10 @@ Let $S$ be the subtotal in USD: a $20 membership plus nonnegative metered usage.
 $$
 B(S)=\begin{cases}
 20 & 20\leq S\leq60\\
-100 & 60<S\leq150\\
-200 & 150<S\leq350\\
-500 & 350<S\leq500\\
-50\left\lfloor\frac{S+25}{50}\right\rfloor & S>500
+100 & 60\lt S\leq150\\
+200 & 150\lt S\leq350\\
+500 & 350\lt S\leq500\\
+50\left\lfloor\frac{S+25}{50}\right\rfloor & S\gt 500
 \end{cases}
 $$
 

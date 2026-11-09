@@ -18,8 +18,11 @@
 <circle cx="934" cy="242" r="12" fill="#fff"/>
 <circle cx="1117" cy="243" r="12" fill="#fff"/>
 <circle cx="1025" cy="404" r="12" fill="#fff"/>
+<!-- Center the visible two-line lettering on the circle at (1025, 297), not its baselines. -->
+<g id="growth-message" transform="translate(1.5 -13)">
 <text x="1025" y="300" text-anchor="middle" font-size="26" font-weight="600" fill="#fff">Grow.</text>
 <text x="1025" y="334" text-anchor="middle" font-size="26" font-weight="600" fill="#fff">Together.</text>
+</g>
 <text x="64" y="585" font-size="25" fill="#475467">Customer Lifetime Value</text>
 <path d="M376 577h46m-10-8 10 8-10 8" stroke="#155eef" stroke-width="2.5" fill="none"/>
 <text x="442" y="585" font-size="25" font-weight="600" fill="#101828">Relationship Lifetime Value;</text>
