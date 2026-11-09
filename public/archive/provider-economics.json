@@ -1,0 +1,130 @@
+{
+  "status": "unknown_costs_with_optional_user_reviewed_scenarios",
+  "defaults": {
+    "servingCost": 0,
+    "servingKnown": 0,
+    "developmentCost": 0,
+    "developmentKnown": 0,
+    "operationsCost": 0,
+    "operationsKnown": 0,
+    "paymentFee": 0,
+    "paymentKnown": 0,
+    "costsReviewed": 0,
+    "costBasis": 0,
+    "monthlyBenefit": 5,
+    "leavingRate": 5,
+    "retentionGain": 0,
+    "customerAcquisition": 0
+  },
+  "receipt": "Revenue = bill(M).adjusted; donations excluded; receipt and provider view share M",
+  "cost_inputs": [
+    {
+      "key": "servingCost",
+      "legacy_flag": "servingKnown",
+      "label": "Serving & infrastructure",
+      "min": 0,
+      "max": 1000000,
+      "decimals": 2,
+      "unit": "USD / month"
+    },
+    {
+      "key": "developmentCost",
+      "legacy_flag": "developmentKnown",
+      "label": "Research & model development",
+      "min": 0,
+      "max": 1000000,
+      "decimals": 2,
+      "unit": "USD / month"
+    },
+    {
+      "key": "operationsCost",
+      "legacy_flag": "operationsKnown",
+      "label": "Company operations",
+      "min": 0,
+      "max": 1000000,
+      "decimals": 2,
+      "unit": "USD / month"
+    },
+    {
+      "key": "paymentFee",
+      "legacy_flag": "paymentKnown",
+      "label": "Payment processing",
+      "min": 0,
+      "max": 20,
+      "unit": "% of service bill"
+    }
+  ],
+  "cost_state": "Raw draft strings are validated into empty/invalid/valid states with the same contract in UI, engine and link parser. Valid zero is explicit zero; empty and invalid never become supplied zero. Numeric slots and legacy Known flags are derived from drafts. All four must be valid and costsReviewed=1 with costBasis matching M before a balance. Editing costs invalidates review; changing M makes it stale. Clearing costs preserves receipt and unrelated assumptions.",
+  "rounding": "Keep percentage precision until final USD charge; exact decimal multiplication and half-away-from-zero cent rounding. Serving/development/operations allocations accept at most two decimals. The 0–20% fee range is a calculator bound, not a claim about processors.",
+  "formulas": {
+    "monthly_balance": "settled bill - servingCost - developmentCost - operationsCost - roundToCents(settled bill * paymentFee / 100)",
+    "expected_12_month_balance": "monthly balance * sum((1 - leavingRate / 100)^t, t = 0..11) - additional customerAcquisition",
+    "loyalty": "Discount min(monthlyBenefit, settled bill); recalculate payment fees; departures = leavingRate * (1 - retentionGain / 100); other allocations remain fixed per retained customer"
+  },
+  "limits": "No OpenAI cost estimate or margin inference. User allocations must count each expense once. Optional worksheet is before financing, taxes and omitted expenses. Foundation donations have a separate charitable destination and are excluded. It is not company profit, cash flow, break-even or contribution-margin accounting. Fixed/shared expenses need not vanish when a customer leaves. Negative reviewed results are visible. Original source corpus is unchanged.",
+  "human": "/archive/provider-economics.html",
+  "markdown": "/archive/provider-economics.md",
+  "json": "/archive/provider-economics.json",
+  "public_benchmark": {
+    "company": "Anthropic, PBC",
+    "filing": "S-1/A",
+    "filed": "2026-11-02",
+    "period": "January–September 2026",
+    "status": "Unaudited nine-month figures",
+    "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm",
+    "sourceLocations": "Results of Operations, p. 150; Note 8, Supplemental Operating Expense Information, p. F-40",
+    "unit": "USD millions",
+    "revenue": 33242,
+    "expenses": [
+      {
+        "name": "Customer-serving costs and related overhead",
+        "reportedLabel": "Cost of revenue",
+        "amount": 4812
+      },
+      {
+        "name": "Research and development",
+        "reportedLabel": "Research and development",
+        "amount": 19240
+      },
+      {
+        "name": "Sales and marketing",
+        "reportedLabel": "Sales and marketing",
+        "amount": 6619
+      },
+      {
+        "name": "General and administrative",
+        "reportedLabel": "General and administrative",
+        "amount": 3831
+      }
+    ],
+    "operatingLoss": 1260,
+    "limitations": "Company-wide accounting ratios, not a subscriber bill or profit per token. Free-user compute and channel-partner costs are included in sales and marketing. No Anthropic percentage is applied to OpenAI or loaded into the simulator.",
+    "total_operating_expenses": 34502,
+    "operating_result_usd_millions": -1260,
+    "operating_result_per_100": -3.79,
+    "calculation": "reported expense / reported revenue * 100",
+    "per_100": [
+      {
+        "label": "Customer-serving costs and related overhead",
+        "reported_usd_millions": 4812,
+        "per_100_revenue": 14.48
+      },
+      {
+        "label": "Research and development",
+        "reported_usd_millions": 19240,
+        "per_100_revenue": 57.88
+      },
+      {
+        "label": "Sales and marketing",
+        "reported_usd_millions": 6619,
+        "per_100_revenue": 19.91
+      },
+      {
+        "label": "General and administrative",
+        "reported_usd_millions": 3831,
+        "per_100_revenue": 11.52
+      }
+    ]
+  },
+  "classification_guide": "Reported figures: the cited filing. Calculated figures: per-$100 ratios. Assumed figures: all provider simulator cost and retention inputs. No peer percentage fills a simulation input."
+}

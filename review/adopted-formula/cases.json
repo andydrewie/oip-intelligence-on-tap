@@ -1,0 +1,463 @@
+{
+  "date": "2026-11-08",
+  "review_dir": "review/adopted-formula",
+  "summary": [
+    "This pass verifies the author-adopted formula and its connected UI. Earlier test counts covered a superseded capped model and must not be used as evidence for this rule.",
+    "Exact concept policy does not mean official OpenAI pricing or proven commercial economics. Original Pasta Board remains unchanged."
+  ],
+  "method": [
+    "28 Node tests plus direct cloud-Chrome interaction. Browser checks are observed procedures, not an unattended end-to-end suite.",
+    "Desktop review and 320/375/390 CSS-pixel content widths used narrow iframe viewports. These are responsive layout checks, not physical iPhone, touch, Safari or screen-reader certification.",
+    "The earlier report and tests remain under review/interaction-repair and review/adopted-formula/superseded-tests in the source archive."
+  ],
+  "changes": [
+    "One adopted settlement function replaces the default200 ceiling and independent continuous curve.",
+    "Expandable formula/table drawer with selected examples, cent-level variations, boundary cases, linked receipt and v2 share URLs.",
+    "Uber origin note beside billing, linked from the companion; semicolon declarations preserved.",
+    "Shared field readiness guard prevents input before hydration; explicit tier adjustments show either direction.",
+    "Markdown, JSON, static formula page, research index and download updated together."
+  ],
+  "cases": [
+    {
+      "id": "A01",
+      "kind": "automated",
+      "title": "M19 Economics baseline distinguishes revenue, gross profit, contribution",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A02",
+      "kind": "automated",
+      "title": "M20 Fixed-plan fulfillment responds to allowance, not imaginary overage",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A03",
+      "kind": "automated",
+      "title": "M21 Retail rate and inference cost affect different parts of economics",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A04",
+      "kind": "automated",
+      "title": "M22 Churn changes horizon value without changing monthly revenue",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A05",
+      "kind": "automated",
+      "title": "M23 Loyalty rate and retention benefits remain separate hypotheses",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A06",
+      "kind": "automated",
+      "title": "M24 Expense classifications and acquisition cost do not contaminate revenue",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A07",
+      "kind": "automated",
+      "title": "M25 Credit loss corners remain separate from subscription economics",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A08",
+      "kind": "automated",
+      "title": "five models reconcile service and contribution economics",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A09",
+      "kind": "automated",
+      "title": "zero churn has a finite horizon but no finite perpetual LTV",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A10",
+      "kind": "automated",
+      "title": "high cost losses are preserved; no negative value clamping",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A11",
+      "kind": "automated",
+      "title": "receipt amounts reconcile at cent precision and reject non-finite inputs",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A12",
+      "kind": "automated",
+      "title": "near-zero churn converges to the zero-churn finite horizon",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A13",
+      "kind": "automated",
+      "title": "shared scenarios round-trip every allowed input without leaking extra state",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A14",
+      "kind": "automated",
+      "title": "bounded source passages reconstruct every source paragraph without omissions or edits",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A15",
+      "kind": "automated",
+      "title": "S01 Adopted totals, exact ties and adjacent cents match author-approved outcomes",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A16",
+      "kind": "automated",
+      "title": "S02 Screenshot regression: meter 585.25 includes base exactly once and continues beyond 500",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A17",
+      "kind": "automated",
+      "title": "S03 Original 106.40 → 100 settles before every contribution",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A18",
+      "kind": "automated",
+      "title": "S04 Positive adjustments are explicit; no negative discounts or hidden cap",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A19",
+      "kind": "automated",
+      "title": "S05 Dollar amounts reconcile to cents even at fractional-cent entry",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A20",
+      "kind": "automated",
+      "title": "S06 Settlement is nondecreasing throughout the first $10,000 in cent increments",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A21",
+      "kind": "automated",
+      "title": "S07 Above 500, distance to nearest 50 is at most 25 and each band grows by 50",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A22",
+      "kind": "automated",
+      "title": "S08 Invalid monetary inputs remain finite, nonnegative",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A23",
+      "kind": "automated",
+      "title": "S09 Example generator provides changing cent-level totals within supported bounds",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A24",
+      "kind": "automated",
+      "title": "S10 Formula link restores the same meter, contribution and open drawer",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A25",
+      "kind": "automated",
+      "title": "S11 Legacy links retain valid meter and gift, disclose removal of former cap and curve",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A26",
+      "kind": "automated",
+      "title": "S12 Scenario validation rejects invalid amounts, flags and unsupported versions",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A27",
+      "kind": "automated",
+      "title": "S13 Economic comparison uses the same settlement function for its calculated meter",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A28",
+      "kind": "automated",
+      "title": "S14 Published model specification agrees with canonical cases and version",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "B01",
+      "kind": "browser",
+      "title": "Screenshot regression",
+      "status": "passed",
+      "action": "Enter 585.25 in the metered input.",
+      "expected": "Total 605.25; settlement 600; adjustment -5.25.",
+      "actual": "Observed all three in nearby results, receipt and drawer."
+    },
+    {
+      "id": "B02",
+      "kind": "browser",
+      "title": "Exact boundaries",
+      "status": "passed",
+      "action": "Enter 60, 60.01, 150, 150.01, 350, 350.01, 524.99, 525, 575 and 1000.37 as calculated totals.",
+      "expected": "Bills 20,100,100,200,200,500,500,550,600,1000.",
+      "actual": "All ten rendered results matched."
+    },
+    {
+      "id": "B03",
+      "kind": "browser",
+      "title": "Table selection and contribution",
+      "status": "passed",
+      "action": "Select total147.83; select a $5 contribution.",
+      "expected": "Meter127.83; settlement100; final105 in receipt and drawer.",
+      "actual": "All values matched. Selection updates the main meter."
+    },
+    {
+      "id": "B04",
+      "kind": "browser",
+      "title": "New examples",
+      "status": "passed",
+      "action": "Generate a fresh set after selecting147.83 and a $5 contribution.",
+      "expected": "Changed cent-level examples; current scenario unchanged.",
+      "actual": "Nine new totals with cents; selected final stayed105."
+    },
+    {
+      "id": "B05",
+      "kind": "browser",
+      "title": "Threshold examples",
+      "status": "passed",
+      "action": "Choose Near a threshold, then total525.",
+      "expected": "Meter505; settlement550.",
+      "actual": "Receipt showed550 before contribution."
+    },
+    {
+      "id": "B06",
+      "kind": "browser",
+      "title": "Share and reload",
+      "status": "passed",
+      "action": "Copy the expanded formula scenario, open the copied URL.",
+      "expected": "Restore use505, gift5, open drawer and final555.",
+      "actual": "Copied v2 URL restored these values."
+    },
+    {
+      "id": "B07",
+      "kind": "browser",
+      "title": "Slider keyboard input",
+      "status": "passed",
+      "action": "Use Home, ArrowRight and End on the native range.",
+      "expected": "Calculated totals20,20.01,1020 at its initial0–1000 meter range.",
+      "actual": "Observed all expected totals."
+    },
+    {
+      "id": "B08",
+      "kind": "browser",
+      "title": "Slider drag",
+      "status": "passed",
+      "action": "Drag native range from its maximum toward the middle.",
+      "expected": "Input and receipt update during actual pointer interaction.",
+      "actual": "Meter481.27; total501.27; settlement500; retained gift5 -> final505."
+    },
+    {
+      "id": "B09",
+      "kind": "browser",
+      "title": "Reset and refresh",
+      "status": "passed",
+      "action": "Reset original bill then reload.",
+      "expected": "Final100; gift0; drawer collapsed.",
+      "actual": "Observed these defaults after reload."
+    },
+    {
+      "id": "B10",
+      "kind": "browser",
+      "title": "Invalid-input recovery",
+      "status": "passed",
+      "action": "Type -3, then Enter.",
+      "expected": "Retain last valid bill while invalid; commit clamps to zero metered use.",
+      "actual": "aria-invalid true; held total605.25, then total20 after Enter."
+    },
+    {
+      "id": "B11",
+      "kind": "browser",
+      "title": "Custom gift and tab continuity",
+      "status": "passed",
+      "action": "Enter custom7.23 on the base-only bill; visit economics and return.",
+      "expected": "Final27.23 retained.",
+      "actual": "Observed27.23 before and after tab change."
+    },
+    {
+      "id": "B12",
+      "kind": "browser",
+      "title": "Economics integration",
+      "status": "passed",
+      "action": "Open economics comparison at defaults.",
+      "expected": "Tier-settlement row uses current formula; revenue100 and contribution58.26.",
+      "actual": "Rendered row matched; automated cases check additional totals."
+    },
+    {
+      "id": "B13",
+      "kind": "browser",
+      "title": "Pet and origin navigation",
+      "status": "passed",
+      "action": "Open pet, inspect declarations, follow The ride that started it.",
+      "expected": "Four semicolon declarations preserved; origin note opens in billing.",
+      "actual": "All declarations present; #founding-story opened the Uber ride/Uber One note."
+    },
+    {
+      "id": "B14",
+      "kind": "browser",
+      "title": "Narrow layout and keyboard row",
+      "status": "passed",
+      "action": "Inspect 320-pixel content viewport; press Enter on total525.17.",
+      "expected": "No horizontal overflow; final550.",
+      "actual": "scrollWidth and clientWidth both320; rendered table, formula and focus ring inspected; final550."
+    },
+    {
+      "id": "B15",
+      "kind": "browser",
+      "title": "390-pixel layout",
+      "status": "passed",
+      "action": "Inspect mobile meter and drawer at390 pixels, plus desktop side-by-side layout.",
+      "expected": "No horizontal overflow; controls and result readable.",
+      "actual": "390 clientWidth =390 scrollWidth; screenshots inspected. An intermediate375-pixel width was also checked."
+    },
+    {
+      "id": "B16",
+      "kind": "browser",
+      "title": "Legacy scenario migration",
+      "status": "passed",
+      "action": "Open v1 link with use585.25,gift5,budget200.",
+      "expected": "Current formula yields605, accompanied by model-change notice.",
+      "actual": "Notice explains removed ceiling/old curve; final605."
+    },
+    {
+      "id": "B17",
+      "kind": "browser",
+      "title": "Immediate input after load",
+      "status": "passed",
+      "action": "Reload and fill585.25 as soon as the number control becomes enabled.",
+      "expected": "Input cannot be edited before hydration; first accepted edit updates bill.",
+      "actual": "Found a pre-hydration reset during initial QA, added ready guards, then retest produced605.25 ->600."
+    },
+    {
+      "id": "D01",
+      "kind": "device",
+      "title": "Physical iPhone touch and Safari",
+      "status": "not_run",
+      "action": "Drag and tap on a physical iPhone in Safari.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D02",
+      "kind": "device",
+      "title": "VoiceOver and assistive technology",
+      "status": "not_run",
+      "action": "Navigate the complete drawer with a screen reader.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D03",
+      "kind": "device",
+      "title": "Other browser engines",
+      "status": "not_run",
+      "action": "Repeat core flows in Firefox and Safari engines.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D04",
+      "kind": "device",
+      "title": "Clipboard-denied fallback",
+      "status": "not_run",
+      "action": "Deny clipboard access and copy the displayed manual link.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    }
+  ]
+}

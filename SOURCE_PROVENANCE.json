@@ -1,0 +1,29 @@
+{
+  "project": "Intelligence on Tap",
+  "proposal": "[OIP] OpenAI Improvement Proposal",
+  "author": "Andrew Fai",
+  "independent_contribution": true,
+  "live_url": "https://intelligence-on-tap-andrew-fai.andydrewie.chatgpt.site/",
+  "sites_project_id": "appgprj_6af025aadbb88191aae40df0c68420e8",
+  "sites_version": 20,
+  "sites_source_commit": "e86f93f004da51a89d7cdcf38b6d107e6c89250f",
+  "publication_scope": "Sites version 20 source with repository presentation, research and economics guides, a new Relationship Lifetime Value essay, contribution workflow and verification commands. Downloadable source regenerated; application behavior and historical corpus unchanged.",
+  "automatic_deployment": false,
+  "source_corpus_sha256": "4ff65f0fea0d7dd541dc68a202761ab3b77364c61a2acf365cb671993caf3dbf",
+  "source_corpus_paragraphs": 572,
+  "verification": {
+    "automated_tests": 93,
+    "documented_cases": 100,
+    "passed": 97,
+    "not_run": 3,
+    "record": "review/state-machines/REVIEW.md",
+    "note": "87 retained baseline cases plus 13 follow-up cases; not all browser cases were newly executed."
+  },
+  "github_repository": "andydrewie/oip-intelligence-on-tap",
+  "formal_title": "[OIP] OpenAI Improvement Proposal - Intelligence on Tap",
+  "repository_review": {
+    "date": "2026-11-09",
+    "record": "review/github-presentation/REVIEW.md",
+    "new_conceptual_extension": "docs/RELATIONSHIP-LIFETIME-VALUE.md"
+  }
+}

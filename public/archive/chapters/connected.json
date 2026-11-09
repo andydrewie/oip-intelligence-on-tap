@@ -1,0 +1,20 @@
+{
+  "id": "connected",
+  "number": "06",
+  "title": "Connected personal intelligence",
+  "label": "Existing tools / hypothetical workflow",
+  "source": "Pasta Board · analytics and plugin corrections; O3–O4 · official documentation",
+  "summary": "Permissioned evidence. Purpose-specific access.",
+  "paragraphs": [
+    "ChatGPT can use supported connected apps subject to provider access, app capabilities and account or workspace settings. The concept considers selected chats and memories, financial records, analytics, Gmail, calendars, GitHub, documents and other authorized sources. Availability and coverage vary; connecting an account does not mean every historical artifact is available.",
+    "An investment workflow built on that information is hypothetical. It would need a distinct consent step specifying the recipient, purpose, records, duration and permitted reuse. Connecting an app to ChatGPT does not automatically authorize an investment team to inspect the underlying information.",
+    "The founder should curate and preview an evidence packet, redact confidential and third-party information, disclose only records they are entitled to share and choose whether to release it. The packet should preserve provenance and distinguish verified facts from inferences. User and third-party ownership rights remain with their holders; evidence access is not a transfer of ownership.",
+    "Revoking future access cannot guarantee that a recipient forgets information already disclosed. Retention, deletion, onward sharing, access logs and contractual limits need to be explicit. The permission explorer here changes only local demo selections; it connects no accounts and transmits no personal information."
+  ],
+  "question": "What is the smallest evidence packet that can answer a specific diligence question?",
+  "boundary": "A private exploratory chat should never silently become a character assessment or an investment signal.",
+  "anchor": "/archive/source.html#p-16735",
+  "provenance": "Editorial reconstruction from author-supplied material; not a verbatim transcript.",
+  "source_passage": "/archive/passages/p-16735.md",
+  "classification_guide": "/archive/inventory.json"
+}

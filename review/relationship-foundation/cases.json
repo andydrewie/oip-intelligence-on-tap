@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-08",
+  "summary": [
+    "The narrative now separates the service relationship, financial evidence and a proposed charitable destination. The receipt settles first; the optional Foundation gift changes total payment only.",
+    "Reported company finances teach cost coverage without estimating OpenAI customer margins. The worksheet remains optional and starts with unknown costs."
+  ],
+  "method": [
+    "This is a bounded review of the relationship/Foundation refinement, plus relevant billing and scenario regressions. It does not certify every historical feature.",
+    "Visual review used cloud Chrome, responsive iframes and 16px/32px root text. Screen captures are retained in review/relationship-foundation. Native device behavior, real browser zoom, tax eligibility and a live donation channel are not established.",
+    "Public benchmark figures were checked against the primary Anthropic S-1/A, Results of Operations and Note 8. Financial scenarios are hypothetical user inputs. No payment or message was sent."
+  ],
+  "changes": [
+    "Named the OpenAI Foundation and charitable purpose before gift selection, separating the service bill, gift and total payment.",
+    "Removed featured speculative margin targets; moved sourced accounting evidence ahead of a single optional reviewer worksheet.",
+    "Kept gifts outside commercial revenue and earned privileges; kept costs unknown until explicitly supplied and reviewed.",
+    "Fixed shared worksheet links and nested direct navigation.",
+    "Updated editorial chapters, Markdown, JSON, agent index and source download while preserving the original source corpus and adopted equation."
+  ],
+  "cases": [
+    {
+      "id": "A01",
+      "title": "Calculation and scenario regression suite",
+      "kind": "automated",
+      "action": "Run node --test tests/*.test.mjs.",
+      "expected": "Billing boundaries, cost completeness, negative balances, donation exclusion, shared-state parsing and legacy migration remain correct.",
+      "actual": "37 tests passed. The scenario round-trip case also verifies the new cost-scenario link target.",
+      "status": "passed"
+    },
+    {
+      "id": "A02",
+      "title": "Type safety and patch integrity",
+      "kind": "automated",
+      "action": "Run TypeScript --noEmit and git diff --check.",
+      "expected": "No type errors or whitespace errors.",
+      "actual": "Both completed successfully.",
+      "status": "passed"
+    },
+    {
+      "id": "A03",
+      "title": "Source preservation and archive targets",
+      "kind": "automated",
+      "action": "Compare original source HTML/JSON and canonical billing/equation modules with the starting commit; inspect local archive links.",
+      "expected": "Historical evidence and adopted math unchanged; current archive targets exist.",
+      "actual": "All four files are byte-identical to the starting commit. 150 local link/file references checked; none missing.",
+      "status": "passed"
+    },
+    {
+      "id": "A04",
+      "title": "Reported finances reconcile",
+      "kind": "automated",
+      "action": "Recalculate each reported expense per $100 revenue and the operating result from the source amounts.",
+      "expected": "Expenses total $34,502 million against $33,242 million revenue; operating loss $1,260 million.",
+      "actual": "The test suite reconciles totals and ratios. UI and current archive present the result as negative $3.79 per $100, not an individual account margin.",
+      "status": "passed"
+    },
+    {
+      "id": "B01",
+      "title": "First-visit donation context",
+      "kind": "browser",
+      "action": "Open a fresh receipt.",
+      "expected": "Settled service bill appears before the optional Foundation donation; default gift is zero.",
+      "actual": "Visible receipt named the OpenAI Foundation and the charitable purpose before the choices; $100 service bill, $0 gift, $100 total.",
+      "status": "passed"
+    },
+    {
+      "id": "B02",
+      "title": "Preset donation preserves the bill",
+      "kind": "browser",
+      "action": "Select a $5 gift on the reference $86.40 metered example.",
+      "expected": "Subtotal $106.40 settles to $100; only total payment becomes $105.",
+      "actual": "All values matched and the selected gift had pressed state.",
+      "status": "passed"
+    },
+    {
+      "id": "B03",
+      "title": "Custom gift and usage above $500",
+      "kind": "browser",
+      "action": "Enter a $7.23 gift and $585.25 metered usage, then open economics.",
+      "expected": "Subtotal $605.25 settles to $600; total $607.23; provider revenue $600.",
+      "actual": "Receipt and linked provider bill matched exactly. No $200 ceiling or permanent $500 cap appeared.",
+      "status": "passed"
+    },
+    {
+      "id": "B04",
+      "title": "Unknown costs stay unknown",
+      "kind": "browser",
+      "action": "Open the optional reviewer worksheet with blank cost fields.",
+      "expected": "No balance; review control disabled; all missing categories identified.",
+      "actual": "All four cost categories were Unknown and no earnings estimate was displayed.",
+      "status": "passed"
+    },
+    {
+      "id": "B05",
+      "title": "Reviewed complete cost scenario",
+      "kind": "browser",
+      "action": "For a $100 service bill, enter $40 serving, $30 development, $10 operations and 3% payment costs; review.",
+      "expected": "No result before review; $17 scenario balance after review.",
+      "actual": "The result appeared only after confirmation and was labeled before financing and tax, not OpenAI profit.",
+      "status": "passed"
+    },
+    {
+      "id": "B06",
+      "title": "Foundation gifts excluded from commercial calculations",
+      "kind": "browser",
+      "action": "Change the gift from $5 to $10 while retaining the reviewed cost scenario.",
+      "expected": "Commercial revenue and balance unchanged.",
+      "actual": "Provider bill stayed $100 and scenario balance stayed $17.",
+      "status": "passed"
+    },
+    {
+      "id": "B07",
+      "title": "Cost changes and negative results",
+      "kind": "browser",
+      "action": "Change development allocation from $30 to $80, then review again.",
+      "expected": "The previous result disappears until reviewed; revised balance is negative $33.",
+      "actual": "Review was invalidated immediately; the reviewed result displayed -$33.",
+      "status": "passed"
+    },
+    {
+      "id": "B08",
+      "title": "Direct shared scenario reload",
+      "kind": "browser",
+      "action": "Copy the reviewed assumptions link and reload it.",
+      "expected": "Open the worksheet directly and restore amounts, review status, receipt and gift.",
+      "actual": "The cost-scenario v4 link opened its drawer and restored the -$33 result with the $100 service bill and $10 gift.",
+      "status": "passed"
+    },
+    {
+      "id": "B09",
+      "title": "Usage changes invalidate cost review",
+      "kind": "browser",
+      "action": "Move the receipt slider one keyboard step from $86.40 to $86.41 and return to economics.",
+      "expected": "The $100 tier stays constant, but prior cost review becomes stale.",
+      "actual": "Usage increased by $0.01; the balance disappeared and the site requested another cost review.",
+      "status": "passed"
+    },
+    {
+      "id": "B10",
+      "title": "Reset does not reset the customer receipt",
+      "kind": "browser",
+      "action": "Clear cost assumptions after editing the receipt.",
+      "expected": "Costs revert to Unknown while metered use, service bill and gift persist.",
+      "actual": "All costs cleared; the linked $100 service bill remained. Receipt state was retained in the scenario URL.",
+      "status": "passed"
+    },
+    {
+      "id": "B11",
+      "title": "Nested disclosure direct navigation",
+      "kind": "browser",
+      "action": "Load and reload the economics-loyalty anchor.",
+      "expected": "Both parent worksheet and nested loyalty disclosure open.",
+      "actual": "Both details elements were open after a fresh reload; the visitor did not need to find a hidden parent.",
+      "status": "passed"
+    },
+    {
+      "id": "B12",
+      "title": "Legacy cost links cannot revive misleading earnings",
+      "kind": "browser",
+      "action": "Open an economics v3 link with use=1000, gift=10, servingCost=50 and otherCosts=5.",
+      "expected": "Preserve the bill and gift; discard incomplete cost defaults; explain the correction.",
+      "actual": "The service bill was $1,000; cost fields were Unknown and an explicit migration message appeared.",
+      "status": "passed"
+    },
+    {
+      "id": "B13",
+      "title": "Keyboard operation",
+      "kind": "browser",
+      "action": "Use an arrow key on the slider, Space on a donation choice, and Enter on the Foundation disclosure.",
+      "expected": "Equivalent keyboard operation with visible state changes.",
+      "actual": "Meter advanced by one cent, $1 gift was selected, and the donation/tax-context disclosure expanded.",
+      "status": "passed"
+    },
+    {
+      "id": "B14",
+      "title": "Mobile and enlarged-text visual review",
+      "kind": "browser",
+      "action": "Inspect screenshots at 440px and 390px normal text, 320px/390px doubled root text; inspect receipt, evidence, worksheet, formula and archive.",
+      "expected": "Controls and labels reflow without page-wide horizontal overflow.",
+      "actual": "Donation controls changed to two columns when necessary; cost rows stacked; long labels remained readable. Measured document width equaled the viewport in checked narrow states. Screenshots are saved beside this report.",
+      "status": "passed"
+    },
+    {
+      "id": "B15",
+      "title": "Desktop visual review",
+      "kind": "browser",
+      "action": "Inspect receipt and financial evidence at 1280px with normal and doubled root text.",
+      "expected": "Readable hierarchy, matching amounts and no label overlap or page-wide overflow.",
+      "actual": "Both states were visually inspected. Document width matched the viewport. Foundation recipient, reported-loss label and context remained visible and legible.",
+      "status": "passed"
+    },
+    {
+      "id": "B16",
+      "title": "Current archive and runtime checks",
+      "kind": "browser",
+      "action": "Open static provider economics, inspect revised financial/donation context, and inspect app-origin error logs.",
+      "expected": "Static archive matches the app; no app-origin runtime errors in reviewed flow.",
+      "actual": "Archive showed signed loss and excluded Foundation donations. App-origin error filter returned no entries; browser extension metadata errors were unrelated to the app.",
+      "status": "passed"
+    },
+    {
+      "id": "D01",
+      "title": "Physical devices and assistive technology",
+      "kind": "device",
+      "action": "Test native iPhone Safari, Android touch dragging, actual browser zoom and screen-reader announcements.",
+      "expected": "Verify behavior on those devices and settings independently.",
+      "actual": "Not run in this environment. Responsive iframe sizes and doubled root text are not physical-device or actual-browser-zoom tests.",
+      "status": "not_run"
+    }
+  ]
+}

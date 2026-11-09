@@ -1,0 +1,673 @@
+{
+  "schema": "intelligence-on-tap/interaction-states/v1",
+  "title": "Interaction state contract",
+  "purpose": "A scoped implementation map for people, agents and tests. This describes the concept site's interactions; it is not a new product flow or a blanket verification claim.",
+  "companions": {
+    "readable": "/archive/interaction-states.md",
+    "index": "/archive/index.json",
+    "input_contract": "/archive/models.json",
+    "recorded_checks": "/testing.json",
+    "source_code": "/source-code.zip",
+    "html": "/archive/interaction-states.html"
+  },
+  "retrieval": {
+    "start": "Read this compact inventory or its Markdown counterpart before downloading source or the corpus.",
+    "narrow_question": "Select a family by id, then inspect only its listed entry point, DOM scope and source owner. Source paths name files within the source ZIP, not additional HTTP endpoints.",
+    "dom": "data-machine/data-state describe inspectable runtime state. They do not replace accessible labels, native details/open, aria-selected, aria-expanded, aria-invalid or live status text.",
+    "no_js": "The archive remains readable without executing the application. Render the app only to inspect current interaction state or verify behavior.",
+    "limits": "URL fragments select destinations; a JSON fragment is not a server-side filter. Search family ids locally after retrieving this small file. No background polling, credentials or full corpus fetch is needed for interaction questions."
+  },
+  "invariants": [
+    "One experience owns the receipt. Economics reads the same metered amount and donation; it cannot fork them.",
+    "Changing metered usage revokes cost review. Donation and disclosure changes do not. Returning to an earlier amount does not itself review costs again.",
+    "Blank, invalid and valid zero are distinct. Rejected cost drafts survive sharing and never become known zero.",
+    "Formula destinations mean open. Closing normalizes to a billing destination whose saved formula flag is zero.",
+    "Only the latest relevant asynchronous request may change feedback. Terminal copy outcomes cannot be overwritten by late callbacks.",
+    "Local search edits do not navigate. Destination focus uses committed DOM. Only initial, native-fragment or history navigation may schedule one guarded reconciliation; app-owned link transitions do not. A new pointer, key, wheel or touch intent cancels pending reconciliation.",
+    "The adopted pricing formula, historical evidence and Foundation donation separation are unchanged by this interaction contract."
+  ],
+  "families": [
+    {
+      "id": "experience",
+      "owner": [
+        "lib/experience-state.mjs",
+        "app/ui.tsx:useExperienceState"
+      ],
+      "state": [
+        "loading",
+        "ready",
+        "bill",
+        "economics",
+        "costInputs",
+        "warnings",
+        "revision"
+      ],
+      "events": [
+        "RESTORE",
+        "BILL_CHANGED",
+        "BILL_RESET",
+        "COST_EDITED",
+        "COSTS_REVIEWED",
+        "COSTS_CLEARED",
+        "ECONOMICS_CHANGED",
+        "ECONOMICS_RESET"
+      ],
+      "guards": [
+        "Accept only allowed keys and bounded numeric values.",
+        "Economics generic edits cannot certify costs or replace receipt fields.",
+        "Ignore duplicate restoration of the same current hash.",
+        "Scope resets to their named state."
+      ],
+      "url_persistence": "Billing v2 saves usage, donation and formula. Economics v5 saves its assumptions and raw cost drafts plus a receipt snapshot. Bare owned routes preserve the current in-session values; explicit scenario links restore their supplied snapshot.",
+      "entry": "/#billing",
+      "observe": [
+        "[data-machine=receipt][data-state]",
+        "[data-machine=cost-review][data-state]"
+      ],
+      "accessibility": "Loading receipt has a status message outside inert controls; controls become available after restoration. Parse/migration warnings remain visible.",
+      "retained_design": "Small pure transition function and one hook, without a state-machine package."
+    },
+    {
+      "id": "navigation",
+      "owner": [
+        "lib/scenarios.mjs:panelForTarget",
+        "app/page.tsx:Home",
+        "app/ui.tsx:scrollToRoute"
+      ],
+      "state": [
+        "current destination",
+        "selected tab",
+        "visited panels",
+        "navigation kind: link or history",
+        "committed destination DOM",
+        "pending initial/native/history reconciliation"
+      ],
+      "events": [
+        "initial hash",
+        "native hashchange",
+        "popstate",
+        "app-link hashchange event",
+        "main-tab click",
+        "ArrowLeft",
+        "ArrowRight",
+        "Home",
+        "End",
+        "Space",
+        "pointerdown",
+        "keydown",
+        "wheel",
+        "touchstart"
+      ],
+      "guards": [
+        "Resolve owning panel through the shared target registry.",
+        "Initial non-research destination focus runs after committed layout. Research fulfills its own pending route after any filtered chapter remounts.",
+        "App-owned pushState links emit an app-link event and do not schedule a post-frame reconciliation.",
+        "Initial, native-fragment and history navigation may reconcile once in an animation frame after the browser history phase, including research destinations.",
+        "Cancel pending reconciliation on route change or the next pointerdown, keydown, wheel or touchstart so a new interaction owns attention.",
+        "Both Home applications require the current URL target to match the intent and its owner to match the selected tab, except anchors outside the tabs. Research also checks its pending target against the current URL.",
+        "Do not focus a missing target or one inside a hidden panel. An empty fragment returns to main.",
+        "Same-document interception requires the same origin, pathname and search plus a fragment. Cross-document links remain native/framework navigation.",
+        "React navigation anchors and the document handler preserve non-primary or modifier clicks; links targeting another browsing context are not intercepted."
+      ],
+      "url_persistence": "The app owns same-document fragment history and preserves framework history.state when pushing or replacing entries. Scenario edits replace the current entry. Scroll restoration is manual while mounted and restored on cleanup. Visited panels retain local state; returning to an empty fragment focuses main without resetting their data.",
+      "entry": "/#explore",
+      "observe": [
+        "[role=tablist][aria-label='Concept explorations']",
+        "[role=tab][aria-selected=true]",
+        "[role=tabpanel]:not([hidden])",
+        "document.activeElement"
+      ],
+      "accessibility": "Main destinations focus their tab. Nested destinations open details ancestors and focus the target summary or section. Native anchors remain usable.",
+      "retained_design": "Browser History API with a four-tab controller. Link transitions use committed layout; only initial/native/history transitions retain one interruptible reconciliation. The browser/framework owns document navigation."
+    },
+    {
+      "id": "number-input",
+      "owner": [
+        "app/ui.tsx:Field",
+        "lib/inputs.mjs"
+      ],
+      "state": [
+        "loading",
+        "empty",
+        "invalid",
+        "valid",
+        "last accepted value",
+        "recovery notice"
+      ],
+      "events": [
+        "type",
+        "slider input",
+        "blur",
+        "Enter",
+        "Escape",
+        "accepted parent value changes",
+        "reset revision"
+      ],
+      "guards": [
+        "Bounded decimal grammar determines validity.",
+        "Only valid edits update calculations.",
+        "Invalid or blank draft retains the last accepted result.",
+        "Blur/Enter restores a rejected draft with an explicit notice; Escape restores the accepted value."
+      ],
+      "url_persistence": "Accepted scenario values persist where the owning scenario is shareable. Generic invalid drafts and local notices are transient; cost drafts use the separate cost-input contract.",
+      "entry": "/#billing",
+      "observe": [
+        "[data-machine=number-input][data-state]",
+        "input[aria-invalid]",
+        "input[aria-describedby]"
+      ],
+      "accessibility": "Visible labels include units; associated hints name the retained result and allowed range. Optional sliders share the same accepted value.",
+      "retained_design": "Shared local draft component, not a separate application-wide machine for every numeric field."
+    },
+    {
+      "id": "receipt-and-donation",
+      "owner": [
+        "app/billing.tsx:Billing",
+        "lib/model.mjs:bill",
+        "lib/experience-state.mjs"
+      ],
+      "state": [
+        "loading",
+        "ready",
+        "usage",
+        "donation",
+        "preset or custom amount presentation"
+      ],
+      "events": [
+        "usage edit",
+        "donation preset",
+        "reveal custom amount",
+        "custom amount edit",
+        "reset example bill"
+      ],
+      "guards": [
+        "Readiness blocks payment controls until saved state is restored.",
+        "Donation is added after settlement, excluded from provider revenue and earned privileges.",
+        "Revealing custom input preserves its amount; a restored non-preset amount displays as custom.",
+        "Receipt and equation use the same bill calculation."
+      ],
+      "url_persistence": "Usage and donation persist in billing and economics scenario links. Custom-input visibility is local, except non-preset saved amounts reveal it automatically.",
+      "entry": "/#billing",
+      "observe": [
+        "[data-machine=receipt][data-state]",
+        "[aria-label='Optional donation amount']",
+        "[aria-controls=donation-custom]",
+        "[data-testid=receipt-settled]",
+        "[data-testid=final-bill]"
+      ],
+      "accessibility": "Donation heading and recipient precede amount buttons. Pressed/expanded states identify selection; live totals explain the service/donation split.",
+      "retained_design": "Local boolean for custom-entry display, central accepted amount. No payment is collected."
+    },
+    {
+      "id": "formula-and-examples",
+      "owner": [
+        "app/billing.tsx",
+        "app/equations.tsx",
+        "lib/experience-state.mjs:experienceHash",
+        "lib/model.mjs"
+      ],
+      "state": [
+        "formula closed",
+        "formula open",
+        "everyday examples",
+        "threshold examples",
+        "example seed"
+      ],
+      "events": [
+        "toggle formula",
+        "formula direct link",
+        "more examples",
+        "toggle thresholds",
+        "select subtotal",
+        "reset bill"
+      ],
+      "guards": [
+        "Formula-target links mean open; closing uses a compatible billing target.",
+        "Generating examples changes no bill; selecting a subtotal changes usage only.",
+        "Donation survives subtotal selection.",
+        "Equation structure remains indivisible with local scrolling when needed."
+      ],
+      "url_persistence": "Formula visibility and accepted amounts persist. Example seed and threshold-view preference are local and reset with the example bill.",
+      "entry": "/#pricing-formula",
+      "observe": [
+        "details#pricing-formula[open]",
+        ".example-actions [aria-pressed]",
+        ".example-table [aria-pressed]"
+      ],
+      "accessibility": "Native summary controls expansion; selected example is pressed. The equation uses MathML, with a labeled horizontal scroll area for tables.",
+      "retained_design": "Controlled formula flag plus small local example-presentation state."
+    },
+    {
+      "id": "cost-inputs",
+      "owner": [
+        "app/economics.tsx:CostField",
+        "lib/provider-economics.mjs:costCategories",
+        "lib/experience-state.mjs"
+      ],
+      "state": [
+        "empty",
+        "invalid",
+        "valid"
+      ],
+      "events": [
+        "COST_EDITED",
+        "RESTORE",
+        "COSTS_CLEARED"
+      ],
+      "guards": [
+        "Keep raw drafts up to 128 characters.",
+        "The three allocation fields accept USD 0–1,000,000 with at most two decimal places.",
+        "Payment processing accepts 0–20 percent, retaining rate precision until final monetary rounding.",
+        "Invalid is not empty or supplied zero."
+      ],
+      "url_persistence": "Economics v5 includes input-servingCost, input-developmentCost, input-operationsCost and input-paymentFee. Legacy supplied invalid values remain rejected drafts with a warning.",
+      "entry": "/#cost-scenario",
+      "observe": [
+        "#cost-servingCost",
+        "#cost-developmentCost",
+        "#cost-operationsCost",
+        "#cost-paymentFee",
+        "[aria-invalid=true]"
+      ],
+      "accessibility": "Each input has label, units, context and linked error text. Result recovery returns focus to the first invalid or missing field.",
+      "retained_design": "Shared validation descriptors, central raw drafts; no extra per-field state controller."
+    },
+    {
+      "id": "cost-review-and-loyalty",
+      "owner": [
+        "lib/experience-state.mjs:reviewStatus",
+        "lib/provider-economics.mjs:providerEconomics",
+        "app/economics.tsx"
+      ],
+      "state": [
+        "incomplete",
+        "invalid",
+        "unreviewed",
+        "reviewed",
+        "stale"
+      ],
+      "events": [
+        "cost edit",
+        "review costs",
+        "usage change",
+        "donation change",
+        "clear costs",
+        "loyalty assumption edit",
+        "shared-link restore"
+      ],
+      "guards": [
+        "All four costs must be valid before explicit review.",
+        "Review records the current metered usage; later usage changes revoke it even inside the same price band.",
+        "Cost edits revoke review; donation changes do not.",
+        "No financial balance or loyalty comparison is shown until reviewed.",
+        "Clear costs preserves bill and unrelated comparison/loyalty assumptions."
+      ],
+      "url_persistence": "Cost values, review flag, usage basis and loyalty inputs persist in economics links. An in-session invalidation reason is local; unreviewed saved inputs remain unreviewed after restoration.",
+      "entry": "/#cost-scenario",
+      "observe": [
+        "[data-machine=cost-review][data-state]",
+        "#cost-scenario > summary",
+        "[data-testid=cost-status]",
+        "[data-testid=provider-remaining]"
+      ],
+      "accessibility": "Collapsed worksheet names correction count; visible status distinguishes missing, invalid, ready and stale. A correction button moves focus to the relevant input.",
+      "retained_design": "Review state is derived from the central snapshot, not an independent boolean in the view."
+    },
+    {
+      "id": "fictional-comparison-and-risk",
+      "owner": [
+        "app/economics.tsx:Economics",
+        "app/page.tsx:AdvancedEconomics",
+        "lib/model.mjs"
+      ],
+      "state": [
+        "comparison not revealed",
+        "comparison revealed",
+        "accepted fictional inputs",
+        "local input drafts"
+      ],
+      "events": [
+        "open comparison",
+        "edit demand/prices/costs/allowances",
+        "edit churn/loyalty",
+        "edit credit or investment assumptions",
+        "navigate away"
+      ],
+      "guards": [
+        "Opening focuses a stable wrapper in a layout effect after its DOM commits, only if it is visible.",
+        "Comparison inputs do not modify the receipt or certify cost review.",
+        "Separate risk and partnership outputs are never added to provider earnings.",
+        "Zero-churn perpetual values cannot display Infinity as a result."
+      ],
+      "url_persistence": "Accepted comparison and risk assumptions persist in economics links. The deliberate reveal flag is local and retained while its visited panel remains mounted.",
+      "entry": "/#economics-comparison",
+      "observe": [
+        "details#economics-comparison",
+        "#fictional-comparison",
+        "[data-testid=economics-result]"
+      ],
+      "accessibility": "Reveal transfers focus to a stable wrapper; numeric fields use the shared contract. Tables have labeled scroll regions and mobile alternatives.",
+      "retained_design": "One local reveal boolean; calculations derive from accepted scenario values."
+    },
+    {
+      "id": "research-load",
+      "owner": [
+        "app/research-loader.tsx"
+      ],
+      "state": [
+        "loading",
+        "ready",
+        "failed",
+        "attempt identity"
+      ],
+      "events": [
+        "mount",
+        "module resolves",
+        "module rejects",
+        "retry",
+        "unmount"
+      ],
+      "guards": [
+        "Only the current mounted attempt may set the module/status.",
+        "Failure stays local to research and leaves a static-index escape.",
+        "Research receives an empty route while its panel is hidden, preventing destination focus on late loading."
+      ],
+      "url_persistence": "Research destination persists; pending/failure/retry state is local and is not serialized.",
+      "entry": "/#research",
+      "observe": [
+        "[data-machine=research-load][data-state]",
+        "[data-machine=research-load][aria-busy]"
+      ],
+      "accessibility": "Loading/failure text uses a status region. After a retry, its button stays mounted and aria-disabled while pending; the handler rejects another activation. Static index remains available. Actual focus recovery still requires browser verification.",
+      "retained_design": "Small dynamic-module loader; no data backend or application-wide error state."
+    },
+    {
+      "id": "research-search-and-chapters",
+      "owner": [
+        "app/research.tsx"
+      ],
+      "state": [
+        "unfiltered",
+        "matches",
+        "empty",
+        "query",
+        "pending route intent",
+        "native chapter open states"
+      ],
+      "events": [
+        "type query",
+        "clear search",
+        "new chapter destination",
+        "toggle chapter",
+        "copy chapter link"
+      ],
+      "guards": [
+        "Search compares title, summary and paragraph text case-insensitively.",
+        "A new research destination records a pending route intent; a chapter destination also clears conflicting search.",
+        "The next committed render fulfills the pending intent if its target still matches the current URL, then clears it. This lets filtered chapters remount before focus.",
+        "Typing clears pending navigation; query edits never create a route intent. Non-research destinations clear the pending research intent.",
+        "Only an initial/native/history transition may let Home reconcile the committed destination once; a new user intent cancels it. App-link and ordinary filter edits do not schedule this reconciliation.",
+        "Filtering may unmount a chapter, so native open state is not promised across removal."
+      ],
+      "url_persistence": "Chapter destination persists; search query and chapter open states are local. Copying a chapter makes a direct chapter link rather than serializing the filter.",
+      "entry": "/#chapters",
+      "observe": [
+        "[data-machine=research-search][data-state]",
+        "#research-search",
+        "details.chapter[open]"
+      ],
+      "accessibility": "Search has a label, match count and no-match help; Clear search returns focus to search. Direct entry opens/focuses the chapter summary.",
+      "retained_design": "Simple synchronous filter and native chapter disclosures."
+    },
+    {
+      "id": "share-link",
+      "owner": [
+        "lib/async-state.mjs",
+        "app/ui.tsx:ShareLink"
+      ],
+      "state": [
+        "idle",
+        "pending",
+        "succeeded",
+        "failed",
+        "request id",
+        "immutable URL snapshot"
+      ],
+      "events": [
+        "START",
+        "RESET",
+        "SUCCEEDED",
+        "FAILED",
+        "eight-second fallback timeout"
+      ],
+      "guards": [
+        "Only matching request identity in pending state may complete.",
+        "Scope change or unmount invalidates the previous request.",
+        "Current hash snapshot must still match before UI completion.",
+        "Failed/succeeded are terminal for that request; retry creates a new identity.",
+        "Timeout is FAILED/manual-copy recovery, not proof that the clipboard write was cancelled."
+      ],
+      "url_persistence": "The copied URL encodes the owning scenario or chapter. Copy status is ephemeral. The browser query is omitted from the copied URL; no private backend state is included.",
+      "entry": "/#billing",
+      "observe": [
+        "[data-machine=share-link][data-state]",
+        "[data-machine=share-link] [role=status]",
+        "input[aria-label='Shareable link']"
+      ],
+      "accessibility": "Pending copy is disabled and announced. Failure provides a selectable URL and an ordinary open link; sharing does not depend on clipboard permission.",
+      "retained_design": "Pure four-state request helper. Same guard applies to receipt, calculation, cost and chapter copying."
+    },
+    {
+      "id": "pet-note",
+      "owner": [
+        "app/ui.tsx:UtilityEgg"
+      ],
+      "state": [
+        "closed",
+        "open"
+      ],
+      "events": [
+        "toggle",
+        "close",
+        "Escape",
+        "outside pointer",
+        "inspiration link"
+      ],
+      "guards": [
+        "Outside-pointer listener exists only while open.",
+        "Close/Escape return focus to the trigger.",
+        "Following inspiration closes the note and uses ordinary destination navigation."
+      ],
+      "url_persistence": "Note visibility is local. Inspiration link has its own founding-story destination.",
+      "entry": "/#proposition",
+      "observe": [
+        ".utility-toggle[aria-expanded]",
+        ".utility-note[role=note]"
+      ],
+      "accessibility": "Named trigger, expanded/controls state and named close button. Nonmodal note does not trap focus.",
+      "retained_design": "Local boolean, not a machine dependency."
+    },
+    {
+      "id": "relationship-stages",
+      "owner": [
+        "app/page.tsx:Relationship"
+      ],
+      "state": [
+        "Customer",
+        "Trusted relationship",
+        "Economic partner",
+        "Mutual investment"
+      ],
+      "events": [
+        "click stage",
+        "ArrowLeft",
+        "ArrowRight",
+        "Home",
+        "End"
+      ],
+      "guards": [
+        "One of four indices is active.",
+        "Focused tab, selected tab and panel label agree.",
+        "Stages do not imply earned entitlement or mutate economic inputs."
+      ],
+      "url_persistence": "The relationship tab is addressable. Selected stage is local and retained while the visited panel stays mounted, not on refresh.",
+      "entry": "/#relationship",
+      "observe": [
+        "[role=tablist][aria-label='Relationship stages']",
+        "#stage-detail[aria-labelledby]"
+      ],
+      "accessibility": "Roving tab index and keyboard selection; focusable panel names its active stage.",
+      "retained_design": "A bounded integer index is sufficient."
+    },
+    {
+      "id": "evidence-preview",
+      "owner": [
+        "app/page.tsx:Relationship"
+      ],
+      "state": [
+        "nothing selected",
+        "selection draft",
+        "preview shown"
+      ],
+      "events": [
+        "toggle category",
+        "preview selected evidence"
+      ],
+      "guards": [
+        "At least one category is required for preview.",
+        "Every selection change removes the prior preview.",
+        "Nothing is connected, sent or authorized by this demo."
+      ],
+      "url_persistence": "Local category labels and preview state only; not included in application URLs or a data-transfer workflow.",
+      "entry": "/#relationship",
+      "observe": [
+        ".permission-box input[type=checkbox]",
+        ".permission-box button[disabled]",
+        ".permission-box [role=status]"
+      ],
+      "accessibility": "Native labeled checkboxes; disabled preview has nearby selection instructions; resulting category count is a status message.",
+      "retained_design": "Small selected list plus preview flag; no actual consent collection."
+    },
+    {
+      "id": "founder-terms",
+      "owner": [
+        "app/page.tsx:Relationship",
+        "app/ui.tsx:Field"
+      ],
+      "state": [
+        "accepted investment",
+        "accepted pre-money valuation",
+        "local field drafts"
+      ],
+      "events": [
+        "edit investment",
+        "edit valuation",
+        "toggle parent disclosure",
+        "leave and return to tab"
+      ],
+      "guards": [
+        "Shared Field validation governs accepted values.",
+        "Ownership derives from investment divided by pre-money value plus investment.",
+        "This is illustrative and separate from the site-wide investment-risk comparison."
+      ],
+      "url_persistence": "Local only, retained within the mounted relationship panel. No persistence or sharing control is promised.",
+      "entry": "/#relationship",
+      "observe": [
+        ".terms [data-machine=number-input]",
+        ".terms strong"
+      ],
+      "accessibility": "Labeled numeric fields and adjacent ownership explanation; native parent disclosure.",
+      "retained_design": "Two local accepted numbers and a derived result."
+    },
+    {
+      "id": "native-disclosures-and-overflow",
+      "owner": [
+        "app/ui.tsx:Detail",
+        "app/billing.tsx",
+        "app/page.tsx",
+        "app/research.tsx",
+        "app/equations.tsx",
+        "scripts/build-archive.mjs"
+      ],
+      "state": [
+        "open",
+        "closed",
+        "local scroll position"
+      ],
+      "events": [
+        "summary activation",
+        "direct destination",
+        "keyboard/pointer scroll"
+      ],
+      "guards": [
+        "Native details own ordinary expansion; pricing formula is the separate controlled exception.",
+        "Route helper opens ancestors for reachable nested targets.",
+        "Tables/equations use local overflow rather than shrinking or wrapping essential notation."
+      ],
+      "url_persistence": "Addressable destination persists. Ordinary open/closed and scroll positions are browser/local state, not scenario parameters.",
+      "entry": "/#explore",
+      "observe": [
+        "details[open]",
+        "summary",
+        ".table-wrap[tabindex]",
+        ".example-table-wrap[tabindex]",
+        ".equation-scroll[tabindex]"
+      ],
+      "accessibility": "Native summary semantics, focus-visible treatment and labeled scroll regions remain the primary contract. No data-state duplication is required for these native states.",
+      "retained_design": "Keep native HTML; do not replace every disclosure with a custom machine."
+    },
+    {
+      "id": "archive-links-and-downloads",
+      "owner": [
+        "scripts/build-archive.mjs",
+        "public/archive",
+        "app/research.tsx",
+        "app/page.tsx"
+      ],
+      "state": [
+        "current document",
+        "fragment destination",
+        "browser download state"
+      ],
+      "events": [
+        "follow internal link",
+        "follow cited external source",
+        "open source paragraph",
+        "download Markdown/JSON/ZIP"
+      ],
+      "guards": [
+        "Stable relative destinations and original source paragraph ids.",
+        "Editorial documents describe current behavior; original source evidence is not rewritten.",
+        "Downloads use ordinary links rather than hidden application requests."
+      ],
+      "url_persistence": "Normal document URL and fragment. No custom application state is needed to inspect the archive.",
+      "entry": "/archive/index.html",
+      "observe": [
+        "a[href]",
+        "a[download]",
+        "document fragment target"
+      ],
+      "accessibility": "Meaningful destination labels and native navigation/download behavior. Static index is available during application loading/failure and without JavaScript.",
+      "retained_design": "Static scoped documents, not a runtime archive browser service."
+    }
+  ],
+  "verification_boundary": {
+    "source_review": "The authored controllers and native/local state families were inspected. This inventory describes implementation contracts, not exhaustive browser certification.",
+    "executed_here": {
+      "command": "node --test tests/async-state.test.mjs",
+      "scope": "Pure request identity, reset, retry, stale completion and terminal timeout transitions",
+      "passed": 14,
+      "failed": 0
+    },
+    "not_established_here": [
+      "Actual clipboard permission denial",
+      "Actual eight-second timer scheduling",
+      "Research network failure and retry rendering",
+      "Screen-reader announcements",
+      "Physical mobile touch",
+      "Safari",
+      "Post-change visual/focus verification"
+    ],
+    "separate_evidence": "/testing.json"
+  }
+}

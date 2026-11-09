@@ -1,0 +1,69 @@
+{
+  "id": "p-23720",
+  "first": 23720,
+  "last": 24530,
+  "paragraph_count": 10,
+  "markdown": "/archive/passages/p-23720.md",
+  "json": "/archive/passages/p-23720.json",
+  "html": "/archive/passages/p-23720.html",
+  "ordinal": 12,
+  "source": "Pasta Board",
+  "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+  "classification": "original_source_text",
+  "speaker_attribution": "Not inferred; the document does not consistently label speakers or exact times.",
+  "full_source": "/archive/source.html",
+  "previous": "/archive/passages/p-22631.md",
+  "next": "/archive/passages/p-24569.md",
+  "paragraphs": [
+    {
+      "id": "p-23720",
+      "text": "Bro, I think this deserves to become a proper public-facing concept site, not another long document or pitch deck.",
+      "source_url": "/archive/source.html#p-23720"
+    },
+    {
+      "id": "p-23835",
+      "text": "And I particularly like your intention: you’re not trying to sell Tibo something. You’re offering him a fully explored idea, including the reasoning, prototypes, economic incentives, philosophical foundations, and unresolved questions.",
+      "source_url": "/archive/source.html#p-23835"
+    },
+    {
+      "id": "p-24071",
+      "text": "No strings attached. Just a thoughtful contribution.",
+      "source_url": "/archive/source.html#p-24071"
+    },
+    {
+      "id": "p-24124",
+      "text": "I’d frame the project as:",
+      "source_url": "/archive/source.html#p-24124"
+    },
+    {
+      "id": "p-24150",
+      "text": "AN OPEN CONCEPT FOR AI-NATIVE COMMERCE",
+      "source_url": "/archive/source.html#p-24150"
+    },
+    {
+      "id": "p-24189",
+      "text": "Intelligence on Tap",
+      "source_url": "/archive/source.html#p-24189"
+    },
+    {
+      "id": "p-24209",
+      "text": "From Customer Lifetime Value to Relationship Lifetime Value.",
+      "source_url": "/archive/source.html#p-24209"
+    },
+    {
+      "id": "p-24270",
+      "text": "Consumption → Loyalty → Trust → Credit → Partnership → Mutual Investment",
+      "source_url": "/archive/source.html#p-24270"
+    },
+    {
+      "id": "p-24343",
+      "text": "Here’s the prompt I’d take into the new conversation. It’s deliberately comprehensive so the next thread can reconstruct our reasoning rather than merely producing a pretty landing page.",
+      "source_url": "/archive/source.html#p-24343"
+    },
+    {
+      "id": "p-24530",
+      "text": "Copy this into your new ChatGPT thread",
+      "source_url": "/archive/source.html#p-24530"
+    }
+  ]
+}

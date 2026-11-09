@@ -1,0 +1,144 @@
+{
+  "id": "p-1",
+  "first": 1,
+  "last": 548,
+  "paragraph_count": 25,
+  "markdown": "/archive/passages/p-1.md",
+  "json": "/archive/passages/p-1.json",
+  "html": "/archive/passages/p-1.html",
+  "ordinal": 0,
+  "source": "Pasta Board",
+  "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+  "classification": "original_source_text",
+  "speaker_attribution": "Not inferred; the document does not consistently label speakers or exact times.",
+  "full_source": "/archive/source.html",
+  "previous": null,
+  "next": "/archive/passages/p-575.md",
+  "paragraphs": [
+    {
+      "id": "p-1",
+      "text": "OPENAI · BILLING CONCEPT",
+      "source_url": "/archive/source.html#p-1"
+    },
+    {
+      "id": "p-26",
+      "text": "Intelligence on Tap",
+      "source_url": "/archive/source.html#p-26"
+    },
+    {
+      "id": "p-46",
+      "text": "Your monthly checkout",
+      "source_url": "/archive/source.html#p-46"
+    },
+    {
+      "id": "p-68",
+      "text": "Base subscription",
+      "source_url": "/archive/source.html#p-68"
+    },
+    {
+      "id": "p-86",
+      "text": "$20.00",
+      "source_url": "/archive/source.html#p-86"
+    },
+    {
+      "id": "p-93",
+      "text": "Metered intelligence",
+      "source_url": "/archive/source.html#p-93"
+    },
+    {
+      "id": "p-114",
+      "text": "$86.40",
+      "source_url": "/archive/source.html#p-114"
+    },
+    {
+      "id": "p-121",
+      "text": "Subtotal",
+      "source_url": "/archive/source.html#p-121"
+    },
+    {
+      "id": "p-130",
+      "text": "$106.40",
+      "source_url": "/archive/source.html#p-130"
+    },
+    {
+      "id": "p-138",
+      "text": "Round down to $100 tier",
+      "source_url": "/archive/source.html#p-138"
+    },
+    {
+      "id": "p-162",
+      "text": "−$6.40",
+      "source_url": "/archive/source.html#p-162"
+    },
+    {
+      "id": "p-169",
+      "text": "Adjusted bill",
+      "source_url": "/archive/source.html#p-169"
+    },
+    {
+      "id": "p-183",
+      "text": "$100.00",
+      "source_url": "/archive/source.html#p-183"
+    },
+    {
+      "id": "p-191",
+      "text": "Donate to OpenAI?",
+      "source_url": "/archive/source.html#p-191"
+    },
+    {
+      "id": "p-209",
+      "text": "Entirely optional. Any amount you wish.",
+      "source_url": "/archive/source.html#p-209"
+    },
+    {
+      "id": "p-249",
+      "text": "$0$1$5$10Custom",
+      "source_url": "/archive/source.html#p-249"
+    },
+    {
+      "id": "p-265",
+      "text": "Enter any amount (USD)",
+      "source_url": "/archive/source.html#p-265"
+    },
+    {
+      "id": "p-288",
+      "text": "$",
+      "source_url": "/archive/source.html#p-288"
+    },
+    {
+      "id": "p-290",
+      "text": "Your final bill",
+      "source_url": "/archive/source.html#p-290"
+    },
+    {
+      "id": "p-306",
+      "text": "Including optional contribution",
+      "source_url": "/archive/source.html#p-306"
+    },
+    {
+      "id": "p-338",
+      "text": "$100.00",
+      "source_url": "/archive/source.html#p-338"
+    },
+    {
+      "id": "p-346",
+      "text": "Consume freely. Pay transparently.",
+      "source_url": "/archive/source.html#p-346"
+    },
+    {
+      "id": "p-381",
+      "text": "Support voluntarily.",
+      "source_url": "/archive/source.html#p-381"
+    },
+    {
+      "id": "p-402",
+      "text": "Illustrative concept only. Not an official OpenAI billing or donation feature. Donation destination and tax treatment would need to be specified.",
+      "source_url": "/archive/source.html#p-402"
+    },
+    {
+      "id": "p-548",
+      "text": "Updated accompanying tweet",
+      "source_url": "/archive/source.html#p-548"
+    }
+  ]
+}

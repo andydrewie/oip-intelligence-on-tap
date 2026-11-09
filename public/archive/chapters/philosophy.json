@@ -1,0 +1,20 @@
+{
+  "id": "philosophy",
+  "number": "08",
+  "title": "Philosophy & institutional design",
+  "label": "Normative hypothesis",
+  "source": "S1 · conscious capitalism; B1 · universal altruism",
+  "summary": "Trust and reciprocity should be designed into the transaction.",
+  "paragraphs": [
+    "The original reply invokes altruistic, conscious capitalism and questions opaque profit margins. The project brief extends this toward universal altruism: commercial success and public benefit might reinforce one another when incentives, contributions and relationships are more transparent. This is a lens for design, not a claim of inevitable social progress.",
+    "Price transparency is narrower than margin transparency. A clear bill does not expose true inference costs, shared infrastructure, research expense or cross-subsidies. Publishing every margin may be impractical; publishing understandable terms, prices, discounts and consent boundaries is a more directly testable first step.",
+    "The proposed optional donation to the OpenAI Foundation gives appreciation a charitable destination: AI that benefits humanity. An unusually valuable outcome may inspire generosity regardless of commercial profitability. The donation remains separate from service charges and earned loyalty privileges. The Foundation channel and any tax eligibility require verification; this concept collects no money.",
+    "Long-term reciprocity can align incentives, but loyalty can also become lock-in. Partnership can also concentrate power. The institutional test is whether a customer can understand the deal, refuse optional disclosure, export their work and leave without unreasonable penalty."
+  ],
+  "question": "What observable outcomes would distinguish mutual value creation from a more persuasive form of extraction?",
+  "boundary": "Profit, public benefit and fairness are different objectives. Their alignment requires evidence and governance, not a slogan.",
+  "anchor": "/archive/source.html#p-9620",
+  "provenance": "Editorial reconstruction from author-supplied material; not a verbatim transcript.",
+  "source_passage": "/archive/passages/p-9620.md",
+  "classification_guide": "/archive/inventory.json"
+}

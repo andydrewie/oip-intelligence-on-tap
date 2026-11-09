@@ -1,0 +1,810 @@
+{
+  "date": "9 November 2026 · Asia/Taipei",
+  "summary": [
+    "Three independent reconnaissance agents reviewed input contracts, interactive controls, and navigation/archive behavior. The implementation owner repaired the confirmed defects and verified the connected recovery paths. All 32 numeric input instances received real browser edits with recorded visible effects.",
+    "The root was fragmented state handling: controls, the calculation engine and URL parsing validated separately; binary supplied flags discarded rejected drafts; a money-rounding helper was reused for percentage rates. Tests had covered arithmetic and selected successful interactions without covering the complete invalid → explanation → correction → share/reload → reset path.",
+    "This revision separates missing, invalid and valid values, preserves rejected cost drafts, makes recovery actionable, and centralizes route and validation contracts. The adopted settlement equation and historical source corpus are unchanged. This record is evidence of bounded coverage, not a promise that every device or every possible state is defect-free."
+  ],
+  "method": [
+    "The 57 Node tests are automated. The browser cases are directly observed cloud-Chrome procedures, including independent agent observations; they are not an unattended browser suite or a saved replay. Numeric case tables in the reconnaissance notes record sequential edits, so their outputs are not all based on the default scenario.",
+    "All 32 numeric instances, six ranges, the fixed-plan select, donation choices, tabs, permission previews, research search and chapter drawers, companion, scenario sharing and reset behavior were inventoried. Shared-field state and boundary tests supplement one real causal edit per numeric instance; not every boundary was physically typed into every repeated field.",
+    "Visual checks used responsive frames at 320/390/1280px and normal/200% root text, plus desktop browser observations. This exercises reflow but is not physical Safari or actual browser zoom. Controlled clipboard rejection verified fallback presentation and keyboard selection.",
+    "External financial claims were not re-researched during this interaction repair. Static link integrity cannot establish external source accuracy. Company evidence remains separate from user-entered cost assumptions.",
+    "After the final source/report package is built, deployment must be followed by a live-site smoke check. Build and deployment outcomes are reported separately from these pre-publication cases."
+  ],
+  "changes": [
+    "One cost-state contract across fields, calculation and v5 links: empty, invalid and explicit zero remain distinct.",
+    "Exact invalid-value messages beside the field and blocked result, a correction action that returns focus, and a warning retained in a collapsed worksheet.",
+    "Percentages retain their precision until the final monetary charge; decimal half-cent handling is centralized.",
+    "Cost clearing affects only costs; invalid generic entries explain the last accepted value and reset reliably.",
+    "Nested scenario URLs restore their values, while cross-tab navigation and comparison reveal move keyboard focus to the destination.",
+    "Contextual chapter/calculation sharing labels, full-size cost fields and large-amount wrapping.",
+    "Updated human and machine documentation, regression tests, source download and a project release gate covering complete recovery paths.",
+    "The receipt explains loading and visibly disables donation choices until the interactive state is ready."
+  ],
+  "cases": [
+    {
+      "id": "I01",
+      "title": "AI usage charge",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Change 86.40 to 86.41 with the range keyboard control, then type an out-of-range 1,000,000.",
+      "expected": "The paired amount and subtotal update; rejected input explains which prior value is still used.",
+      "actual": "Subtotal became 106.41. The invalid draft kept 86.41 in use with a range/last-value notice; blur restored it explicitly."
+    },
+    {
+      "id": "I02",
+      "title": "Donation amount",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Select $1/$5/$10/$0, then enter a custom 2.135 on a 1,000 service bill.",
+      "expected": "Preset and custom choices change only the donation and final payment, with cent rounding.",
+      "actual": "Presets produced 101/105/110/100 on the original bill. Custom 2.135 displayed 2.14 and total 1,002.14. Provider balance did not change."
+    },
+    {
+      "id": "I03",
+      "title": "Formula subtotal",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Type subtotal 525, then load the 524.99 boundary example.",
+      "expected": "The formula and receipt share one meter; adopted half-step behavior remains intact.",
+      "actual": "525 settled to 550; 524.99 settled to 500. Linked receipt and worked formula agreed."
+    },
+    {
+      "id": "I04",
+      "title": "Serving and infrastructure",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 888, then 888.001.",
+      "expected": "Valid cents are accepted; excess precision is identified and blocks review.",
+      "actual": "888 appeared in the ledger; 888.001 showed the two-decimal correction and no balance."
+    },
+    {
+      "id": "I05",
+      "title": "Research and development",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 555, then -1.",
+      "expected": "A valid monthly allocation is retained; a negative draft is explicitly invalid.",
+      "actual": "555 appeared in the ledger. -1 showed the allowed range and no balance."
+    },
+    {
+      "id": "I06",
+      "title": "Company operations",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 555, then 1,000,001.",
+      "expected": "An out-of-range allocation remains a visible draft, not a supplied zero.",
+      "actual": "555 appeared in the ledger. 1,000,001 showed a range error and no balance."
+    },
+    {
+      "id": "I07",
+      "title": "Payment processing",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 555%, correct to 3%, then use 2.875%, blank and explicit zero.",
+      "expected": "The rejected value is named; correction restores calculation; blank and zero differ; the percentage is not rounded early.",
+      "actual": "555% showed the requested exact correction. 3% of 1,000 = 30; 2.875% = 28.75; blank withheld the result; explicit zero gave a zero fee after review."
+    },
+    {
+      "id": "I08",
+      "title": "Comparison · Assumed demand",
+      "kind": "browser",
+      "status": "passed",
+      "action": "154.7 → 180.3",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier contribution 104.90 → 92.10; annual 1,208.80 → 1,055.20. Revenue stays 200 because the subtotal remains in the same settlement band."
+    },
+    {
+      "id": "I09",
+      "title": "Comparison · Price per comparison unit",
+      "kind": "browser",
+      "status": "passed",
+      "action": "1.25 → 1.35",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Base + metered revenue 220.38 → 236.41; contribution 111.89 → 127.46."
+    },
+    {
+      "id": "I10",
+      "title": "Comparison · Cost per comparison unit",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0.50 → 0.55",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier contribution 92.10 → 83.08; annual 1,055.20 → 947.02; revenue remains 200."
+    },
+    {
+      "id": "I11",
+      "title": "Comparison · Customers leaving each month",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0% → 4%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier annual 947.02 → 754.45; monthly contribution stays 83.08."
+    },
+    {
+      "id": "I12",
+      "title": "Comparison · Fixed-plan allowance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "120 → 140",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Fixed 200 fulfillment 66.6% → 77.6%; contribution 116.25 → 105.25."
+    },
+    {
+      "id": "I13",
+      "title": "Comparison · $50 plan allowance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "60 → 70",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "$50 fulfillment 33.3% → 38.8%; contribution 3.56 → −1.94. Negative displayed."
+    },
+    {
+      "id": "I14",
+      "title": "Comparison · Base-plan allowance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "20 → 30",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Base + metered revenue 236.41 → 222.91; contribution 118.44 → 105.33."
+    },
+    {
+      "id": "I15",
+      "title": "Comparison · Loyalty usage discount",
+      "kind": "browser",
+      "status": "passed",
+      "action": "15% → 20%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Loyalty revenue 192.47 → 182.32; contribution 75.77 → 65.92."
+    },
+    {
+      "id": "I16",
+      "title": "Comparison · Loyalty churn reduction",
+      "kind": "browser",
+      "status": "passed",
+      "action": "10% → 25% relative",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Loyalty churn 3.6% → 3.0%; annual 601.74 → 622.70; monthly contribution stays 65.92."
+    },
+    {
+      "id": "I17",
+      "title": "Comparison · Delivery overhead",
+      "kind": "browser",
+      "status": "passed",
+      "action": "8 → 12",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier contribution 83.08 → 79.08; annual 754.45 → 715.72."
+    },
+    {
+      "id": "I18",
+      "title": "Comparison · Other variable expense",
+      "kind": "browser",
+      "status": "passed",
+      "action": "4 → 6",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier contribution 79.08 → 77.08; annual 715.72 → 696.36."
+    },
+    {
+      "id": "I19",
+      "title": "Comparison · Payment fee",
+      "kind": "browser",
+      "status": "passed",
+      "action": "2.875% → 3.125%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier contribution 77.08 → 76.58, exactly 0.50 lower on 200 revenue; annual 696.36 → 691.52."
+    },
+    {
+      "id": "I20",
+      "title": "Comparison · Acquisition cost",
+      "kind": "browser",
+      "status": "passed",
+      "action": "50 → 75",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Tier annual 691.52 → 666.52, exactly 25 lower; monthly contribution unchanged 76.58."
+    },
+    {
+      "id": "I21",
+      "title": "Comparison · Default probability",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0% → 10%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Risk expected loss 0 → 480 with 12,000 balance and 40% LGD."
+    },
+    {
+      "id": "I22",
+      "title": "Comparison · Outstanding balance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "12,000 → 18,000",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Risk expected loss 480 → 720."
+    },
+    {
+      "id": "I23",
+      "title": "Comparison · Loss given default",
+      "kind": "browser",
+      "status": "passed",
+      "action": "40% → 50%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "Risk expected loss 720 → 900."
+    },
+    {
+      "id": "I24",
+      "title": "Comparison · Investment",
+      "kind": "browser",
+      "status": "passed",
+      "action": "500,000 → 200,000",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "At 0× return, expected proceeds−500,000 → −200,000."
+    },
+    {
+      "id": "I25",
+      "title": "Comparison · Success gross multiple",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0× → 4×",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "At 25% success, proceeds−200,000 → 0."
+    },
+    {
+      "id": "I26",
+      "title": "Comparison · Success probability",
+      "kind": "browser",
+      "status": "passed",
+      "action": "25% → 30%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "At 4× return, proceeds 0 → 40,000. Credit expected loss remained 900."
+    },
+    {
+      "id": "I27",
+      "title": "Monthly loyalty discount",
+      "kind": "browser",
+      "status": "passed",
+      "action": "5 → 10",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "Without-benefit annual 340.13 unchanged; with-benefit 295.55 → 250.96."
+    },
+    {
+      "id": "I28",
+      "title": "Monthly departures",
+      "kind": "browser",
+      "status": "passed",
+      "action": "5 → 10 out of 100",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "Without 340.13 → 265.50; with 250.96 → 195.90."
+    },
+    {
+      "id": "I29",
+      "title": "Relative departure reduction",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0% → 50%",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "Without 265.50 unchanged; with 195.90 → 250.96."
+    },
+    {
+      "id": "I30",
+      "title": "Additional acquisition cost",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0 → 25",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "Without 265.50 → 240.50; with 250.96 → 225.96. Both fell 25."
+    },
+    {
+      "id": "I31",
+      "title": "Founder investment",
+      "kind": "browser",
+      "status": "passed",
+      "action": "1,000,000 → 2,000,000 with 9m pre-money",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "Ownership 10.00% → 18.18%."
+    },
+    {
+      "id": "I32",
+      "title": "Founder pre-money valuation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "9,000,000 → 8,000,000 with 2m investment",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "Ownership 18.18% → 20.00%."
+    },
+    {
+      "id": "N01",
+      "title": "Research → Current pricing formula → next Tab",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research → Current pricing formula → next Tab",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Reproduced body-focus failure; repaired summary focus and next Tab into subtotal verified"
+    },
+    {
+      "id": "N02",
+      "title": "Economics comparison → Open the fictional comparison",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Economics comparison → Open the fictional comparison",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Reproduced lost focus; final wrapper focus and next Tab into demand verified"
+    },
+    {
+      "id": "N03",
+      "title": "Nested comparison demand 123.45 → reload",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Nested comparison demand 123.45 → reload",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Reproduced silent restoration to 96.4; revised parser restores 123.45"
+    },
+    {
+      "id": "N05",
+      "title": "Main tabs: Home from Research, End from Bill",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Main tabs: Home from Research, End from Bill",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Correct destination selected; focus follows the selected tab"
+    },
+    {
+      "id": "N06",
+      "title": "Research search: nonexistent term",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research search: nonexistent term",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "No chapters shown; visible message offers useful replacement terms"
+    },
+    {
+      "id": "N07",
+      "title": "Research search: loyalty, switch to Bill and back",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research search: loyalty, switch to Bill and back",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Matching chapters remain filtered; query is retained"
+    },
+    {
+      "id": "N08",
+      "title": "Direct `#chapter-billing` while search hides Billing",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Direct `#chapter-billing` while search hides Billing",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Search clears, Billing chapter opens, and scroll target is visible"
+    },
+    {
+      "id": "N09",
+      "title": "Research → Current pricing formula",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research → Current pricing formula",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Billing becomes selected; formula drawer opens; top measured near 119 CSS px"
+    },
+    {
+      "id": "N10",
+      "title": "Clean archive URL `/archive/pricing-formula`",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Clean archive URL `/archive/pricing-formula`",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Static formula page loads without `.html`; equation and examples are present"
+    },
+    {
+      "id": "N11",
+      "title": "Static formula → Open interactive drawer",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Static formula → Open interactive drawer",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "App opens the matching disclosure and displays the current calculation"
+    },
+    {
+      "id": "N12",
+      "title": "Formula Copy link → clipboard and visible feedback",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Formula Copy link → clipboard and visible feedback",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Copy feedback and clipboard preserved the formula route and values. Final retest exposed Open this calculation with use=504.99, gift=0 and formula=1."
+    },
+    {
+      "id": "N13",
+      "title": "Open this scenario from formula share feedback",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Open this scenario from formula share feedback",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Route retains formula target and encoded values"
+    },
+    {
+      "id": "N14",
+      "title": "Formula summary → Enter",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Formula summary → Enter",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Drawer collapses; focus remains on its summary"
+    },
+    {
+      "id": "N15",
+      "title": "Direct `#economics-comparison`",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Direct `#economics-comparison`",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Economics selected; parent worksheet and nested comparison disclosure both open"
+    },
+    {
+      "id": "N19",
+      "title": "Main-tab ArrowRight at Research; ArrowLeft at Bill",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Main-tab ArrowRight at Research; ArrowLeft at Bill",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Wraps to Bill and Research respectively; selected tab receives focus"
+    },
+    {
+      "id": "N20",
+      "title": "Main-tab Space, then main/nested Back and Forward",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Main-tab Space, then main/nested Back and Forward",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Space selects Economics; final repair aligns focused and selected main tab; nested Back focuses comparison summary"
+    },
+    {
+      "id": "N21",
+      "title": "Research index → Loyalty chapter → bounded source",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research index → Loyalty chapter → bounded source",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Correct static chapter and p-10404 passage open"
+    },
+    {
+      "id": "N22",
+      "title": "Source passage Next → Previous",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Source passage Next → Previous",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "p-10404 → p-13252 → p-10404"
+    },
+    {
+      "id": "N23",
+      "title": "Header Sources → next Tab",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Header Sources → next Tab",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Sources region receives focus near 119 CSS px; next Tab reaches original conversation"
+    },
+    {
+      "id": "N24",
+      "title": "Sibling nested aliases with a nondefault scenario",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Sibling nested aliases with a nondefault scenario",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Public benchmarks, loyalty, method each restore usage/gift/serving draft and correct receipt totals"
+    },
+    {
+      "id": "N25",
+      "title": "Static chapter → Interactive chapter → Copy chapter link → conflicting search → shared link",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Static chapter → Interactive chapter → Copy chapter link → conflicting search → shared link",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "Loyalty chapter opens and focuses; copy produces `#chapter-loyalty`; opening it clears hidden-result search and restores chapter context"
+    },
+    {
+      "id": "R01",
+      "title": "Invalid fee recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Activate Correct payment processing from the blocked result.",
+      "expected": "Focus returns to the invalid field without erasing other values.",
+      "actual": "Focus reached cost-paymentFee with 555 retained. The field and result both said: 555% is outside this calculator’s 0–20% range. Correct payment processing to calculate."
+    },
+    {
+      "id": "R02",
+      "title": "Invalid shared-link recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Share and reopen the 888/555/555/555% cost scenario.",
+      "expected": "Invalid input remains invalid through copy/open/reload.",
+      "actual": "The v5 link retained the raw 555 draft; the reopened worksheet withheld its balance and showed a correction."
+    },
+    {
+      "id": "R03",
+      "title": "Valid review and shared restoration",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Correct the fee to 3, review costs, then reopen the link.",
+      "expected": "Current valid reviewed assumptions restore with the same signed result.",
+      "actual": "The 1,000 bill minus 888, 555, 555 and 30 produced -1,028.00 and restored consistently."
+    },
+    {
+      "id": "R04",
+      "title": "Stale assumptions within the same tier",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Change usage 1,000 to 1,001 after reviewing costs.",
+      "expected": "Review invalidates even if the settled bill is unchanged.",
+      "actual": "Bill stayed 1,000 but the Usage changed notice appeared and the balance was withheld until review."
+    },
+    {
+      "id": "R05",
+      "title": "Scoped cost clearing",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Clear costs after editing advanced demand, credit balance and loyalty settings, then re-enter and review the costs.",
+      "expected": "Only the named cost assumptions clear.",
+      "actual": "Four cost drafts cleared; demand 180.4, credit 18,000 and loyalty settings remained. Re-review restored the same loyalty comparison."
+    },
+    {
+      "id": "R06",
+      "title": "Reset with an unchanged canonical value",
+      "kind": "browser",
+      "status": "passed",
+      "action": "At the default receipt, type invalid usage, then reset the example.",
+      "expected": "Reset clears the invalid local draft even when the accepted number was already the default.",
+      "actual": "Usage returned to 86.4 and the stale validation hint cleared after rendering."
+    },
+    {
+      "id": "R07",
+      "title": "Generic invalid input recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter founder valuation 0; then use Escape. Also test invalid credit probability 101.",
+      "expected": "The last valid calculation remains explicitly labeled; recovery restores the accepted entry.",
+      "actual": "Valuation 0 showed the valid range and prior 8m; Escape restored 8m and ownership 20%. Credit 101 showed the 0–100 range and prior 10%; correcting to 0 yielded zero expected loss."
+    },
+    {
+      "id": "R08",
+      "title": "Collapsed worksheet warning",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Collapse the worksheet while a cost draft is invalid.",
+      "expected": "The collapsed summary still identifies a correction needed.",
+      "actual": "Summary retained Business assumptions · 1 input needs correction; the result did not display an earnings figure."
+    },
+    {
+      "id": "R09",
+      "title": "Clipboard failure fallback",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use the local QA harness to force clipboard.writeText rejection, then activate Copy link and Tab through the recovery controls.",
+      "expected": "Failure offers a usable link and a selectable text field.",
+      "actual": "Select and copy the link below appeared. Next Tab reached Open this scenario, then the readonly Shareable link field with all 60 characters selected. Controlled failure injection, not a real OS permission prompt."
+    },
+    {
+      "id": "R10",
+      "title": "Custom donation continuity",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Choose $5 then reveal Custom.",
+      "expected": "Changing the input mode preserves the selected amount.",
+      "actual": "Custom retained 5 and the final payment stayed consistent."
+    },
+    {
+      "id": "R11",
+      "title": "More examples and threshold switch",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Switch to threshold examples, load a boundary, then request more examples.",
+      "expected": "Examples are actionable, vary to cents and use the same settlement rule.",
+      "actual": "524.99 loaded into the linked calculator; more example bills changed the cent-level rows and reconciled."
+    },
+    {
+      "id": "C01",
+      "title": "All paired ranges",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use ArrowRight on receipt, four advanced ranges and provider retention range.",
+      "expected": "Every range and numeric field stay synchronized.",
+      "actual": "Receipt 86.40→86.41; advanced demand 180.3→180.4, price 1.35→1.40, cost 0.55→0.60, churn 4→4.5; retention 50→51 with departures 4.9% and annual 227.26."
+    },
+    {
+      "id": "C02",
+      "title": "Fixed-plan selection",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Change fixed-plan selection 200→500.",
+      "expected": "The selected price affects revenue and contribution; allowance remains its separately labeled assumption.",
+      "actual": "Revenue 200→500 and contribution 98.75→389.38; fulfillment remained 77.6%."
+    },
+    {
+      "id": "C03",
+      "title": "Relationship stage navigation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Click all four stage tabs; use Home and ArrowLeft from Customer.",
+      "expected": "The selected stage, panel and keyboard focus agree.",
+      "actual": "Each stage showed its matching heading; Home selected Customer and ArrowLeft wrapped to Mutual investment."
+    },
+    {
+      "id": "C04",
+      "title": "Permission preview and revocation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect no selection, select Projects & GitHub, revoke it, then select all four categories.",
+      "expected": "The preview explains what is selected and disappears when permissions change.",
+      "actual": "Empty preview was disabled with instructions. Single preview named one category; revocation removed it. All-category preview listed four and stated nothing was connected or sent."
+    },
+    {
+      "id": "C05",
+      "title": "All ten research chapter drawers",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Open and close each chapter individually.",
+      "expected": "Each disclosure reveals useful text and its relevant evidence, then closes predictably.",
+      "actual": "All ten exposed substantive text/source links and closed again. Billing also exposed the current formula link."
+    },
+    {
+      "id": "C06",
+      "title": "Companion dismissal and origin",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Open the pet note; close by button, Escape and outside click; follow Uber inspiration.",
+      "expected": "Dismissal returns focus or follows the clicked destination; origin link opens its story.",
+      "actual": "Close and Escape returned focus to the pet. Outside The idea click dismissed it. Uber inspiration selected Bill and opened the correct founding story."
+    },
+    {
+      "id": "C07",
+      "title": "Zero churn and separate speculative models",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Set churn 0; change credit and partnership assumptions.",
+      "expected": "No infinite lifetime claim; credit risk and speculative investment stay separate from subscription earnings.",
+      "actual": "Lifetime cells said No finite estimate. Credit example was 480; investment example was-125,000, with negative results preserved and separated."
+    },
+    {
+      "id": "V01",
+      "title": "Narrow error recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect 390px layout and use the error recovery control.",
+      "expected": "Fields remain full-width, legible and actionable.",
+      "actual": "Cost controls measured 50px high; error and correction action remained readable without page overflow."
+    },
+    {
+      "id": "V02",
+      "title": "320px with 200% text",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect the invalid-cost worksheet and recovery focus in the responsive harness at 320px/32px root text.",
+      "expected": "Text and buttons wrap; recovery reaches the invalid field.",
+      "actual": "Document width 305 matched available 305; focus recovery brought the invalid field into view. This is enlarged-text emulation, not physical iOS."
+    },
+    {
+      "id": "V03",
+      "title": "Desktop error recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect 1280px layout at normal and 200% text.",
+      "expected": "The paired form/result layout reflows when enlarged.",
+      "actual": "Normal text showed two columns; enlarged text showed a readable single column. Document width 1265 matched available 1265 in both."
+    },
+    {
+      "id": "V04",
+      "title": "Large receipt amounts",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter maximum usage 999,980 and donation 10,000 at 390px and 320px/200% text.",
+      "expected": "The 1,010,000 final amount does not create page-wide overflow.",
+      "actual": "390px was readable. The first 320px enlarged pass exposed nowrap overflow; revised receipt wrapping passed with document and available widths both 305."
+    },
+    {
+      "id": "A01",
+      "title": "Automated regression suite",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs.",
+      "expected": "All existing and new calculation/input/source regressions pass.",
+      "actual": "57 tests passed,0 failed. Raw output is included in the source download."
+    },
+    {
+      "id": "A02",
+      "title": "Malformed and legacy cost links",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Test v4 known-flag variants, rejected numbers, omitted supplied values and v5 raw drafts.",
+      "expected": "No invalid or missing supplied value becomes a trusted zero.",
+      "actual": "Independent regression cases pass for 1.0/01/1e0 flags, hex/binary values, missing values and valid/empty/invalid round trips."
+    },
+    {
+      "id": "A03",
+      "title": "Decimal money and percentage arithmetic",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Test half-cent money and 2.875% of 1,000 without pre-rounding the percentage.",
+      "expected": "Decimal semantics agree with the displayed cents.",
+      "actual": "2.135→2.14;2.875%×1,000→28.75. Tiny and high-precision rates remain finite within supported bounds."
+    },
+    {
+      "id": "A04",
+      "title": "Tariff boundaries and monotonicity",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Check exact named midpoints, adjacent cents and above 500 half-steps; scan subtotal cents through 10,000.",
+      "expected": "The adopted equation remains consistent and nondecreasing.",
+      "actual": "All settlement tests pass;525→550 and 524.99→500. No pricing-policy changes were made."
+    },
+    {
+      "id": "A05",
+      "title": "All nested scenario aliases",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Round-trip nondefault receipt and economics state through all six economics destinations.",
+      "expected": "Writer, parser and linked receipt agree for every registered target.",
+      "actual": "Regression tests pass for economics, cost-scenario, public-benchmarks, economics-loyalty, economics-method and economics-comparison."
+    },
+    {
+      "id": "A06",
+      "title": "Archive and source contract",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Regenerate archive; test v5 metadata, input states, cost bounds and preserved source digest.",
+      "expected": "Human and machine exports match current behavior; historical evidence stays unchanged.",
+      "actual": "Both new archive-contract tests and existing source/model tests pass."
+    },
+    {
+      "id": "A07",
+      "title": "Static target and JSON integrity",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run final release artifact checker after report and source packaging.",
+      "expected": "Static local destinations/fragments resolve; JSON parses; archive members are valid and current.",
+      "actual": "Recorded in review/input-recovery/artifact-checks.json; no broken static destinations, duplicate IDs, invalid JSON or corrupt ZIP members."
+    },
+    {
+      "id": "A08",
+      "title": "TypeScript validation",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run ./node_modules/.bin/tsc --noEmit.",
+      "expected": "No type errors.",
+      "actual": "Completed with exit 0 and no diagnostics."
+    },
+    {
+      "id": "R12",
+      "title": "Loading and saved-value readiness",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Reload a shared bill with a $5 donation; inspect pending controls, then act once ready.",
+      "expected": "Pending controls are disabled and explain loading. Saved values restore before the available control changes the bill.",
+      "actual": "During loading aria-busy was true and the $10 button was disabled. Once ready, the saved bill showed $105; clicking the available $10 choice produced $110 and selected that button. Native disabled choices and a visible loading notice now replace the previously active-looking pending buttons."
+    },
+    {
+      "id": "D01",
+      "title": "Physical mobile Safari and touch",
+      "kind": "device",
+      "status": "not_run",
+      "action": "Use the released site on physical iPhone/iPad, including drag gestures and the OS keyboard.",
+      "expected": "Confirm native touch and keyboard behavior.",
+      "actual": "Not run in this environment. Responsive Chrome checks do not establish Safari behavior."
+    },
+    {
+      "id": "D02",
+      "title": "Screen-reader speech output",
+      "kind": "device",
+      "status": "not_run",
+      "action": "Exercise invalid state, recovery and navigation with VoiceOver or NVDA.",
+      "expected": "Verify spoken error context and focus order.",
+      "actual": "Not run. DOM labels, invalid state and keyboard focus were inspected, but speech output was not."
+    },
+    {
+      "id": "D03",
+      "title": "Real browser zoom, OS text size and permission prompts",
+      "kind": "device",
+      "status": "not_run",
+      "action": "Repeat enlarged-text and clipboard checks using browser zoom, mobile OS text settings and actual denied clipboard permission.",
+      "expected": "Confirm native device preference and permission behavior.",
+      "actual": "Not run.200% root-text/reflow and controlled clipboard rejection were tested instead."
+    }
+  ]
+}

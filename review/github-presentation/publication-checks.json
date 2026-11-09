@@ -1,0 +1,14 @@
+{
+  "checked": 60,
+  "errors": [],
+  "wordCounts": {
+    "README.md": 767,
+    "CONTRIBUTING.md": 306,
+    "docs/PROPOSAL.md": 588,
+    "docs/RELATIONSHIP-LIFETIME-VALUE.md": 1154,
+    "docs/ECONOMICS.md": 757,
+    "docs/RESEARCH.md": 461,
+    "docs/SOURCES.md": 445,
+    "docs/DEVELOPMENT.md": 392
+  }
+}

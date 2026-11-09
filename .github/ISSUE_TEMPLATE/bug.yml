@@ -1,0 +1,32 @@
+name: Report a reproducible problem
+description: Help improve the prototype or documentation.
+title: "[Bug] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page, file or commit
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the starting state, inputs and actions. Remove private information.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, device and viewport
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Logs, screenshots or a minimal example, without private data or credentials.

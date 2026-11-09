@@ -1,0 +1,484 @@
+{
+  "date": "2026-11-08",
+  "review_dir": "review/reading-flow",
+  "summary": [
+    "This pass addresses reading order, receipt clarity and text enlargement. The adopted pricing formula and historical source corpus are unchanged.",
+    "The final billing interaction is one receipt. Membership and editable usage lead to subtotal and rounding, then an optional donation and final total. Supporting calculations and background come afterward.",
+    "These are bounded engineering and editorial observations, not proof that every visitor will understand the site or a formal accessibility certification."
+  ],
+  "method": [
+    "28 existing Node regression tests plus 18 observed browser procedures. The browser checks were performed through direct cloud-Chrome interaction; they are not an unattended test suite.",
+    "Desktop screenshots and narrow same-origin frames were inspected. Root-font enlargement to 200% and a narrow viewport displayed at 2x tested two distinct kinds of reflow. Native browser zoom, physical Safari/iPhone, VoiceOver and denied-clipboard paths remain unverified.",
+    "The temporary responsive fixture is excluded from the release. Screenshots in this review show the local production-source preview. The deployed revision receives an additional public smoke check.",
+    "Uber reference: https://help.uber.com/en/riders/article/node-title?nodeId=12312768-6482-4969-8790-ff6efcf8c93f and https://www.uber.com/tw/en/ride/how-it-works/tips/ . Used the optional post-trip choice, preset amounts and custom-amount pattern; this is an independently designed concept receipt, not a reproduction of a particular Uber screen."
+  ],
+  "changes": [
+    "Introduced billing vocabulary in scroll order and removed the duplicated calculator/payment surface.",
+    "Placed usage, rounding, optional donation and final total in one receipt. Donation choices preserve usage; custom entry preserves the selected amount.",
+    "Used readable relative type, quieter supporting notes and reflowing layouts; separated the custom donation control from preset dollar buttons.",
+    "Explained economics terms before controls/results; clarified the local permission preview and source/download labels.",
+    "Fixed scenario persistence for visitors who naturally scroll into the bill. Shared calculations and reset remain connected to the same formula.",
+    "Kept exact pricing, source evidence, philosophical wording, blue palette, official font files and pet declarations intact."
+  ],
+  "cases": [
+    {
+      "id": "A01",
+      "kind": "automated",
+      "title": "M19 Economics baseline distinguishes revenue, gross profit, contribution",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A02",
+      "kind": "automated",
+      "title": "M20 Fixed-plan fulfillment responds to allowance, not imaginary overage",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A03",
+      "kind": "automated",
+      "title": "M21 Retail rate and inference cost affect different parts of economics",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A04",
+      "kind": "automated",
+      "title": "M22 Churn changes horizon value without changing monthly revenue",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A05",
+      "kind": "automated",
+      "title": "M23 Loyalty rate and retention benefits remain separate hypotheses",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A06",
+      "kind": "automated",
+      "title": "M24 Expense classifications and acquisition cost do not contaminate revenue",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A07",
+      "kind": "automated",
+      "title": "M25 Credit loss corners remain separate from subscription economics",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A08",
+      "kind": "automated",
+      "title": "five models reconcile service and contribution economics",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A09",
+      "kind": "automated",
+      "title": "zero churn has a finite horizon but no finite perpetual LTV",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A10",
+      "kind": "automated",
+      "title": "high cost losses are preserved; no negative value clamping",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A11",
+      "kind": "automated",
+      "title": "receipt amounts reconcile at cent precision and reject non-finite inputs",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A12",
+      "kind": "automated",
+      "title": "near-zero churn converges to the zero-churn finite horizon",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A13",
+      "kind": "automated",
+      "title": "shared scenarios round-trip every allowed input without leaking extra state",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A14",
+      "kind": "automated",
+      "title": "bounded source passages reconstruct every source paragraph without omissions or edits",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A15",
+      "kind": "automated",
+      "title": "S01 Adopted totals, exact ties and adjacent cents match author-approved outcomes",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A16",
+      "kind": "automated",
+      "title": "S02 Screenshot regression: meter 585.25 includes base exactly once and continues beyond 500",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A17",
+      "kind": "automated",
+      "title": "S03 Original 106.40 \u2192 100 settles before every contribution",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A18",
+      "kind": "automated",
+      "title": "S04 Positive adjustments are explicit; no negative discounts or hidden cap",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A19",
+      "kind": "automated",
+      "title": "S05 Dollar amounts reconcile to cents even at fractional-cent entry",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A20",
+      "kind": "automated",
+      "title": "S06 Settlement is nondecreasing throughout the first $10,000 in cent increments",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A21",
+      "kind": "automated",
+      "title": "S07 Above 500, distance to nearest 50 is at most 25 and each band grows by 50",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A22",
+      "kind": "automated",
+      "title": "S08 Invalid monetary inputs remain finite, nonnegative",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A23",
+      "kind": "automated",
+      "title": "S09 Example generator provides changing cent-level totals within supported bounds",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A24",
+      "kind": "automated",
+      "title": "S10 Formula link restores the same meter, contribution and open drawer",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A25",
+      "kind": "automated",
+      "title": "S11 Legacy links retain valid meter and gift, disclose removal of former cap and curve",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A26",
+      "kind": "automated",
+      "title": "S12 Scenario validation rejects invalid amounts, flags and unsupported versions",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A27",
+      "kind": "automated",
+      "title": "S13 Economic comparison uses the same settlement function for its calculated meter",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "A28",
+      "kind": "automated",
+      "title": "S14 Published model specification agrees with canonical cases and version",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs from the source checkout.",
+      "expected": "All assertions for this behavior pass; expected settlement outputs are specified independently in tests/settlement.test.mjs.",
+      "actual": "Passed. Exact assertion code and raw output are included in the source download."
+    },
+    {
+      "id": "B01",
+      "kind": "browser",
+      "title": "First-reader orientation",
+      "status": "passed",
+      "action": "Read the homepage, overview and billing entry in viewport-sized steps at 390 CSS pixels.",
+      "expected": "Purpose and billing sequence are introduced before the controls.",
+      "actual": "The page identifies an independent ChatGPT concept, explains membership plus usage, then rounding and optional donation. This is an editorial review, not a novice-user study."
+    },
+    {
+      "id": "B02",
+      "kind": "browser",
+      "title": "One receipt, one payment sequence",
+      "status": "passed",
+      "action": "Inspect the final billing panel on desktop and mobile.",
+      "expected": "One receipt contains membership, editable usage, subtotal, adjustment, donation and final bill.",
+      "actual": "The duplicate calculator summary and quick-donation preset were removed. Formula, charitable-path and origin details follow the receipt."
+    },
+    {
+      "id": "B03",
+      "kind": "browser",
+      "title": "All preset donations",
+      "status": "passed",
+      "action": "Set usage to 86.40; choose $0, $1, $5 and $10.",
+      "expected": "Final totals 100.00, 101.00, 105.00 and 110.00.",
+      "actual": "All four final totals matched; the $0 option explicitly means no donation."
+    },
+    {
+      "id": "B04",
+      "kind": "browser",
+      "title": "Donation preserves a nondefault usage amount",
+      "status": "passed",
+      "action": "Set usage to 585.25 and choose a $5 donation.",
+      "expected": "Subtotal 605.25, rounded bill 600.00, final 605.00; usage remains 585.25.",
+      "actual": "Matched in desktop interaction and 320-pixel mobile with 200% root text."
+    },
+    {
+      "id": "B05",
+      "kind": "browser",
+      "title": "Custom donation preserves the selected amount",
+      "status": "passed",
+      "action": "Choose $5, open Enter another amount, then type 7.23 at usage 585.25.",
+      "expected": "Opening custom preserves 5; final becomes 607.23 without resetting usage.",
+      "actual": "Observed 5 in the custom field, then 607.23 final and unchanged 585.25 usage. The custom control spans its own row."
+    },
+    {
+      "id": "B06",
+      "kind": "browser",
+      "title": "Formula and receipt share one scenario",
+      "status": "passed",
+      "action": "With a $10 donation, select the 525.17 subtotal example.",
+      "expected": "Usage becomes 505.17, settled bill 550, final 560 in both views.",
+      "actual": "Receipt and drawer both displayed 560.00. The donation was retained."
+    },
+    {
+      "id": "B07",
+      "kind": "browser",
+      "title": "Shared calculation restores the same values",
+      "status": "passed",
+      "action": "Copy the calculation link and navigate to the clipboard URL.",
+      "expected": "Restore usage, donation and expanded formula.",
+      "actual": "Restored /#pricing-formula?v=2&use=505.17&gift=10&formula=1; both totals were 560.00."
+    },
+    {
+      "id": "B08",
+      "kind": "browser",
+      "title": "Reset has a complete and predictable result",
+      "status": "passed",
+      "action": "Activate Reset example bill from a shared nondefault calculation.",
+      "expected": "Restore usage 86.40, no donation, final 100 and collapsed formula.",
+      "actual": "Observed 86.4 input, 100.00 final, and no open attribute on the formula drawer."
+    },
+    {
+      "id": "B09",
+      "kind": "browser",
+      "title": "Natural-scroll edits survive refresh",
+      "status": "passed",
+      "action": "Enter from the root without a hash, edit usage to 585.25, choose 5, and reload.",
+      "expected": "The URL records the scenario and reload preserves it.",
+      "actual": "URL became #billing?v=2&use=585.25&gift=5&formula=0; reload restored 585.25 and final 605.00. This corrects an observed pre-fix omission for natural scrolling."
+    },
+    {
+      "id": "B10",
+      "kind": "browser",
+      "title": "Pointer and keyboard controls",
+      "status": "passed",
+      "action": "Drag the usage range with a pointer; use Home and ArrowRight; operate donation buttons and tabs by keyboard.",
+      "expected": "Inputs update and navigation remains operable without a pointer.",
+      "actual": "Home plus ArrowRight produced 0.01 usage and a 20.00 pre-donation bill. Enter activated donation options; ArrowRight changed desktop tabs. Large-text permission preview also worked with Space and Enter. A native pointer drag to the range midpoint produced 500 usage, 520 subtotal and 500 rounded bill."
+    },
+    {
+      "id": "B11",
+      "kind": "browser",
+      "title": "Economics definitions and visible response",
+      "status": "passed",
+      "action": "Open economics directly; inspect definitions and change monthly AI usage to 120.75.",
+      "expected": "Units and contribution are explained before results; revenue updates.",
+      "actual": "Modeled units precede inputs; financial contribution is distinguished from donations. Revenue changed to 130.75 on desktop and mobile. The comparison explains demand served and tier settlement before the table/cards."
+    },
+    {
+      "id": "B12",
+      "kind": "browser",
+      "title": "Permission preview is contextual and local",
+      "status": "passed",
+      "action": "Read the permission introduction; select Projects & GitHub and preview.",
+      "expected": "Explain the choice before selection; report only selected evidence without implying access was granted.",
+      "actual": "The result said 1 evidence category selected, named Projects & GitHub, and reiterated that nothing was connected or sent. Verified with keyboard at 200% mobile text."
+    },
+    {
+      "id": "B13",
+      "kind": "browser",
+      "title": "Research access and filtering",
+      "status": "passed",
+      "action": "Open research, inspect source/download labels, and search for loyalty.",
+      "expected": "Sources and file formats are named; relevant chapters remain.",
+      "actual": "The filter returned thesis, loyalty, economics, philosophy, timeline and open-questions chapters. Source labels identify Pasta Board and file formats."
+    },
+    {
+      "id": "B14",
+      "kind": "browser",
+      "title": "Desktop layout review",
+      "status": "passed",
+      "action": "Inspect homepage, receipt, economics, relationship and research at 1348 CSS-pixel content width.",
+      "expected": "Hierarchy and interactions remain clear across desktop panels.",
+      "actual": "Screenshots reviewed for each panel. The receipt remains beside its short introduction; the formula expands below. Tab and calculator interactions were exercised."
+    },
+    {
+      "id": "B15",
+      "kind": "browser",
+      "title": "Narrow default layout",
+      "status": "passed",
+      "action": "Inspect billing and adjacent panels at 390 and 320 CSS pixels.",
+      "expected": "No whole-page horizontal overflow; controls and disclosures remain usable.",
+      "actual": "Observed document widths equal content widths. Receipt precedes supporting drawers. The donation custom control has its own row; preset controls have at least 48-pixel height at default text size."
+    },
+    {
+      "id": "B16",
+      "kind": "browser",
+      "title": "200% text enlargement",
+      "status": "passed",
+      "action": "Set root text to 32px in a temporary same-origin test frame at 320, 390 and desktop widths.",
+      "expected": "Text scales, controls wrap and the document does not widen.",
+      "actual": "Billing reflowed without whole-page overflow at 320 and 390; desktop text enlargement also reflowed. Economics, relationship and research were checked at 320; corrected formula-grid and loyalty-comparison overflow. Donation arithmetic and permission keyboard controls worked while enlarged."
+    },
+    {
+      "id": "B17",
+      "kind": "browser",
+      "title": "Zoom-equivalent reflow",
+      "status": "passed",
+      "action": "Render a 659 CSS-pixel content viewport at 2x visual scale in the test frame.",
+      "expected": "The desktop-sized display reflows to a narrow single-column layout.",
+      "actual": "Observed 659 scroll width matching 659 client width. This is a layout simulation only, not native browser zoom or a scaled-frame pointer certification."
+    },
+    {
+      "id": "B18",
+      "kind": "browser",
+      "title": "Primary and secondary type hierarchy",
+      "status": "passed",
+      "action": "Inspect computed type and donation button dimensions.",
+      "expected": "Primary mobile prose and inputs remain readable; supporting notes are smaller; custom amount is not squeezed into an equal amount pill.",
+      "actual": "Primary prose and inputs are 16px at default size; notes are 13px. Type uses rem units. Donation choices use 48px minimum targets and adapt to two columns when enlarged; custom amount is full width."
+    },
+    {
+      "id": "D01",
+      "kind": "device",
+      "title": "Physical iPhone touch and Safari",
+      "status": "not_run",
+      "action": "Drag and tap on a physical iPhone in Safari.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D02",
+      "kind": "device",
+      "title": "VoiceOver and assistive technology",
+      "status": "not_run",
+      "action": "Navigate the complete drawer with a screen reader.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D03",
+      "kind": "device",
+      "title": "Other browser engines",
+      "status": "not_run",
+      "action": "Repeat core flows in Firefox and Safari engines.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D04",
+      "kind": "device",
+      "title": "Clipboard-denied fallback",
+      "status": "not_run",
+      "action": "Deny clipboard access and copy the displayed manual link.",
+      "expected": "Same clear, usable results.",
+      "actual": "Not executed in this environment."
+    },
+    {
+      "id": "D05",
+      "kind": "device",
+      "title": "Native browser zoom and mobile OS text settings",
+      "status": "not_run",
+      "action": "Repeat the final flows with native Command/Ctrl-plus zoom and physical-device text preferences.",
+      "expected": "Same reflow and readable controls.",
+      "actual": "The cloud-browser shortcut did not change native zoom. Relative-text enlargement and zoom-equivalent responsive layouts were tested instead; they are not claimed as native-device verification."
+    }
+  ]
+}

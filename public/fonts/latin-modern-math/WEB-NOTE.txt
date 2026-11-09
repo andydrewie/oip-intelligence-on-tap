@@ -1,0 +1,1 @@
+The original Latin Modern Math 1.959 OTF is unchanged. The WOFF file is a losslessly compressed web container of the same font, with the same glyph order and MATH table. No glyphs, metrics or font naming were edited. Both retain the upstream GUST Font License.

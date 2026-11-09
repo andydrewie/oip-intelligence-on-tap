@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this proposal or prototype, please cite it using this information."
+type: software
+title: "[OIP] OpenAI Improvement Proposal - Intelligence on Tap"
+authors:
+  - family-names: Fai
+    given-names: Andrew
+repository-code: "https://github.com/andydrewie/oip-intelligence-on-tap"
+url: "https://intelligence-on-tap-andrew-fai.andydrewie.chatgpt.site/"
+abstract: "An independent proposal and interactive prototype exploring optional metered intelligence, transparent settlement, compounding loyalty and Relationship Lifetime Value."
+keywords:
+  - AI economics
+  - metered intelligence
+  - relationship lifetime value
+  - research prototype

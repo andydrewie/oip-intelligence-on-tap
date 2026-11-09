@@ -1,0 +1,239 @@
+{
+  "date": "2026-11-08",
+  "summary": [
+    "Current bounded review: receipt-linked provider economics, optional public accounting context, and responsive disclosure behavior. The 24 cases below group 35 automated tests and 12 observed browser procedures; they are not 59 independent automated tests.",
+    "Historical reviews remain in the source package. This revision does not claim to have repeated every prior device or browser procedure."
+  ],
+  "method": [
+    "Automated: 35 Node calculation/source tests and TypeScript type checking. Browser: direct cloud-Chrome mouse, keyboard, form, clipboard and navigation actions.",
+    "Responsive review used a temporary same-origin iframe at 320, 390 and 1280 pixels, with 100% or 200% root-font scaling. Browser scrollbars reduce content widths by 15px. The harness is retained in review notes but is not deployed as a public route.",
+    "Screenshots are actual browser captures. The font-scaling harness caused a development hydration warning when it set the root style before React hydration; it is test-only and is absent from the delivered site. Browser-extension metadata errors were also seen and are separate from application behavior.",
+    "Public benchmark values were checked against Anthropic S-1/A filed 2026-11-02, Results of Operations p.150 and supplemental expenses p.F-40. Ratios are our calculations, never OpenAI cost estimates."
+  ],
+  "changes": [
+    "Primary economics now follows the receipt\u2019s settled bill and explicitly excludes donations.",
+    "Dollar-denominated serving costs replace undefined units in the primary view; results distinguish available funds from net profit.",
+    "Cost assumptions, loyalty, public benchmarks, formulas and the original five-plan comparison are progressively disclosed.",
+    "Economics v3 links restore the receipt and assumptions; reset retains the bill. Legacy comparisons migrate visibly.",
+    "Narrow and enlarged text reflows; benchmark numbers no longer split and disclosure symbols no longer overflow.",
+    "Readable and machine-readable notes include provenance, definitions, assumptions and exclusions."
+  ],
+  "cases": [
+    {
+      "id": "A01",
+      "kind": "automated",
+      "title": "Default provider ledger",
+      "action": "Calculate the default bill and illustrative costs.",
+      "expected": "100 revenue minus 50 serving, 5 other and 3 payment = 42; serving ceiling 92.",
+      "actual": "Exact cents assertions pass; no retention improvement is assumed.",
+      "status": "passed"
+    },
+    {
+      "id": "A02",
+      "kind": "automated",
+      "title": "Receipt boundaries and donation exclusion",
+      "action": "Evaluate receipt thresholds, large usage and donation variants.",
+      "expected": "Provider revenue always equals bill(usage).adjusted and excludes gift.",
+      "actual": "M=585.25 gives revenue 600 and default remainder 527; donation cannot alter revenue.",
+      "status": "passed"
+    },
+    {
+      "id": "A03",
+      "kind": "automated",
+      "title": "Losses and fee rounding",
+      "action": "Evaluate excess costs, zero fees and a fractional fee rate.",
+      "expected": "Preserve losses and cent rounding.",
+      "actual": "2.875% of 100 gives 2.88; negative remainders and cost ceilings remain visible.",
+      "status": "passed"
+    },
+    {
+      "id": "A04",
+      "kind": "automated",
+      "title": "Loyalty and retention math",
+      "action": "Evaluate 0% and 100% departures, a 20% relative reduction, and oversized discounts.",
+      "expected": "Finite 12-month horizon; relative percent differs from percentage points; no negative price.",
+      "actual": "5% departures reduced by 20% becomes 4%; discount is capped at the settled bill; zero-churn baseline is 454 after acquisition.",
+      "status": "passed"
+    },
+    {
+      "id": "A05",
+      "kind": "automated",
+      "title": "Shared receipt and assumptions",
+      "action": "Round-trip v3 economics link with usage 585.25, donation 7.23 and nondefault costs.",
+      "expected": "Restore numerical assumptions and the associated receipt.",
+      "actual": "Allowlisted fields and receipt restore exactly.",
+      "status": "passed"
+    },
+    {
+      "id": "A06",
+      "kind": "automated",
+      "title": "Legacy scenario migration",
+      "action": "Parse v1/v2 economics links.",
+      "expected": "Retain advanced inputs, derive metered dollars and explain the change.",
+      "actual": "Demand 200, base allowance 10 and price 2 become usage 380; warning is provided.",
+      "status": "passed"
+    },
+    {
+      "id": "A07",
+      "kind": "automated",
+      "title": "Reported figures and calculated ratios",
+      "action": "Reconcile the cited benchmark and inspect provider defaults.",
+      "expected": "Expense categories sum to 34,502 million; ratios use 33,242 million revenue; no default is sourced from peer ratios.",
+      "actual": "Four category ratios round to 14.48, 57.88, 19.91 and 11.52 per 100; serving default remains the independent assumption 50.",
+      "status": "passed"
+    },
+    {
+      "id": "A08",
+      "kind": "automated",
+      "title": "Existing calculation and source regressions",
+      "action": "Run all existing model and source tests with the seven new provider tests.",
+      "expected": "Existing receipt, settlement, source partitions and scenario checks still pass.",
+      "actual": "All 35 Node tests pass: 28 existing and 7 new. Raw output is included.",
+      "status": "passed"
+    },
+    {
+      "id": "A09",
+      "kind": "automated",
+      "title": "Type checking",
+      "action": "Run node node_modules/typescript/bin/tsc --noEmit.",
+      "expected": "No TypeScript errors.",
+      "actual": "Passed.",
+      "status": "passed"
+    },
+    {
+      "id": "B01",
+      "kind": "browser",
+      "title": "Cost input, keyboard and pointer slider",
+      "action": "Type 120.25, press ArrowRight on the cost slider, then drag the slider with the mouse.",
+      "expected": "The same input and visible ledger update after each action.",
+      "actual": "120.25 produced a -28.25 shortfall; ArrowRight changed it to 120.26 and -28.26; pointer drag later set 134.05 and showed -42.05.",
+      "status": "passed"
+    },
+    {
+      "id": "B02",
+      "kind": "browser",
+      "title": "Receipt to economics continuity",
+      "action": "Enter usage 585.25 and custom donation 7.23, then follow the receipt economics link.",
+      "expected": "Subtotal 605.25 settles to 600; donation produces 607.23 final; provider revenue remains 600.",
+      "actual": "Observed all values, including payment fee 18 and default remainder 527.",
+      "status": "passed"
+    },
+    {
+      "id": "B03",
+      "kind": "browser",
+      "title": "Scenario copy and reload",
+      "action": "Set serving cost 173.48 on that larger bill, copy its link and reload.",
+      "expected": "The copied URL includes receipt plus costs; reload restores them.",
+      "actual": "Clipboard contained v3, use=585.25, gift=7.23 and servingCost=173.48. Reload showed bill 600 and remainder 403.52.",
+      "status": "passed"
+    },
+    {
+      "id": "B04",
+      "kind": "browser",
+      "title": "Reset costs while preserving the bill",
+      "action": "Reset assumptions after the nondefault shared scenario.",
+      "expected": "Return cost assumptions to examples, retain current receipt.",
+      "actual": "Bill stayed 600; serving cost returned to 50 and remainder to 527. Receipt reset separately restored the 100 example.",
+      "status": "passed"
+    },
+    {
+      "id": "B05",
+      "kind": "browser",
+      "title": "Loyalty relative reduction and benefit cap",
+      "action": "Set reduction in departures to 20 and a 700 discount on a 600 bill.",
+      "expected": "95 of 100 retained without benefit versus 96 with it; discount cannot exceed 600.",
+      "actual": "Correct retention numbers and a visible 600 cap appeared; negative loyalty result remained visible.",
+      "status": "passed"
+    },
+    {
+      "id": "B06",
+      "kind": "browser",
+      "title": "Legacy link and advanced isolation",
+      "action": "Open v2 demand=200, baseUnits=10, rate=2; expand advanced comparison and change demand to 300.",
+      "expected": "Migration is visible; advanced changes do not rewrite primary receipt.",
+      "actual": "Original comparison inputs and warning appeared. Primary revenue stayed 500 while advanced settlement revenue changed to 600.",
+      "status": "passed"
+    },
+    {
+      "id": "B07",
+      "kind": "browser",
+      "title": "History navigation",
+      "action": "Navigate from economics to Edit the bill, then use browser Back.",
+      "expected": "Return to economics with assumptions retained.",
+      "actual": "Returned to v3 demand 300 / rate 2 / receipt usage 380, with comparison revenue 600.",
+      "status": "passed"
+    },
+    {
+      "id": "B08",
+      "kind": "browser",
+      "title": "Mobile receipt donation sequence",
+      "action": "At 390px iframe width and 100% text, select the 5 donation.",
+      "expected": "Donation is below the bill, is explicitly labeled, and updates final total without changing usage.",
+      "actual": "100 settled plus 5 donation gave 105 final. Separate custom amount control and commercial-contribution qualification remained readable. No page overflow: 375px client and scroll width.",
+      "status": "passed"
+    },
+    {
+      "id": "B09",
+      "kind": "browser",
+      "title": "Narrow provider view and enlarged text",
+      "action": "Inspect 390px default text and 320px at 200% root text; enter serving cost 62.48.",
+      "expected": "Controls remain editable, values stay visible and content reflows.",
+      "actual": "Remainder became 29.52; at 320px/200%, client and scroll widths were both 305px. Screenshot retained.",
+      "status": "passed"
+    },
+    {
+      "id": "B10",
+      "kind": "browser",
+      "title": "Expanded benchmark at 200% narrow text",
+      "action": "Open benchmark at 320px and 200% text, inspect and repair overflow.",
+      "expected": "Readable amounts with no page-wide horizontal scroll.",
+      "actual": "Found a rotating disclosure symbol overflow and split monetary values. Fixed symbol sizing and stacked benchmark rows. Retest: 305px client and scroll widths; amounts such as 57.88 stay intact.",
+      "status": "passed"
+    },
+    {
+      "id": "B11",
+      "kind": "browser",
+      "title": "Enlarged desktop reflow",
+      "action": "Inspect provider view at 1280px iframe width and 200% root text.",
+      "expected": "Columns reflow rather than clipping.",
+      "actual": "Single-column provider layout remained usable; client and scroll widths both 1265px. Screenshot retained.",
+      "status": "passed"
+    },
+    {
+      "id": "B12",
+      "kind": "browser",
+      "title": "Direct benchmark entry",
+      "action": "Navigate directly to #public-benchmarks.",
+      "expected": "Select economics and open the correct drawer.",
+      "actual": "Economics selected, benchmark expanded and source link present.",
+      "status": "passed"
+    },
+    {
+      "id": "D01",
+      "kind": "device",
+      "title": "Physical mobile touch and Safari",
+      "action": "Test on physical iPhone/Android browsers.",
+      "expected": "Native touch dragging, virtual keyboard and browser chrome behave correctly.",
+      "actual": "Not performed. Cloud Chrome responsive screenshots are not physical-device tests.",
+      "status": "not_run"
+    },
+    {
+      "id": "D02",
+      "kind": "device",
+      "title": "Assistive technology",
+      "action": "Use VoiceOver or NVDA through receipt and cost disclosures.",
+      "expected": "Controls, value changes and navigation are understandable.",
+      "actual": "Not performed. Accessible labels and actual keyboard actions were inspected, but this is not screen-reader certification.",
+      "status": "not_run"
+    },
+    {
+      "id": "D03",
+      "kind": "device",
+      "title": "Native browser zoom and OS text settings",
+      "action": "Test actual browser zoom and mobile OS text enlargement.",
+      "expected": "Reader settings preserve usability.",
+      "actual": "Not performed. This pass used responsive iframe widths and 200% root-font scaling, explicitly labeled as simulations.",
+      "status": "not_run"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "title": "Intelligence on Tap — evidence inventory",
+  "author": "Andrew Fai",
+  "compiled": "2026-11-08",
+  "scope": "Tibo subscription-pricing discussion onward only",
+  "source_completeness": "Author confirmed Pasta Board is the complete source. All supplied document text has been read. Screenshots independently show the original tweets and mockup. The source document does not consistently label speakers or provide exact timestamps; these are not invented.",
+  "sources": [
+    {
+      "id": "P",
+      "type": "author_supplied_complete_source",
+      "title": "Pasta Board",
+      "url": "https://docs.google.com/document/d/1CUV-pxvWUYFlNuPRgsjOUy7MSnpTo9KHtdsnwrD1WGw/edit",
+      "archive": "/archive/source.html",
+      "structured": "/archive/source.json",
+      "read": "2026-11-08"
+    },
+    {
+      "id": "S1",
+      "type": "primary_screenshot",
+      "path": "/sources/tweet-source-3.png",
+      "description": "Tibo's Pro 50 question and Andrew's original reply"
+    },
+    {
+      "id": "S2",
+      "type": "primary_screenshot",
+      "path": "/sources/tweet-source-1.png",
+      "description": "Andrew's follow-up with Intelligence on Tap billing mockup"
+    },
+    {
+      "id": "S3",
+      "type": "primary_screenshot",
+      "path": "/sources/tweet-source-2.png",
+      "description": "Loyalty follow-up: sustained $200/$500 subscriptions and compute on credit"
+    },
+    {
+      "id": "B1",
+      "type": "user_project_brief",
+      "path": "/archive/research.md",
+      "description": "Scope and philosophical extensions supplied by the author in this build conversation; organized paraphrase, not an original-chat transcript"
+    },
+    {
+      "id": "O1",
+      "type": "official_documentation",
+      "url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "O2",
+      "type": "official_documentation",
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "O3",
+      "type": "official_documentation",
+      "url": "https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "O4",
+      "type": "official_documentation",
+      "url": "https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "ANT-S1A-20261102",
+      "type": "public_primary_financial_filing",
+      "title": "Anthropic S-1/A, November 2, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm",
+      "locations": "Results of Operations, p.150; Note 8, p.F-40",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "id": "O5",
+      "type": "official_documentation",
+      "title": "Business data privacy, security, and compliance",
+      "url": "https://openai.com/business-data/",
+      "checked": "2026-11-08"
+    }
+  ],
+  "claims": [
+    {
+      "id": "pricing",
+      "status": "original_proposal",
+      "sources": [
+        "P",
+        "S1"
+      ],
+      "summary": "$20 base with dynamic metering; original wording bills at the nearest tier that covers usage.",
+      "source_anchor": "/archive/source.html#p-575"
+    },
+    {
+      "id": "rounding",
+      "status": "proposed_feature",
+      "sources": [
+        "P",
+        "S2"
+      ],
+      "summary": "$20 + $86.40 = $106.40; commercial discount $6.40; adjusted bill $100. This differs from tier coverage.",
+      "source_anchor": "/archive/source.html#p-138"
+    },
+    {
+      "id": "contribution",
+      "status": "proposed_feature_with_editorial_clarification",
+      "sources": [
+        "P",
+        "S2",
+        "B1"
+      ],
+      "summary": "The original screenshot says Donate to OpenAI. Andrew later clarified the intended recipient as the nonprofit OpenAI Foundation, supporting AI that benefits humanity. The current concept replaces the earlier commercial-contribution interpretation. Zero is the default, no money is collected, and donation acceptance/tax eligibility are unverified.",
+      "source_anchor": "/archive/source.html#p-847",
+      "follow_up_specification": "/archive/charitable-path.md"
+    },
+    {
+      "id": "loyalty",
+      "status": "original_proposal",
+      "sources": [
+        "P",
+        "S3"
+      ],
+      "summary": "Sustained $200/$500 relationships unlock privileges and possible compute credit. Loyalty should compound.",
+      "source_anchor": "/archive/source.html#p-10404"
+    },
+    {
+      "id": "credit",
+      "status": "unresolved_design_boundary",
+      "sources": [
+        "P",
+        "S3",
+        "B1"
+      ],
+      "summary": "Loyalty recognition is not credit underwriting; spending alone proves neither ability to repay nor founder competence.",
+      "source_anchor": "/archive/source.html#p-3439"
+    },
+    {
+      "id": "relationship",
+      "status": "future_extension",
+      "sources": [
+        "P",
+        "B1"
+      ],
+      "summary": "Customer Lifetime Value to Relationship Lifetime Value; financing, introductions, partnership, optional equity investment.",
+      "source_anchor": "/archive/source.html#p-13252"
+    },
+    {
+      "id": "connected",
+      "status": "future_extension",
+      "sources": [
+        "P",
+        "B1",
+        "O3",
+        "O4"
+      ],
+      "summary": "Selected permissioned evidence could support voluntary diligence; connecting an app does not authorize investment access.",
+      "source_anchor": "/archive/source.html#p-16735"
+    },
+    {
+      "id": "economics",
+      "status": "simulation_assumptions",
+      "sources": [
+        "P",
+        "B1"
+      ],
+      "summary": "Unknown cost, demand elasticity and retention effects must be tested; all simulated allowances, rates, costs and churn are assumptions.",
+      "source_anchor": "/archive/source.html#p-8287"
+    },
+    {
+      "id": "philosophy",
+      "status": "hypothesis",
+      "sources": [
+        "P",
+        "S1",
+        "B1"
+      ],
+      "summary": "Conscious capitalism, reciprocity and universal altruism as design questions; no proven profitability or inevitable social outcome.",
+      "source_anchor": "/archive/source.html#p-9620"
+    },
+    {
+      "id": "current",
+      "status": "documented_fact",
+      "sources": [
+        "O1",
+        "O2"
+      ],
+      "summary": "Official pages list Plus $20 and Pro $100/$200/$500 and eligible usage credits. Credit coverage is not universal."
+    },
+    {
+      "id": "correction",
+      "status": "documented_change_of_view",
+      "sources": [
+        "P"
+      ],
+      "source_anchor": "/archive/source.html#p-10404",
+      "summary": "The earlier equality-focused critique miscalibrated the argument. Sustained substantial spending and reliable payment are commercially meaningful; spend, tenure and reliability should earn greater benefits. Underwriting remains a separate risk question."
+    },
+    {
+      "id": "business-scope",
+      "status": "documented_fact_with_proposal_boundary",
+      "sources": [
+        "O5"
+      ],
+      "summary": "OpenAI documents organizational roles, administration and business data protections. Coverage varies by product. The author’s personal metering option does not confer Business or Enterprise features."
+    }
+  ],
+  "unavailable": [
+    "Original executable mockup code",
+    "Consistent speaker labels and exact timestamps in the supplied source"
+  ],
+  "editorial_rule": "Do not turn unavailable provenance into a global implementation blocker. Build from inspectable supplied evidence, label gaps locally, and never fabricate conversation history.",
+  "follow_up_decisions": [
+    {
+      "id": "adopted-settlement",
+      "status": "author_adopted_concept_rule",
+      "date": "2026-11-08",
+      "source": "Author follow-up in this project conversation, after Pasta Board",
+      "summary": "Exact piecewise settlement: 20/100/200/500 tiers through named midpoints; above 500, 50*floor((S+25)/50). S includes the base. Contributions follow settlement.",
+      "specification": "/archive/pricing-formula.md"
+    },
+    {
+      "id": "uber-origin",
+      "status": "author_reported_personal_inspiration",
+      "source": "Author follow-up in this project conversation, after Pasta Board",
+      "summary": "End-of-ride settlement and optional tip; Uber One as membership analogy.",
+      "specification": "/archive/founding-story.md"
+    },
+    {
+      "id": "receipt-linked-provider-economics",
+      "status": "author_approved_editorial_and_implementation_refinement",
+      "date": "2026-11-08",
+      "summary": "Simple receipt, optional price-support explanation, shared settled bill, explicit dollar cost assumptions; loyalty, public benchmarks and advanced comparisons behind disclosure. Public accounting ratios are not OpenAI per-customer or per-token economics.",
+      "specification": "/archive/provider-economics.md"
+    },
+    {
+      "id": "optional-personal-meter",
+      "status": "author_clarified_proposal_scope",
+      "date": "2026-11-08",
+      "source": "Author follow-up in this project conversation, after Pasta Board",
+      "summary": "Tibo’s Pro 50 question is visible at the opening. Keep $100/$200/$500 fixed plans and offer $20 base plus personal metering alongside them. The author prefers this additional choice to another fixed tier; superiority is not commercially established. Preserve the distinct organizational scope of Business/Enterprise.",
+      "specification": "/archive/chapters/pricing.md"
+    },
+    {
+      "id": "cc0-adoption",
+      "status": "author_adopted_dedication",
+      "date": "2026-11-08",
+      "source": "Author accepted the CC0 footer recommendation in this project conversation",
+      "summary": "Andrew’s original authored writing uses CC0 1.0; original application code remains MIT. Third-party materials are excluded.",
+      "specification": "/content-license.md"
+    },
+    {
+      "id": "cost-coverage-correction",
+      "status": "author_identified_defect_and_requested_clarification",
+      "date": "2026-11-08",
+      "source": "Author follow-up and screenshot IMG_7977, after Pasta Board",
+      "summary": "Arbitrary fixed serving costs yielded a misleading earnings impression as bills grew. Remove default balances; account for infrastructure, development and operations; require explicit cost inputs and review. A subsequent clarification established that the 10–20% remark was a guess; target-margin cards were retired. Preserve the billing rule and historical corpus.",
+      "specification": "/archive/provider-economics.md"
+    },
+    {
+      "id": "relationship-foundation-evidence",
+      "status": "author_approved_editorial_and_implementation_refinement",
+      "date": "2026-11-08",
+      "source": "Author approved the five-part revision after clarifying the Foundation recipient and guessed margins",
+      "summary": "Main story: flexible payment, earned loyalty and voluntary generosity. Name the OpenAI Foundation at checkout, separate the gift from the service bill and commercial model, lead economics with cost coverage and sourced company evidence, place reviewer assumptions behind disclosure, and update connected human/agent materials. No official donation channel or tax eligibility is asserted.",
+      "specifications": [
+        "/archive/charitable-path.md",
+        "/archive/provider-economics.md"
+      ]
+    }
+  ]
+}

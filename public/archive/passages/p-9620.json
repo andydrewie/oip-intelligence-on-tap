@@ -1,0 +1,64 @@
+{
+  "id": "p-9620",
+  "first": 9620,
+  "last": 10302,
+  "paragraph_count": 9,
+  "markdown": "/archive/passages/p-9620.md",
+  "json": "/archive/passages/p-9620.json",
+  "html": "/archive/passages/p-9620.html",
+  "ordinal": 5,
+  "source": "Pasta Board",
+  "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+  "classification": "original_source_text",
+  "speaker_attribution": "Not inferred; the document does not consistently label speakers or exact times.",
+  "full_source": "/archive/source.html",
+  "previous": "/archive/passages/p-8287.md",
+  "next": "/archive/passages/p-10404.md",
+  "paragraphs": [
+    {
+      "id": "p-9620",
+      "text": "One last philosophical thought",
+      "source_url": "/archive/source.html#p-9620"
+    },
+    {
+      "id": "p-9651",
+      "text": "Your original closing line was:",
+      "source_url": "/archive/source.html#p-9651"
+    },
+    {
+      "id": "p-9683",
+      "text": "Loyalty should compound.",
+      "source_url": "/archive/source.html#p-9683"
+    },
+    {
+      "id": "p-9708",
+      "text": "I see an opportunity for a companion principle:",
+      "source_url": "/archive/source.html#p-9708"
+    },
+    {
+      "id": "p-9756",
+      "text": "Trust should be earned. Loyalty should compound. Intelligence should remain sovereign to its user.",
+      "source_url": "/archive/source.html#p-9756"
+    },
+    {
+      "id": "p-9855",
+      "text": "That brings your proposal back to something you’ve been thinking about for a long time: the relationship between an augmented individual and the institutions providing their intelligence.",
+      "source_url": "/archive/source.html#p-9855"
+    },
+    {
+      "id": "p-10043",
+      "text": "And I think that’s where your idea becomes more consequential than subscription pricing.",
+      "source_url": "/archive/source.html#p-10043"
+    },
+    {
+      "id": "p-10132",
+      "text": "What if the next generation of AI companies competes not merely on intelligence or price, but on the quality of the economic relationship it builds with each individual?",
+      "source_url": "/archive/source.html#p-10132"
+    },
+    {
+      "id": "p-10302",
+      "text": "That is a question worth carrying into your broader thinking about Conscious Capitalism and Scholē.",
+      "source_url": "/archive/source.html#p-10302"
+    }
+  ]
+}

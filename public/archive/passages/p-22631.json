@@ -1,0 +1,94 @@
+{
+  "id": "p-22631",
+  "first": 22631,
+  "last": 23660,
+  "paragraph_count": 15,
+  "markdown": "/archive/passages/p-22631.md",
+  "json": "/archive/passages/p-22631.json",
+  "html": "/archive/passages/p-22631.html",
+  "ordinal": 11,
+  "source": "Pasta Board",
+  "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+  "classification": "original_source_text",
+  "speaker_attribution": "Not inferred; the document does not consistently label speakers or exact times.",
+  "full_source": "/archive/source.html",
+  "previous": "/archive/passages/p-21264.md",
+  "next": "/archive/passages/p-23720.md",
+  "paragraphs": [
+    {
+      "id": "p-22631",
+      "text": "My biggest realization",
+      "source_url": "/archive/source.html#p-22631"
+    },
+    {
+      "id": "p-22654",
+      "text": "There’s a fundamental difference between how traditional SaaS and an AI-native platform might conceptualize customer lifetime value.",
+      "source_url": "/archive/source.html#p-22654"
+    },
+    {
+      "id": "p-22787",
+      "text": "Traditional SaaS asks:",
+      "source_url": "/archive/source.html#p-22787"
+    },
+    {
+      "id": "p-22810",
+      "text": "How much revenue will this customer generate over their lifetime?",
+      "source_url": "/archive/source.html#p-22810"
+    },
+    {
+      "id": "p-22876",
+      "text": "Your proposed model asks:",
+      "source_url": "/archive/source.html#p-22876"
+    },
+    {
+      "id": "p-22902",
+      "text": "How much mutual economic value can this relationship generate over both lifetimes?",
+      "source_url": "/archive/source.html#p-22902"
+    },
+    {
+      "id": "p-22985",
+      "text": "And those are radically different questions.",
+      "source_url": "/archive/source.html#p-22985"
+    },
+    {
+      "id": "p-23030",
+      "text": "It also introduces reciprocity: the company doesn’t merely evaluate the customer. The customer can use their own agent to evaluate the company’s offers, terms, trustworthiness, and competing alternatives.",
+      "source_url": "/archive/source.html#p-23030"
+    },
+    {
+      "id": "p-23235",
+      "text": "That’s genuinely bidirectional.",
+      "source_url": "/archive/source.html#p-23235"
+    },
+    {
+      "id": "p-23267",
+      "text": "Perhaps the most interesting formulation to emerge from our discussion is:",
+      "source_url": "/archive/source.html#p-23267"
+    },
+    {
+      "id": "p-23342",
+      "text": "Customer Lifetime Value → Relationship Lifetime Value;",
+      "source_url": "/archive/source.html#p-23342"
+    },
+    {
+      "id": "p-23397",
+      "text": "The first measures what the customer is worth to the company.",
+      "source_url": "/archive/source.html#p-23397"
+    },
+    {
+      "id": "p-23459",
+      "text": "The second asks what both parties can become worth to each other.",
+      "source_url": "/archive/source.html#p-23459"
+    },
+    {
+      "id": "p-23525",
+      "text": "And that might be a much more consequential application of your philosophy of Conscious Capitalism than the original $20 metered plan.",
+      "source_url": "/archive/source.html#p-23525"
+    },
+    {
+      "id": "p-23660",
+      "text": "The subscription is merely where the relationship begins.",
+      "source_url": "/archive/source.html#p-23660"
+    }
+  ]
+}

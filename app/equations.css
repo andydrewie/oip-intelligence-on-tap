@@ -1,0 +1,23 @@
+@font-face{font-family:"IOT Latin Modern Math";src:url("/fonts/latin-modern-math/latinmodern-math.woff") format("woff");font-weight:400;font-style:normal;font-display:block}
+/* Native, selectable mathematical notation. Body/UI type remains OpenAI Sans. */
+.equation-card{background:#f0f3fa;padding:1.1rem;border-radius:8px;margin:1.25rem 0;min-width:0;container-type:inline-size;container-name:equation}
+.equation-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;padding:.3rem 0 .5rem}
+.equation-scroll:focus-visible{outline:3px solid #245bc3;outline-offset:4px}
+.equation-card math,.equation-worked math,.inline-equation math{font-family:"IOT Latin Modern Math",math;font-size:1.125rem;font-weight:400;color:#202632}
+.inline-equation{display:inline-block;vertical-align:middle}
+.inline-equation math{font-size:1.1em}
+.settlement-equation{width:max-content;white-space:nowrap;margin-inline:auto}
+.settlement-equation mtd{padding:.28em 0;text-align:left}
+.settlement-equation mtd+ mtd{padding-left:.3em}
+.settlement-equation math{flex:none}
+.equation-line{display:flex;flex-wrap:wrap;align-items:center;gap:.15em .3em;margin:.75rem 0}
+.equation-line math{flex:none}
+.equation-worked .settlement-working{margin:1.15rem 0}
+.equation-worked .worked-final{border-top:1px solid #c6d5f0;padding-top:.65rem}
+.equation-worked .worked-final p{font-size:.875rem;margin:.25rem 0 .5rem}
+.equation-worked .worked-final .equation-line{margin-bottom:0}
+@media(max-width:360px){.equation-card{padding:.7rem}.equation-worked{padding:14px}}
+
+.equation-hint{display:none;margin:.5rem 0 0;font-size:.875rem;color:#59667b}
+@container equation (max-width:20rem){.equation-hint{display:block}}
+@media(min-width:701px){.equation-card math,.equation-worked math{font-size:1.25rem}}

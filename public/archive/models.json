@@ -1,0 +1,458 @@
+{
+  "schema_version": 2,
+  "status": "implementation_analysis_and_simulated_assumptions",
+  "currency": "USD",
+  "units": "Billing and the primary provider view use USD. The advanced five-plan comparison uses arbitrary comparison units, not tokens or ChatGPT credits.",
+  "defaults": {
+    "demand": 96.4,
+    "rate": 1,
+    "cost": 0.35,
+    "baseUnits": 10,
+    "fixedPrice": 100,
+    "fixedUnits": 100,
+    "fiftyUnits": 40,
+    "serviceCost": 3,
+    "variableCost": 2,
+    "feePercent": 3,
+    "churn": 5,
+    "retention": 20,
+    "loyalty": 10,
+    "cac": 50
+  },
+  "scenario_links": {
+    "format": "/#pricing-formula?v=2&use=86.4&gift=5&formula=1",
+    "version": 2,
+    "parameters": {
+      "billing": {
+        "defaults": {
+          "use": 86.4,
+          "gift": 0,
+          "formula": 0
+        },
+        "bounds": {
+          "use": [
+            0,
+            999980
+          ],
+          "gift": [
+            0,
+            10000
+          ],
+          "formula": [
+            0,
+            1
+          ]
+        }
+      },
+      "economics": {
+        "defaults": {
+          "demand": 96.4,
+          "rate": 1,
+          "cost": 0.35,
+          "baseUnits": 10,
+          "fixedPrice": 100,
+          "fixedUnits": 100,
+          "fiftyUnits": 40,
+          "serviceCost": 3,
+          "variableCost": 2,
+          "feePercent": 3,
+          "churn": 5,
+          "retention": 20,
+          "loyalty": 10,
+          "cac": 50,
+          "servingCost": 0,
+          "servingKnown": 0,
+          "developmentCost": 0,
+          "developmentKnown": 0,
+          "operationsCost": 0,
+          "operationsKnown": 0,
+          "paymentFee": 0,
+          "paymentKnown": 0,
+          "costsReviewed": 0,
+          "costBasis": 0,
+          "monthlyBenefit": 5,
+          "leavingRate": 5,
+          "retentionGain": 0,
+          "customerAcquisition": 0,
+          "use": 86.4,
+          "gift": 0,
+          "exposure": 5000,
+          "pd": 5,
+          "lgd": 60,
+          "investment": 100000,
+          "success": 20,
+          "multiple": 5
+        },
+        "bounds": {
+          "use": [
+            0,
+            999980
+          ],
+          "gift": [
+            0,
+            10000
+          ],
+          "servingCost": [
+            0,
+            1000000
+          ],
+          "servingKnown": [
+            0,
+            1
+          ],
+          "developmentCost": [
+            0,
+            1000000
+          ],
+          "developmentKnown": [
+            0,
+            1
+          ],
+          "operationsCost": [
+            0,
+            1000000
+          ],
+          "operationsKnown": [
+            0,
+            1
+          ],
+          "paymentFee": [
+            0,
+            20
+          ],
+          "paymentKnown": [
+            0,
+            1
+          ],
+          "costsReviewed": [
+            0,
+            1
+          ],
+          "costBasis": [
+            0,
+            999980
+          ],
+          "monthlyBenefit": [
+            0,
+            1000000
+          ],
+          "leavingRate": [
+            0,
+            100
+          ],
+          "retentionGain": [
+            0,
+            100
+          ],
+          "customerAcquisition": [
+            0,
+            1000000
+          ],
+          "demand": [
+            0,
+            1000
+          ],
+          "rate": [
+            0,
+            5
+          ],
+          "cost": [
+            0,
+            5
+          ],
+          "baseUnits": [
+            0,
+            2000
+          ],
+          "fixedPrice": [
+            20,
+            500
+          ],
+          "fixedUnits": [
+            0,
+            2000
+          ],
+          "fiftyUnits": [
+            0,
+            2000
+          ],
+          "serviceCost": [
+            0,
+            1000
+          ],
+          "variableCost": [
+            0,
+            1000
+          ],
+          "feePercent": [
+            0,
+            20
+          ],
+          "churn": [
+            0,
+            30
+          ],
+          "retention": [
+            0,
+            100
+          ],
+          "loyalty": [
+            0,
+            100
+          ],
+          "cac": [
+            0,
+            1000
+          ],
+          "exposure": [
+            0,
+            100000
+          ],
+          "pd": [
+            0,
+            100
+          ],
+          "lgd": [
+            0,
+            100
+          ],
+          "investment": [
+            0,
+            10000000
+          ],
+          "success": [
+            0,
+            100
+          ],
+          "multiple": [
+            0,
+            50
+          ]
+        }
+      }
+    },
+    "notes": "Links contain all numerical assumptions for one simulator. Invalid ordinary simulation settings fall back to defaults with visible feedback; cost drafts retain empty, invalid and valid states and never silently become supplied zero. No user records or permission selections are encoded. Economics v5 includes raw input-servingCost/input-developmentCost/input-operationsCost/input-paymentFee drafts (up to 128 characters), shared receipt, review status and usage basis. Empty means not entered; invalid values remain visible and unused. v4 links preserve rejected supplied values as invalid drafts. v1/v2/v3 clear incomplete provider cost examples with a visible correction; advanced inputs and receipt are retained. All economics targets restore the same inputs.",
+    "economics_version": 5,
+    "economics_targets": [
+      "economics",
+      "cost-scenario",
+      "public-benchmarks",
+      "economics-loyalty",
+      "economics-method",
+      "economics-comparison"
+    ]
+  },
+  "billing": {
+    "status": "adopted_concept_rule",
+    "adopted": "2026-11-08",
+    "base": 20,
+    "currency": "USD",
+    "input": "M = calculated metered charge, excluding base; S = 20 + M",
+    "tiers": [
+      20,
+      100,
+      200,
+      500
+    ],
+    "formula_latex": "B(S)=\\begin{cases}\n20, & 20\\le S\\le60,\\\\\n100, & 60<S\\le150,\\\\\n200, & 150<S\\le350,\\\\\n500, & 350<S\\le500,\\\\\n50\\left\\lfloor\\dfrac{S+25}{50}\\right\\rfloor, & S>500.\n\\end{cases}",
+    "formula": "B(S) = 20 if 20 <= S <= 60; 100 if 60 < S <= 150; 200 if 150 < S <= 350; 500 if 350 < S <= 500; 50 * floor((S + 25) / 50) if S > 500",
+    "order": [
+      "Normalize metered charge and optional contribution to nonnegative cents",
+      "S = 20 + metered charge",
+      "Apply the adopted B(S) rule using integer-cent comparisons",
+      "Tier adjustment = B(S) - S; may be positive or negative",
+      "Total payment = B(S) + optional Foundation donation"
+    ],
+    "ties": "At 60,150,350 use the lower tier. Above 500 midpoint ties round upward: 524.99 -> 500; 525 -> 550.",
+    "compute_interpretation": "Author-provided concept anchors: 200 USD = 20x; 500 USD = 50x; continuation of 50 USD per 5x. This settlement formula does not specify the underlying compute meter or verify official entitlements.",
+    "reference": {
+      "metered": 86.4,
+      "subtotal": 106.4,
+      "adjustment": -6.4,
+      "adjusted": 100,
+      "contribution": 5,
+      "final": 105
+    },
+    "screenshot_regression": {
+      "metered": 585.25,
+      "subtotal": 605.25,
+      "adjustment": -5.25,
+      "adjusted": 600
+    },
+    "examples": [
+      {
+        "total": 106.4,
+        "settled": 100,
+        "adjustment": -6.4
+      },
+      {
+        "total": 147.83,
+        "settled": 100,
+        "adjustment": -47.83
+      },
+      {
+        "total": 153.27,
+        "settled": 200,
+        "adjustment": 46.73
+      },
+      {
+        "total": 237.68,
+        "settled": 200,
+        "adjustment": -37.68
+      },
+      {
+        "total": 349.82,
+        "settled": 200,
+        "adjustment": -149.82
+      },
+      {
+        "total": 350.18,
+        "settled": 500,
+        "adjustment": 149.82
+      },
+      {
+        "total": 524.83,
+        "settled": 500,
+        "adjustment": -24.83
+      },
+      {
+        "total": 525.17,
+        "settled": 550,
+        "adjustment": 24.83
+      },
+      {
+        "total": 567.94,
+        "settled": 550,
+        "adjustment": -17.94
+      }
+    ],
+    "limits": "Exact rule for this independent concept, not an official price or a claim of proven economics. No permanent $500 cap, hidden $200 ceiling, discretionary percent discount or tax. Both upward and downward settlement are explicit. Foundation donations remain separate from commercial revenue. No automatic charitable deduction or verified collection channel. Account-splitting incentives remain a commercial question.",
+    "provenance": "Author adopted the formula in follow-up discussion after Pasta Board. The historical source and original 106.40 -> 100 example remain unchanged.",
+    "human": "/archive/pricing-formula.html",
+    "markdown": "/archive/pricing-formula.md",
+    "interactive": "/#pricing-formula",
+    "origin_note": {
+      "status": "author-reported retrospective origin, supplied during review",
+      "inspiration": "Uber end-of-ride settlement and optional tip; Uber One as a membership analogy for the proposed $20 base",
+      "boundary": "Not a statement of Uber One pricing, endorsement, or charitable tax treatment. Complements the restaurant analogy in the source."
+    },
+    "utility_intuition": {
+      "status": "author design analogy supplied during review; not a cost identity",
+      "poetic_coda": "Energy = the power of life;",
+      "note": "Compute as electricity + infrastructure; electricity as energy + infrastructure; oil as energy + infrastructure, with different grades. Suggests legible metering and explicit intelligence/service grades.",
+      "boundary": "Normalized units in this simulator do not model quality differences or establish personal/API/enterprise tariffs."
+    },
+    "presentation": {
+      "primary": "One editable receipt: membership, usage, subtotal, adjustment, settled service bill, optional Foundation donation, total payment",
+      "donation": "UI Foundation donation maps to scenario gift and bill().contribution; it is a separate proposed charitable gift, not commercial revenue",
+      "distinction": "Subscription contribution is a financial metric after costs; it excludes voluntary donations."
+    }
+  },
+  "subscription": {
+    "formulas": {
+      "billable_usage": "max(0, demand − baseUnits) × rate",
+      "fixed_revenue": "fixedPrice; served = min(demand, fixedUnits)",
+      "fifty_revenue": "50; served = min(demand, fiftyUnits)",
+      "hybrid_revenue": "20 + billable_usage; all demand served",
+      "settled_revenue": "bill(billable_usage).adjusted; all demand served",
+      "loyalty_revenue": "20 + billable_usage × (1 − loyalty / 100); all demand served",
+      "loyalty_churn": "baseline churn × (1 − retention / 100); relative reduction",
+      "gross_profit": "revenue − served × cost − serviceCost",
+      "contribution": "gross profit − variableCost − revenue × feePercent / 100",
+      "contribution_margin_percent": "100 × contribution / revenue",
+      "expected_12_month_value": "contribution × sum((1 − churn / 100)^t, t = 0..11) − cac",
+      "contribution_ltv": "contribution / (churn / 100) − cac; null at zero churn or a nonfinite perpetual estimate"
+    },
+    "limits": "Fixed allowances are independent assumptions, not verified entitlements. Requested demand is held constant. Loyalty is a separate variant, not stacked with settlement. No voluntary contributions, credit losses, partnership returns, corporate overhead, R&D, taxes, discount rate, causally measured retention or cohort variation. Gross profit, contribution and LTV are not net income.",
+    "presentation": "Fictional comparison, opened deliberately. Internal gp means balance after modeled delivery costs, not verified gross profit. Partial contribution excludes research and company overhead."
+  },
+  "separate_scenarios": {
+    "credit_loss": "exposure × (pd / 100) × (lgd / 100); matching assumed time horizon, no underwriting",
+    "partnership_net_proceeds": "investment × ((success / 100) × multiple − 1); failure returns zero; timing, fees and dilution excluded",
+    "founder_runway": "60000 cash / (30000 monthly cash expense − 25000 monthly cash collections) = 12 months; MRR alone does not establish cash collections",
+    "equity_fraction": "investment / (pre-money valuation + investment); excludes pools, convertibles and other terms"
+  },
+  "implementation": "/lib/model.mjs in /source-code.zip",
+  "provenance": "/archive/inventory.json",
+  "limitations": "All results are sensitivity illustrations, not proof of business viability, creditworthiness, investment merit or official features.",
+  "foundation_donation": {
+    "status": "author_clarified_destination_with_proposed_channel",
+    "recipient": "OpenAI Foundation",
+    "purpose": "AI that benefits humanity",
+    "note": "/archive/charitable-path.md",
+    "default_amount": 0,
+    "affects_service_bill": false,
+    "included_in_provider_revenue": false,
+    "affects_earned_privileges": false,
+    "channel_status": "No donation channel is verified and no payment is collected",
+    "tax_status": "No deduction or tax saving promised; recipient and donor eligibility require verification"
+  },
+  "provider": {
+    "status": "unknown_costs_with_optional_user_reviewed_scenarios",
+    "defaults": {
+      "servingCost": 0,
+      "servingKnown": 0,
+      "developmentCost": 0,
+      "developmentKnown": 0,
+      "operationsCost": 0,
+      "operationsKnown": 0,
+      "paymentFee": 0,
+      "paymentKnown": 0,
+      "costsReviewed": 0,
+      "costBasis": 0,
+      "monthlyBenefit": 5,
+      "leavingRate": 5,
+      "retentionGain": 0,
+      "customerAcquisition": 0
+    },
+    "receipt": "Revenue = bill(M).adjusted; donations excluded; receipt and provider view share M",
+    "cost_inputs": [
+      {
+        "key": "servingCost",
+        "legacy_flag": "servingKnown",
+        "label": "Serving & infrastructure",
+        "min": 0,
+        "max": 1000000,
+        "decimals": 2,
+        "unit": "USD / month"
+      },
+      {
+        "key": "developmentCost",
+        "legacy_flag": "developmentKnown",
+        "label": "Research & model development",
+        "min": 0,
+        "max": 1000000,
+        "decimals": 2,
+        "unit": "USD / month"
+      },
+      {
+        "key": "operationsCost",
+        "legacy_flag": "operationsKnown",
+        "label": "Company operations",
+        "min": 0,
+        "max": 1000000,
+        "decimals": 2,
+        "unit": "USD / month"
+      },
+      {
+        "key": "paymentFee",
+        "legacy_flag": "paymentKnown",
+        "label": "Payment processing",
+        "min": 0,
+        "max": 20,
+        "unit": "% of service bill"
+      }
+    ],
+    "cost_state": "Raw draft strings are validated into empty/invalid/valid states with the same contract in UI, engine and link parser. Valid zero is explicit zero; empty and invalid never become supplied zero. Numeric slots and legacy Known flags are derived from drafts. All four must be valid and costsReviewed=1 with costBasis matching M before a balance. Editing costs invalidates review; changing M makes it stale. Clearing costs preserves receipt and unrelated assumptions.",
+    "rounding": "Keep percentage precision until final USD charge; exact decimal multiplication and half-away-from-zero cent rounding. Serving/development/operations allocations accept at most two decimals. The 0–20% fee range is a calculator bound, not a claim about processors.",
+    "formulas": {
+      "monthly_balance": "settled bill - servingCost - developmentCost - operationsCost - roundToCents(settled bill * paymentFee / 100)",
+      "expected_12_month_balance": "monthly balance * sum((1 - leavingRate / 100)^t, t = 0..11) - additional customerAcquisition",
+      "loyalty": "Discount min(monthlyBenefit, settled bill); recalculate payment fees; departures = leavingRate * (1 - retentionGain / 100); other allocations remain fixed per retained customer"
+    },
+    "limits": "No OpenAI cost estimate or margin inference. User allocations must count each expense once. Optional worksheet is before financing, taxes and omitted expenses. Foundation donations have a separate charitable destination and are excluded. It is not company profit, cash flow, break-even or contribution-margin accounting. Fixed/shared expenses need not vanish when a customer leaves. Negative reviewed results are visible. Original source corpus is unchanged.",
+    "human": "/archive/provider-economics.html",
+    "markdown": "/archive/provider-economics.md",
+    "json": "/archive/provider-economics.json"
+  }
+}

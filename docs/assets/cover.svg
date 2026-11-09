@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">Intelligence on Tap</title>
+<desc id="desc">An independent proposal by Andrew Fai. Access, discovery, reciprocity. Customer Lifetime Value becomes Relationship Lifetime Value.</desc>
+<rect width="1280" height="640" fill="#f7faff"/>
+<path d="M0 528H1280" stroke="#dce6f5"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="64" y="54" width="10" height="24" rx="5" fill="#155eef"/>
+<text x="90" y="74" font-size="20" font-weight="600" letter-spacing="1.2" fill="#344054">ANDREW FAI / INDEPENDENT PROPOSAL</text>
+<text x="60" y="213" font-size="94" font-weight="700" letter-spacing="-4.5" fill="#101828">Intelligence</text>
+<text x="60" y="316" font-size="94" font-weight="700" letter-spacing="-4.5" fill="#155eef">on Tap</text>
+<text x="65" y="384" font-size="29" fill="#344054">Access that grows with you.</text>
+<text x="65" y="450" font-size="18" letter-spacing="2" font-weight="600" fill="#155eef">ACCESS / DISCOVERY / RECIPROCITY</text>
+<rect x="862" y="134" width="326" height="326" rx="52" fill="#155eef"/>
+<g fill="none" stroke="#c7dbff" stroke-width="2.5">
+<circle cx="1025" cy="297" r="106"/>
+
+</g>
+<circle cx="934" cy="242" r="12" fill="#fff"/>
+<circle cx="1117" cy="243" r="12" fill="#fff"/>
+<circle cx="1025" cy="404" r="12" fill="#fff"/>
+<text x="1025" y="300" text-anchor="middle" font-size="26" font-weight="600" fill="#fff">Grow.</text>
+<text x="1025" y="334" text-anchor="middle" font-size="26" font-weight="600" fill="#fff">Together.</text>
+<text x="64" y="585" font-size="25" fill="#475467">Customer Lifetime Value</text>
+<path d="M376 577h46m-10-8 10 8-10 8" stroke="#155eef" stroke-width="2.5" fill="none"/>
+<text x="442" y="585" font-size="25" font-weight="600" fill="#101828">Relationship Lifetime Value;</text>
+<text x="1190" y="584" text-anchor="end" font-size="17" fill="#667085">OIP / 01</text>
+</g>
+</svg>

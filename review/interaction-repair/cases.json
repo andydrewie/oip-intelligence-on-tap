@@ -1,0 +1,883 @@
+{
+  "date": "2026-11-08",
+  "summary": [
+    "The reported meter problem was an interaction-design failure: the slider changed requested usage, but a hidden 200 spending ceiling admitted only 180 of metered usage, and the explanation was below the controls on a phone. A correct total did not make the interaction clear.",
+    "The revised build shows subtotal, discount, adjusted bill and paused usage beside the meter. A deliberate action raises the ceiling. Churn now changes a visible 12-month result. Narrow comparisons use cards, shared scenarios survive refresh, and resets clear old parameters.",
+    "The original 106.40 → 100 → optional contribution sequence remains. Personal scaling, the possible charitable path, Uber origin note and hidden utility analogy are later additions, clearly separated from the source corpus.",
+    "The desktop and tested narrow-layout concept is suitable for review. Physical iPhone touch and assistive technology remain unverified; this report does not claim universal device readiness."
+  ],
+  "method": [
+    "35 automated Node tests passed, including 26 added interaction-model tests and 9 retained regressions. Existing regressions overlap some new examples deliberately. The source corpus checksum and all 572 paragraphs remained intact. TypeScript was checked with no errors.",
+    "56 browser procedures were observed through cloud Chrome, using native mouse movement, keyboard input, actual form controls, direct navigation and DOM/accessibility observations. The 390px/320px checks used same-origin iframes with real responsive layouts; they were not physical Safari emulation.",
+    "Early browser observations were reconstructed from tool output after a browser REPL reset. The report is a human-readable evidence log, not a saved automated browser trace. Initial layout failures and their rechecks are recorded in U46/U48 rather than omitted.",
+    "U51 is partly verified because JSON download capture timed out. The source endpoint itself was readable. No claim is made that every link on the internet, every device, or every permission state was tested.",
+    "This report supersedes the earlier readiness assessment for interaction quality. It preserves historical review files instead of rewriting the earlier record."
+  ],
+  "changes": [
+    "Immediate billing feedback, clear admitted/paused amounts, visible spending ceiling and explicit recovery action.",
+    "44px slider targets, native keyboard behavior, blue focus, bounds feedback and synchronized numeric fields.",
+    "Visible 12-month economics result so retention controls have an observable effect.",
+    "Atomic presets, clean reset URLs and reproducible shared numeric scenarios.",
+    "Readable phone-width billing totals and five comparison cards.",
+    "Separate continuous personal-scaling experiment above 500, including one-account versus split-account comparison.",
+    "A separate hypothetical Foundation gift path with no promised deductibility or unverified donation channel.",
+    "Uber founding-inspiration attribution and an unobtrusive utility/grades Easter egg behind the blue companion."
+  ],
+  "cases": [
+    {
+      "id": "M01",
+      "kind": "automated",
+      "title": "Canonical bill: discount precedes every voluntary amount",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Canonical bill: discount precedes every voluntary amount. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M02",
+      "kind": "automated",
+      "title": "Reported 347.54 input admits 180 and pauses 167.54",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Reported 347.54 input admits 180 and pauses 167.54. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M03",
+      "kind": "automated",
+      "title": "Raising ceiling removes pause; round-down still explains a flat bill",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Raising ceiling removes pause; round-down still explains a flat bill. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M04",
+      "kind": "automated",
+      "title": "Base-only ceiling pauses all extra use",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Base-only ceiling pauses all extra use. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M05",
+      "kind": "automated",
+      "title": "Ceilings reconcile at cent boundaries",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Ceilings reconcile at cent boundaries. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M06",
+      "kind": "automated",
+      "title": "Contribution remains outside spending ceiling",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Contribution remains outside spending ceiling. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M07",
+      "kind": "automated",
+      "title": "Turning rounding off charges admitted use exactly",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Turning rounding off charges admitted use exactly. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M08",
+      "kind": "automated",
+      "title": "Zero and 10 percent discount caps have explicit effects",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Zero and 10 percent discount caps have explicit effects. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M09",
+      "kind": "automated",
+      "title": "Source tier discontinuities remain visible, not silently smoothed",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Source tier discontinuities remain visible, not silently smoothed. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M10",
+      "kind": "automated",
+      "title": "Original unrestricted rule above 500 is explicitly a cap",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Original unrestricted rule above 500 is explicitly a cap. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M11",
+      "kind": "automated",
+      "title": "Invalid model monetary inputs cannot create NaN or negative bills",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Invalid model monetary inputs cannot create NaN or negative bills. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M12",
+      "kind": "automated",
+      "title": "Personal scaling examples: 550, 560, 1000, 2000 subtotals",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Personal scaling examples: 550, 560, 1000, 2000 subtotals. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M13",
+      "kind": "automated",
+      "title": "Continuous scaling does not reset discounts at its breakpoints",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Continuous scaling does not reset discounts at its breakpoints. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M14",
+      "kind": "automated",
+      "title": "Scaling remains nondecreasing over 0 to 10000 metered dollars",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Scaling remains nondecreasing over 0 to 10000 metered dollars. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M15",
+      "kind": "automated",
+      "title": "One account does not cost more than equal splits in this model",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "One account does not cost more than equal splits in this model. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M16",
+      "kind": "automated",
+      "title": "Unequal splits also do not beat combining billable usage",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Unequal splits also do not beat combining billable usage. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M17",
+      "kind": "automated",
+      "title": "Large personal use continues to add cost, no top price cap",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Large personal use continues to add cost, no top price cap. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M18",
+      "kind": "automated",
+      "title": "Source checkout and new scaling curve are intentionally distinct",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Source checkout and new scaling curve are intentionally distinct. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M19",
+      "kind": "automated",
+      "title": "Economics baseline distinguishes revenue, gross profit, contribution",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Economics baseline distinguishes revenue, gross profit, contribution. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M20",
+      "kind": "automated",
+      "title": "Fixed-plan fulfillment responds to allowance, not imaginary overage",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Fixed-plan fulfillment responds to allowance, not imaginary overage. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M21",
+      "kind": "automated",
+      "title": "Retail rate and inference cost affect different parts of economics",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Retail rate and inference cost affect different parts of economics. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M22",
+      "kind": "automated",
+      "title": "Churn changes horizon value without changing monthly revenue",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Churn changes horizon value without changing monthly revenue. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M23",
+      "kind": "automated",
+      "title": "Loyalty rate and retention benefits remain separate hypotheses",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Loyalty rate and retention benefits remain separate hypotheses. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M24",
+      "kind": "automated",
+      "title": "Expense classifications and acquisition cost do not contaminate revenue",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Expense classifications and acquisition cost do not contaminate revenue. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M25",
+      "kind": "automated",
+      "title": "Credit loss corners remain separate from subscription economics",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Credit loss corners remain separate from subscription economics. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "M26",
+      "kind": "automated",
+      "title": "Sharing preserves scale scenario and rejects fractional account counts",
+      "action": "Run the named test in tests/interaction.test.mjs.",
+      "expected": "Sharing preserves scale scenario and rejects fractional account counts. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R01",
+      "kind": "automated",
+      "title": "reference receipt and voluntary contribution reconcile",
+      "action": "Run the named test in tests/model.test.mjs.",
+      "expected": "reference receipt and voluntary contribution reconcile. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R02",
+      "kind": "automated",
+      "title": "discount thresholds, caps and high consumption remain explicit",
+      "action": "Run the named test in tests/model.test.mjs.",
+      "expected": "discount thresholds, caps and high consumption remain explicit. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R03",
+      "kind": "automated",
+      "title": "five models reconcile service and contribution economics",
+      "action": "Run the named test in tests/model.test.mjs.",
+      "expected": "five models reconcile service and contribution economics. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R04",
+      "kind": "automated",
+      "title": "zero churn has a finite horizon but no finite perpetual LTV",
+      "action": "Run the named test in tests/model.test.mjs.",
+      "expected": "zero churn has a finite horizon but no finite perpetual LTV. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R05",
+      "kind": "automated",
+      "title": "high cost losses are preserved; no negative value clamping",
+      "action": "Run the named test in tests/model.test.mjs.",
+      "expected": "high cost losses are preserved; no negative value clamping. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R06",
+      "kind": "automated",
+      "title": "receipt amounts reconcile at cent precision and reject non-finite inputs",
+      "action": "Run the named test in tests/review.test.mjs.",
+      "expected": "receipt amounts reconcile at cent precision and reject non-finite inputs. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R07",
+      "kind": "automated",
+      "title": "near-zero churn converges to the zero-churn finite horizon",
+      "action": "Run the named test in tests/review.test.mjs.",
+      "expected": "near-zero churn converges to the zero-churn finite horizon. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R08",
+      "kind": "automated",
+      "title": "shared scenarios round-trip every allowed input without leaking extra state",
+      "action": "Run the named test in tests/review.test.mjs.",
+      "expected": "shared scenarios round-trip every allowed input without leaking extra state. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "R09",
+      "kind": "automated",
+      "title": "bounded source passages reconstruct every source paragraph without omissions or edits",
+      "action": "Run the named test in tests/review.test.mjs.",
+      "expected": "bounded source passages reconstruct every source paragraph without omissions or edits. Exact inputs and assertions are included in the downloadable source.",
+      "actual": "Passed in the recorded 35-test Node run; 0 failures.",
+      "status": "passed"
+    },
+    {
+      "id": "U01",
+      "kind": "browser",
+      "title": "Drag the billing slider",
+      "action": "Drag the native range with a mouse, then read its paired field and result.",
+      "expected": "The field, range and nearby bill update together.",
+      "actual": "A drag moved both inputs to 120.22; subtotal 140.22 and adjusted bill 100.",
+      "status": "passed"
+    },
+    {
+      "id": "U02",
+      "kind": "browser",
+      "title": "Reproduce Andrew’s phone example",
+      "action": "Enter requested usage 347.54 with the 200 ceiling.",
+      "expected": "180 admitted, 167.54 paused; the explanation must be beside the slider.",
+      "actual": "Nearby result showed subtotal 200, admitted 180 and paused 167.54.",
+      "status": "passed"
+    },
+    {
+      "id": "U03",
+      "kind": "browser",
+      "title": "Recover from the ceiling",
+      "action": "Use “Allow all requested use” after U02.",
+      "expected": "The explicit action raises the ceiling to 367.54 and removes the pause.",
+      "actual": "No use paused; subtotal 367.54, discount 167.54, adjusted 200. Tier behavior remained explained.",
+      "status": "passed"
+    },
+    {
+      "id": "U04",
+      "kind": "browser",
+      "title": "Turn the discount off",
+      "action": "After U03, uncheck round-down.",
+      "expected": "The bill equals the admitted subtotal.",
+      "actual": "Final bill changed to 367.54.",
+      "status": "passed"
+    },
+    {
+      "id": "U05",
+      "kind": "browser",
+      "title": "Restore the canonical bill",
+      "action": "Click Original $100 bill after changing controls.",
+      "expected": "Restore defaults and a clean billing URL.",
+      "actual": "Final 100; URL ended in #billing without stale scenario values.",
+      "status": "passed"
+    },
+    {
+      "id": "U06",
+      "kind": "browser",
+      "title": "Every contribution preset",
+      "action": "Choose 1, 5, 10 and 0 on the canonical bill.",
+      "expected": "Contribution changes the final bill after discount.",
+      "actual": "Final amounts 101, 105, 110 and 100.",
+      "status": "passed"
+    },
+    {
+      "id": "U07",
+      "kind": "browser",
+      "title": "Custom cents contribution",
+      "action": "Select Custom and enter 25.25.",
+      "expected": "Keep cents and add only to the final amount.",
+      "actual": "Final 125.25; adjusted usage bill remained 100.",
+      "status": "passed"
+    },
+    {
+      "id": "U08",
+      "kind": "browser",
+      "title": "The complete example preset",
+      "action": "Change custom contribution, then choose With $5 contribution.",
+      "expected": "Restore the entire canonical scenario with a 5 contribution.",
+      "actual": "Final 105; the custom field closed and defaults returned.",
+      "status": "passed"
+    },
+    {
+      "id": "U09",
+      "kind": "browser",
+      "title": "Native slider keyboard behavior",
+      "action": "With ceiling 1000 and rounding off, use End, Home, ArrowRight and ArrowLeft.",
+      "expected": "Reach maximum, minimum and one-cent increments.",
+      "actual": "Usage 600 / 0 / 0.01 / 0; final 620 / 20 / 20.01 / 20.",
+      "status": "passed"
+    },
+    {
+      "id": "U10",
+      "kind": "browser",
+      "title": "Click the slider track",
+      "action": "Click the middle of the billing track.",
+      "expected": "Clicking the track changes the actual input and result.",
+      "actual": "Input changed to 300; subtotal 320.",
+      "status": "passed"
+    },
+    {
+      "id": "U11",
+      "kind": "browser",
+      "title": "Invalid input gives feedback",
+      "action": "Type 700 into the 0–600 request field without leaving it.",
+      "expected": "Show bounds and invalid state; retain last valid calculation while editing.",
+      "actual": "aria-invalid=true and 0–600 hint appeared; preceding valid subtotal 320 was retained.",
+      "status": "passed"
+    },
+    {
+      "id": "U12",
+      "kind": "browser",
+      "title": "Commit invalid or empty drafts",
+      "action": "Press Enter on 700, enter -1 and Tab, then clear and Tab.",
+      "expected": "Clamp to supported bounds; empty draft must not produce NaN.",
+      "actual": "700 became 600; -1 became 0; empty restored 0; final 20.",
+      "status": "passed"
+    },
+    {
+      "id": "U13",
+      "kind": "browser",
+      "title": "The base is the minimum ceiling",
+      "action": "Enter ceiling 5 and commit with Enter.",
+      "expected": "Clamp to 20 and pause all additional usage.",
+      "actual": "Ceiling 20; all 86.40 of extra request paused; final 20.",
+      "status": "passed"
+    },
+    {
+      "id": "U14",
+      "kind": "browser",
+      "title": "Discount cap affects the bill",
+      "action": "Set usage 130, ceiling 200, cap 10%; then cap 0%.",
+      "expected": "Subtotal 150 gets 15 discount at 10%, none at 0%.",
+      "actual": "Adjusted 135, then 150.",
+      "status": "passed"
+    },
+    {
+      "id": "U15",
+      "kind": "browser",
+      "title": "Edited values survive reload",
+      "action": "Set usage 117.25 and reload.",
+      "expected": "The safe scenario URL restores the entered assumptions.",
+      "actual": "Usage retained; subtotal 137.25.",
+      "status": "passed"
+    },
+    {
+      "id": "U16",
+      "kind": "browser",
+      "title": "Reset survives reload",
+      "action": "Reset to Original $100 bill, then reload.",
+      "expected": "Old encoded values must not return.",
+      "actual": "Subtotal 106.40 and final 100; clean #billing URL.",
+      "status": "passed"
+    },
+    {
+      "id": "U17",
+      "kind": "browser",
+      "title": "Personal scaling presets",
+      "action": "Open Beyond $500 and choose 550, 560, 1000 and 2000 subtotal presets.",
+      "expected": "The continuous experiment grows beyond 500 without replacing the source rule.",
+      "actual": "One-account prices 500, 508, 860 and 1660; original-rule comparison remained visible.",
+      "status": "passed"
+    },
+    {
+      "id": "U18",
+      "kind": "browser",
+      "title": "One account versus ten",
+      "action": "Set personal metered use 1980 and compare 10 accounts, then 1.",
+      "expected": "Same total billable usage; each account has its own 20 base.",
+      "actual": "10-account comparison 2062 versus one 1660; setting 1 made both 1660.",
+      "status": "passed"
+    },
+    {
+      "id": "U19",
+      "kind": "browser",
+      "title": "High personal usage",
+      "action": "Enter 1000000 in the extended personal meter.",
+      "expected": "A finite value continues to scale; no hidden 500 price cap.",
+      "actual": "One-account amount 800076.",
+      "status": "passed"
+    },
+    {
+      "id": "U20",
+      "kind": "browser",
+      "title": "Copy a usable scenario",
+      "action": "Copy a changed billing scenario and inspect the feedback, exposed link and browser clipboard.",
+      "expected": "Copy the actual safe numeric URL and provide feedback.",
+      "actual": "“Link copied” and Open this link appeared. Clipboard matched #billing with use=347.54, budget=200 and the remaining allowed values.",
+      "status": "passed"
+    },
+    {
+      "id": "U21",
+      "kind": "browser",
+      "title": "Reopen a scaling scenario",
+      "action": "Open the generated shared link with scaling expanded and usage 1000000.",
+      "expected": "Restore values and the expanded experiment.",
+      "actual": "Scaling section remained open with 1000000 metered input.",
+      "status": "passed"
+    },
+    {
+      "id": "U22",
+      "kind": "browser",
+      "title": "Economics starts coherent",
+      "action": "Open The economics at defaults.",
+      "expected": "Visible monthly and horizon results match the formulas.",
+      "actual": "Revenue 106.40; contribution 64.47; 12-month value 542.64.",
+      "status": "passed"
+    },
+    {
+      "id": "U23",
+      "kind": "browser",
+      "title": "Churn has a visible effect",
+      "action": "Change monthly churn from 5% to 10%.",
+      "expected": "Horizon value changes while this month’s bill stays fixed.",
+      "actual": "12-month value fell to 412.60 beside the controls; revenue stayed 106.40.",
+      "status": "passed"
+    },
+    {
+      "id": "U24",
+      "kind": "browser",
+      "title": "Demand and fulfillment differ",
+      "action": "Set monthly demand 200.",
+      "expected": "Fixed plans serve only their assumed allowance; metered variant serves the full request.",
+      "actual": "Fixed fulfillment 50%; hypothetical 50 plan 20%; metered revenue 210, contribution 128.70.",
+      "status": "passed"
+    },
+    {
+      "id": "U25",
+      "kind": "browser",
+      "title": "Retail price changes revenue",
+      "action": "Reset economics and set metered retail rate 2.",
+      "expected": "Revenue responds to the chosen rate.",
+      "actual": "Base + metered revenue became 192.80.",
+      "status": "passed"
+    },
+    {
+      "id": "U26",
+      "kind": "browser",
+      "title": "Cost is not revenue",
+      "action": "Reset economics and set inference cost 1.",
+      "expected": "Revenue stays the same while contribution falls.",
+      "actual": "Revenue 106.40; contribution 1.81.",
+      "status": "passed"
+    },
+    {
+      "id": "U27",
+      "kind": "browser",
+      "title": "Show losses honestly",
+      "action": "Set inference cost 5.",
+      "expected": "Display negative contribution without clamping it away.",
+      "actual": "Contribution displayed -383.79.",
+      "status": "passed"
+    },
+    {
+      "id": "U28",
+      "kind": "browser",
+      "title": "Plan and allowance controls",
+      "action": "Set fixed price 500, fixed allowance 20; set hypothetical-50 allowance and base allowance to 96.4.",
+      "expected": "Each setting affects its respective model, not an invented official entitlement.",
+      "actual": "Fixed revenue 500 and 20.7% fulfillment; hypothetical-50 fulfillment 100%; base + metered revenue 20.",
+      "status": "passed"
+    },
+    {
+      "id": "U29",
+      "kind": "browser",
+      "title": "Loyalty price and retention",
+      "action": "At defaults, set loyalty discount 20% and relative churn reduction 50%.",
+      "expected": "Keep the two effects distinct.",
+      "actual": "Loyalty revenue 89.12, churn 2.5%, 12-month value 449.97.",
+      "status": "passed"
+    },
+    {
+      "id": "U30",
+      "kind": "browser",
+      "title": "Economic round-down cap",
+      "action": "Set the rounding cap to 0%.",
+      "expected": "Rounded variant returns to the undiscounted bill.",
+      "actual": "Revenue in that variant became 106.40.",
+      "status": "passed"
+    },
+    {
+      "id": "U31",
+      "kind": "browser",
+      "title": "Expense and acquisition controls",
+      "action": "Change delivery overhead to 13, other variable cost to 12, payment fee to 4%, then acquisition cost 50→60.",
+      "expected": "Operating deductions change contribution; acquisition cost changes horizon value only.",
+      "actual": "Sequential contributions 54.47 / 44.47 / 43.40. Acquisition increase reduced the displayed horizon value by 10.",
+      "status": "passed"
+    },
+    {
+      "id": "U32",
+      "kind": "browser",
+      "title": "Separate credit exposure",
+      "action": "Set exposure 10000, default probability 10%, loss given default 50%.",
+      "expected": "Expected loss = exposure × probability × loss severity.",
+      "actual": "Separate credit loss displayed 500.",
+      "status": "passed"
+    },
+    {
+      "id": "U33",
+      "kind": "browser",
+      "title": "Separate investment illustration",
+      "action": "Set investment 200000, success probability 25%, return multiple 5.",
+      "expected": "Expected net proceeds equal 200000 × (0.25 × 5 − 1).",
+      "actual": "Displayed 50000, separate from subscription results.",
+      "status": "passed"
+    },
+    {
+      "id": "U34",
+      "kind": "browser",
+      "title": "Reset all economic assumptions",
+      "action": "After changing advanced and separate scenarios, click Reset all assumptions.",
+      "expected": "Reset every scenario, not only the four main sliders.",
+      "actual": "Credit loss 150, partnership net 0, annual value 542.64; clean #economics URL.",
+      "status": "passed"
+    },
+    {
+      "id": "U35",
+      "kind": "browser",
+      "title": "All economics sliders are native controls",
+      "action": "At defaults between changes, use Home on demand, rate, cost and churn ranges.",
+      "expected": "Each responds to keyboard input with a relevant nearby effect.",
+      "actual": "Demand 0→revenue20; rate0→revenue20; cost0→contribution98.21; churn0→annual723.62. Range hit areas measured 44px high.",
+      "status": "passed"
+    },
+    {
+      "id": "U36",
+      "kind": "browser",
+      "title": "Share economic assumptions",
+      "action": "Change rate to 2 and churn to 12; copy and reopen/reload scenario.",
+      "expected": "Encode and restore all allowed numeric assumptions.",
+      "actual": "Rate 2 and churn 12 retained; URL contained the full numeric scenario.",
+      "status": "passed"
+    },
+    {
+      "id": "U37",
+      "kind": "browser",
+      "title": "Relationship stage navigation",
+      "action": "Open each of the four stages and use Home/End.",
+      "expected": "Update selected stage and content; keyboard focus follows.",
+      "actual": "All four contents appeared; End selected/focused the final stage.",
+      "status": "passed"
+    },
+    {
+      "id": "U38",
+      "kind": "browser",
+      "title": "Permission preview is deliberate",
+      "action": "Observe empty selection, select all four evidence categories and preview; then deselect.",
+      "expected": "Empty preview disabled; selection changes invalidate an old preview.",
+      "actual": "Button was disabled empty, four categories appeared after preview, and changed selections invalidated the preview.",
+      "status": "passed"
+    },
+    {
+      "id": "U39",
+      "kind": "browser",
+      "title": "Equity calculation",
+      "action": "Set investment 2000000 and pre-money valuation 8000000.",
+      "expected": "Post-money share = 2 / (8 + 2).",
+      "actual": "Displayed 20%.",
+      "status": "passed"
+    },
+    {
+      "id": "U40",
+      "kind": "browser",
+      "title": "Tab and scaling shortcuts",
+      "action": "Use Home/End in the main tabs; open What happens beyond $500?.",
+      "expected": "Keyboard selects the correct panel; shortcut opens the experiment.",
+      "actual": "Research selected/focused with End; scaling opened. Rechecked tabs after anchor-navigation refinement in U55.",
+      "status": "passed"
+    },
+    {
+      "id": "U41",
+      "kind": "browser",
+      "title": "Research search and empty state",
+      "action": "Search uppercase LOYALTY, then a nonmatching phrase, then clear.",
+      "expected": "Case-insensitive search, useful no-result state and reversible filtering.",
+      "actual": "6 chapters matched; no-result message appeared; clear restored all 10.",
+      "status": "passed"
+    },
+    {
+      "id": "U42",
+      "kind": "browser",
+      "title": "Direct chapter navigation",
+      "action": "Open the loyalty chapter’s direct link after filtering research.",
+      "expected": "Reach the chapter without a stale search hiding it.",
+      "actual": "Search cleared, loyalty expanded, URL #chapter-loyalty.",
+      "status": "passed"
+    },
+    {
+      "id": "U43",
+      "kind": "browser",
+      "title": "Timeline evidence targets",
+      "action": "Inspect the six turning-point links.",
+      "expected": "Each points to a real, specific original paragraph.",
+      "actual": "Targets p-575, p-1327, p-10404, p-13252, p-16735 and p-22631 matched archived anchors.",
+      "status": "passed"
+    },
+    {
+      "id": "U44",
+      "kind": "browser",
+      "title": "Unsupported scenario links",
+      "action": "Open economics with version 999 and churn 999.",
+      "expected": "Fall back safely and explain the unsupported version.",
+      "actual": "Defaults rendered, revenue 106.40, visible version warning.",
+      "status": "passed"
+    },
+    {
+      "id": "U45",
+      "kind": "browser",
+      "title": "Back and tab continuity",
+      "action": "Set churn 12, visit Relationship and use Back; switch away/back and reload.",
+      "expected": "Keep useful state across navigation.",
+      "actual": "Churn stayed 12 after Back and after returning/reloading.",
+      "status": "passed"
+    },
+    {
+      "id": "U46",
+      "kind": "browser",
+      "title": "Narrow billing amounts",
+      "action": "Inspect billing at 390px and 320px layout widths, including the ceiling example.",
+      "expected": "No page overflow and no line break inside a monetary amount.",
+      "actual": "Initial 320px currency wrapping failed. Fixed to two-column summary with a full-width adjusted amount. Recheck: content/scroll widths 375/375 and 305/305; amounts stayed whole.",
+      "status": "passed"
+    },
+    {
+      "id": "U47",
+      "kind": "browser",
+      "title": "Drag in the phone-width layout",
+      "action": "Use a native mouse drag within the 390px iframe billing slider.",
+      "expected": "Input and nearby result remain synchronized at phone width.",
+      "actual": "Field and range became 121.59, subtotal141.59, discount41.59, adjusted100. This was mouse input, not physical touch.",
+      "status": "passed"
+    },
+    {
+      "id": "U48",
+      "kind": "browser",
+      "title": "Narrow economics comparison",
+      "action": "Inspect economics at both layout widths, with churn10.",
+      "expected": "Read every label and amount without a clipped column.",
+      "actual": "Initial 320px table heading clipped. Replaced the small-screen comparison with five cards. Recheck: no page overflow; annual412.60 and metered revenue106.40/contribution64.47 readable.",
+      "status": "passed"
+    },
+    {
+      "id": "U49",
+      "kind": "browser",
+      "title": "Narrow relationship and research",
+      "action": "At 320px, select the last relationship stage and search research for loyalty.",
+      "expected": "Controls and content remain usable within the page width.",
+      "actual": "Final stage opened; 6 results shown; content and scroll widths both305.",
+      "status": "passed"
+    },
+    {
+      "id": "U50",
+      "kind": "browser",
+      "title": "Typography and keyboard focus",
+      "action": "Inspect computed body font and focus a range by keyboard.",
+      "expected": "Use the requested typeface, blue focus and a usable control target.",
+      "actual": "OpenAI Sans; body ink rgb(32,38,50) on rgb(250,251,254); 3px blue focus outline and 44px range height. Calculated core contrast: ink/paper14.66:1; muted/paper5.12:1; blue/white6.25:1; blue/accent5.42:1. This is not a full accessibility audit.",
+      "status": "passed"
+    },
+    {
+      "id": "U51",
+      "kind": "browser",
+      "title": "Source access and downloads",
+      "action": "Open source anchors p10404/p10452, retrieve the research Markdown and source JSON, and download the packaged source ZIP.",
+      "expected": "Evidence remains accessible and downloadable.",
+      "actual": "Source correction paragraphs were readable. Research Markdown downloaded (17989 bytes); source JSON rendered (131789 characters). Automated capture of the JSON download timed out despite one visible link; endpoint access succeeded. Source ZIP downloaded (239 files, 4834224 bytes), matched the local SHA-256 and passed ZIP integrity; it contained the new code/tests/review. The final package is regenerated after these report notes.",
+      "status": "partial"
+    },
+    {
+      "id": "U52",
+      "kind": "browser",
+      "title": "Origin and charitable-path disclosure",
+      "action": "Open billing assumptions and Could a separate gift be tax deductible?.",
+      "expected": "Attribute the Uber inspiration; keep commercial contribution and a future charitable gift distinct.",
+      "actual": "Uber/Uber One origin note present. Foundation path linked primary sources and explicitly stated that donation acceptance and eligibility were not verified.",
+      "status": "passed"
+    },
+    {
+      "id": "U53",
+      "kind": "browser",
+      "title": "Review runtime diagnostics",
+      "action": "Inspect browser error logs after the interaction pass.",
+      "expected": "Identify site-owned runtime failures without conflating browser instrumentation.",
+      "actual": "No site-owned runtime exception identified in the observed interactions. Development hydration warning referred to injected data-oai-browser-agent attributes on html; extension metadata errors were also present. Retained as environment warnings, not silenced in the site.",
+      "status": "passed"
+    },
+    {
+      "id": "U54",
+      "kind": "browser",
+      "title": "Easter egg keyboard loop",
+      "action": "Open the blue companion, use Escape, reopen with Enter, then use its close button.",
+      "expected": "Reveal the complete note; closing returns focus to its trigger.",
+      "actual": "Full utility/grades note appeared; Escape and close dismissed it; focus returned to “A small thought, on tap”.",
+      "status": "passed"
+    },
+    {
+      "id": "U55",
+      "kind": "browser",
+      "title": "Final anchor-based navigation",
+      "action": "Use the hero link, then economics; press End, Home and Space in the tabs.",
+      "expected": "Links retain native destinations and keyboard tab behavior.",
+      "actual": "Economics selected with baseline live output; End focused/selected research; Home and Space returned billing at #billing. Returning to an already encoded billing scenario was also checked after the final explicit scroll change: explore top settled at39.52px/40.06px in320px/390px layouts.",
+      "status": "passed"
+    },
+    {
+      "id": "U56",
+      "kind": "browser",
+      "title": "Easter egg at phone widths",
+      "action": "Open the note at 320px and 390px; click outside it.",
+      "expected": "Keep the note within the viewport and allow easy dismissal.",
+      "actual": "320px note rect left40/right265; 390px left40/right335. Both readable. Outside click set aria-expanded=false. Screenshot saved.",
+      "status": "passed"
+    },
+    {
+      "id": "D01",
+      "kind": "device",
+      "title": "Physical iPhone Safari gestures",
+      "action": "On an iPhone, drag every slider, scroll vertically beside it, type numbers and rotate.",
+      "expected": "Smooth touch interaction without accidental scrolling, zoom or browser-chrome obstruction.",
+      "actual": "Not run: no physical iPhone session was available. Chromium widths and mouse drags are not a substitute.",
+      "status": "not_run"
+    },
+    {
+      "id": "D02",
+      "kind": "device",
+      "title": "VoiceOver / screen-reader experience",
+      "action": "Use VoiceOver to operate tabs, amounts, live results and hidden note.",
+      "expected": "Useful announcements at a sensible cadence with correct labels and focus order.",
+      "actual": "Not run with an actual assistive-technology session. ARIA labels, focus and keyboard behavior were inspected.",
+      "status": "not_run"
+    },
+    {
+      "id": "D03",
+      "kind": "device",
+      "title": "Independent browser engines",
+      "action": "Repeat the canonical, capped, scaled and shared scenarios in Safari/WebKit and Firefox.",
+      "expected": "Equivalent calculations and input behavior across engines.",
+      "actual": "Not run: browser observations used cloud Chromium.",
+      "status": "not_run"
+    },
+    {
+      "id": "D04",
+      "kind": "device",
+      "title": "Clipboard denied path",
+      "action": "Deny clipboard access and use the manual fallback link/input.",
+      "expected": "Show a usable copy alternative and no false success state.",
+      "actual": "Not run with clipboard permission denied. Allowed clipboard copying was verified in U20.",
+      "status": "not_run"
+    }
+  ]
+}

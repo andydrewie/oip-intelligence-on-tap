@@ -1,0 +1,99 @@
+{
+  "id": "p-8287",
+  "first": 8287,
+  "last": 9497,
+  "paragraph_count": 16,
+  "markdown": "/archive/passages/p-8287.md",
+  "json": "/archive/passages/p-8287.json",
+  "html": "/archive/passages/p-8287.html",
+  "ordinal": 4,
+  "source": "Pasta Board",
+  "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+  "classification": "original_source_text",
+  "speaker_attribution": "Not inferred; the document does not consistently label speakers or exact times.",
+  "full_source": "/archive/source.html",
+  "previous": "/archive/passages/p-7922.md",
+  "next": "/archive/passages/p-9620.md",
+  "paragraphs": [
+    {
+      "id": "p-8287",
+      "text": "5. The problem I would investigate before anything else",
+      "source_url": "/archive/source.html#p-8287"
+    },
+    {
+      "id": "p-8343",
+      "text": "There’s a commercial paradox in our design.",
+      "source_url": "/archive/source.html#p-8343"
+    },
+    {
+      "id": "p-8387",
+      "text": "We originally proposed that $106.40 of consumption could be rounded down to $100. That’s a $6.40 discount.",
+      "source_url": "/archive/source.html#p-8387"
+    },
+    {
+      "id": "p-8494",
+      "text": "Then we added additional credit privileges for loyal subscribers.",
+      "source_url": "/archive/source.html#p-8494"
+    },
+    {
+      "id": "p-8560",
+      "text": "And now we’ve got potential usage rollover and compute rewards.",
+      "source_url": "/archive/source.html#p-8560"
+    },
+    {
+      "id": "p-8624",
+      "text": "We’re creating mechanisms that may encourage more spending, while simultaneously reducing the amount of revenue collected per unit of consumption.",
+      "source_url": "/archive/source.html#p-8624"
+    },
+    {
+      "id": "p-8771",
+      "text": "That could be good business if it increases retention, consumption, and lifetime gross profit enough to offset the discounts and costs. Or it could be economically destructive.",
+      "source_url": "/archive/source.html#p-8771"
+    },
+    {
+      "id": "p-8948",
+      "text": "I’d want to investigate that before launching anything.",
+      "source_url": "/archive/source.html#p-8948"
+    },
+    {
+      "id": "p-9004",
+      "text": "In particular, the tests should distinguish:",
+      "source_url": "/archive/source.html#p-9004"
+    },
+    {
+      "id": "p-9049",
+      "text": "Revenue expansion from new consumption.",
+      "source_url": "/archive/source.html#p-9049"
+    },
+    {
+      "id": "p-9089",
+      "text": "Revenue lost from customers downgrading or receiving discounts.",
+      "source_url": "/archive/source.html#p-9089"
+    },
+    {
+      "id": "p-9153",
+      "text": "Additional infrastructure and inference costs.",
+      "source_url": "/archive/source.html#p-9153"
+    },
+    {
+      "id": "p-9200",
+      "text": "Payment defaults and the cost of administering credit.",
+      "source_url": "/archive/source.html#p-9200"
+    },
+    {
+      "id": "p-9255",
+      "text": "Retention improvements attributable to loyalty benefits.",
+      "source_url": "/archive/source.html#p-9255"
+    },
+    {
+      "id": "p-9312",
+      "text": "And I’d run the same comparisons against a conventional $50 tier. Without actual consumption distributions and serving costs, we don’t know which architecture is economically superior.",
+      "source_url": "/archive/source.html#p-9312"
+    },
+    {
+      "id": "p-9497",
+      "text": "The objective isn’t merely to collect more revenue. It’s to create a durable, mutually beneficial commercial relationship.",
+      "source_url": "/archive/source.html#p-9497"
+    }
+  ]
+}

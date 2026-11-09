@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-08",
+  "summary": [
+    "Current bounded correction: remove unsupported earnings impressions, explain complete cost coverage and offer clearly hypothetical margin budgets. The cases group 38 automated tests and observed browser procedures; they are not all separate automated tests.",
+    "Earlier reviews are historical evidence in the source package. They do not validate the corrected model merely because arithmetic once passed."
+  ],
+  "method": [
+    "Automated: Node calculation/source regression tests and TypeScript checking. Browser: native cloud-Chrome form, keyboard, navigation and share actions.",
+    "Responsive review at 320, 390, 440 and 1280px widths with default or 200% root text. The 15px scrollbar is reflected in reported content widths. No physical Safari, screen-reader or native zoom verification is claimed.",
+    "Public accounting context rechecked against the cited SEC filing, Note 8 p.F-40 and compute/infrastructure discussion p.147. Those figures never populate OpenAI cost inputs."
+  ],
+  "changes": [
+    "Actual provider costs start unknown. No default earnings-like result.",
+    "Serving infrastructure, research/model development, people and company operations are visible before calculations.",
+    "10/15/20 percent scenarios calculate required total cost budgets, not estimated OpenAI margins.",
+    "Optional operating-cost balance requires explicit inputs and review for current usage; changing costs or usage invalidates review.",
+    "Earlier scenario links clear incomplete provider cost examples with an explanation. Connected Markdown, JSON, chapters and source package use the corrected model."
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "title": "Unknown costs and explicit zero",
+      "kind": "automated",
+      "action": "Exercise missing, null, nonfinite, negative and explicitly zero costs.",
+      "expected": "Missing costs block balances and loyalty outputs; intentional zero is allowed.",
+      "actual": "All unknown/review gates passed; unknown does not silently become zero.",
+      "status": "passed"
+    },
+    {
+      "id": "C02",
+      "title": "Receipt continuity and target budgets",
+      "kind": "automated",
+      "action": "Test tier boundaries, high usage, donations and 0/10/15/20/100 percent targets.",
+      "expected": "Revenue uses the unchanged billing rule; budget plus hypothetical surplus reconciles.",
+      "actual": "At a 1,000 bill, the 15 percent target allows 850 total costs and 150 surplus. Donations never enter revenue.",
+      "status": "passed"
+    },
+    {
+      "id": "C03",
+      "title": "Cost coverage, stale review and losses",
+      "kind": "automated",
+      "action": "Vary serving, development, operations and payment costs; change usage within and across tiers.",
+      "expected": "All allocations count once; stale or unreviewed inputs yield null; losses stay negative.",
+      "actual": "Reviewed 100 revenue minus 40/30/10/3 gives 17; raising development to 80 gives -33. Usage changes invalidate review.",
+      "status": "passed"
+    },
+    {
+      "id": "C04",
+      "title": "Shared links and legacy correction",
+      "kind": "automated",
+      "action": "Round-trip v4 reviewed and incomplete scenarios; parse v1/v2/v3 links and malformed flags.",
+      "expected": "Partial data remains incomplete; old cost examples cannot revive an earnings-like result.",
+      "actual": "Receipt and advanced comparisons retained; earlier provider assumptions cleared with a correction message.",
+      "status": "passed"
+    },
+    {
+      "id": "C05",
+      "title": "Source, equations and public accounting",
+      "kind": "automated",
+      "action": "Run all existing and new calculation/source tests and TypeScript checking.",
+      "expected": "No billing or corpus regression; benchmark reconciles without supplying cost inputs.",
+      "actual": "38 Node tests passed; TypeScript passed. Public benchmark totals and ratios reconcile. Canonical source hash unchanged.",
+      "status": "passed"
+    },
+    {
+      "id": "B01",
+      "title": "First view and mobile context",
+      "kind": "browser",
+      "action": "Open economics at 440px default text and inspect its reading order.",
+      "expected": "Explain revenue, cost coverage and limits before any results.",
+      "actual": "A bill isn’t profit, serving/development/operations and actual-cost uncertainty precede hypothetical target budgets. No default provider balance. 425px content/viewport widths.",
+      "status": "passed"
+    },
+    {
+      "id": "B02",
+      "title": "Cost inputs and keyboard calculation",
+      "kind": "browser",
+      "action": "At 1280px, enter 40 serving, 30 development, 10 operations and 3 percent fees; activate review with Enter.",
+      "expected": "Blank inputs disable review; completed inputs require confirmation.",
+      "actual": "No result before review; after Enter, the ledger reconciles to 17. Desktop screenshot retained.",
+      "status": "passed"
+    },
+    {
+      "id": "B03",
+      "title": "Cleared cost and negative balance",
+      "kind": "browser",
+      "action": "Clear development; then enter 80 and review.",
+      "expected": "Unknown removes the result; high costs can produce a loss.",
+      "actual": "Empty field removed the balance; reviewed 80 development produced -33.",
+      "status": "passed"
+    },
+    {
+      "id": "B04",
+      "title": "Share, navigation and increased usage",
+      "kind": "browser",
+      "action": "Copy/open the cost scenario, navigate to the receipt and increase metered use to 1,000.",
+      "expected": "Entered costs survive navigation but cannot automatically support a larger-bill result.",
+      "actual": "Copied link used v4 with review status. Allocations survived reload; the 1,000 bill showed no balance and asked for another cost review. Target budgets became 900/850/800.",
+      "status": "passed"
+    },
+    {
+      "id": "B05",
+      "title": "Clear assumptions preserves the bill",
+      "kind": "browser",
+      "action": "Clear cost assumptions after the 1,000 bill.",
+      "expected": "All costs revert to unknown; the receipt is retained.",
+      "actual": "All four inputs blank with Unknown placeholders; provider bill remained 1,000.",
+      "status": "passed"
+    },
+    {
+      "id": "B06",
+      "title": "Legacy misleading link",
+      "kind": "browser",
+      "action": "Open v3 use=1000 with servingCost=50, otherCosts=5 and paymentFee=3.",
+      "expected": "Do not display the old 915 residual.",
+      "actual": "Bill remained 1,000; visible cost-model correction; no provider balance element.",
+      "status": "passed"
+    },
+    {
+      "id": "B07",
+      "title": "Enlarged mobile and desktop",
+      "kind": "browser",
+      "action": "Inspect 320px and 1280px at 200 percent root text; enter explicit zero at narrow size.",
+      "expected": "Text, cards and fields reflow; unknown categories remain missing.",
+      "actual": "No page-wide overflow: 305/305 and 1265/1265 widths. Zero accepted for serving; the other three remained unknown. Screenshots retained.",
+      "status": "passed"
+    },
+    {
+      "id": "B08",
+      "title": "Connected archive",
+      "kind": "browser",
+      "action": "Open the economics archive at 390px default text.",
+      "expected": "The same target-budget distinction and cost model appear without JavaScript.",
+      "actual": "Updated explanation visible; 375px content/viewport widths. Readable HTML, Markdown and JSON regenerated.",
+      "status": "passed"
+    },
+    {
+      "id": "D01",
+      "title": "Physical mobile touch and Safari",
+      "kind": "device",
+      "action": "Test physical iPhone/Android browsers.",
+      "expected": "Confirm behavior on those devices and settings.",
+      "actual": "Not performed. Responsive cloud-Chrome review and root-font scaling are not a substitute.",
+      "status": "not_run"
+    },
+    {
+      "id": "D02",
+      "title": "Screen-reader behavior",
+      "kind": "device",
+      "action": "Use VoiceOver or NVDA through the changed cost UI.",
+      "expected": "Confirm behavior on those devices and settings.",
+      "actual": "Not performed. Responsive cloud-Chrome review and root-font scaling are not a substitute.",
+      "status": "not_run"
+    },
+    {
+      "id": "D03",
+      "title": "Native browser/OS enlargement",
+      "kind": "device",
+      "action": "Test real browser zoom and operating-system text settings.",
+      "expected": "Confirm behavior on those devices and settings.",
+      "actual": "Not performed. Responsive cloud-Chrome review and root-font scaling are not a substitute.",
+      "status": "not_run"
+    }
+  ]
+}

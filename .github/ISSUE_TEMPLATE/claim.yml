@@ -1,0 +1,28 @@
+name: Challenge or improve a claim
+description: Bring a counterexample, source, experiment or better explanation.
+title: "[Claim] "
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Which claim or design choice?
+      description: Link the passage or describe the precise statement.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reasoning
+      description: Share a primary source, counterexample or proposed comparison. Separate observations from assumptions.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: What would change?
+      description: Explain the consequence for users, research or economics.
+  - type: textarea
+    id: test
+    attributes:
+      label: How could we test it?
+      description: What observation would support or challenge your interpretation?

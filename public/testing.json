@@ -1,0 +1,1033 @@
+{
+  "date": "9 November 2026 · Asia/Taipei",
+  "summary": [
+    "This record combines 87 retained v17 input-recovery cases with 13 state-machine follow-up cases. Each case identifies its evidence revision. Retained browser observations are not represented as new executions.",
+    "The follow-up maps 17 authored interaction families. Shared receipt and economics values now have one transition owner; review, navigation, research loading/search and copy feedback have explicit guards and recovery paths. Simple native disclosures and local selectors remain simple.",
+    "The root was divided responsibility: inputs, parsers and calculation flags could disagree; multiple effects or asynchronous callbacks could complete an older action. Earlier arithmetic checks did not establish that the entire human recovery and navigation journey worked."
+  ],
+  "method": [
+    "93 Node tests were run in this follow-up:57 existing checks plus22 shared-state and14 asynchronous-state regressions. Browser cases are observed cloud-Chrome procedures, not an unattended browser suite or recorded replay.",
+    "The v17 baseline covered all 32 numeric instances and the inventory of sliders, selectors, donation controls, tabs, search, disclosures, companion and sharing. This follow-up repeated targeted connected sequences and new recovery paths; it does not claim to rerun every baseline browser case.",
+    "Current visual checks used390px and1280px responsive frames at normal and 200% root text, plus the native desktop viewport. This verifies reflow, not physical iPhone Safari, native browser zoom, or real screen-reader announcements. The three baseline device/permission limitations remain marked not run.",
+    "Research failure/retry used an explicit injectable loader fixture, then the real research component. The preview-only route and mobile harness are excluded from production. Clipboard request timing has pure regression tests; native permission denial was not repeated in this follow-up.",
+    "This pass does not re-research financial disclosures or infer provider margins. It preserves the adopted tariff, source corpus and donation separation. Passing interaction tests is not evidence for external financial claims.",
+    "Build, packaged-source integrity and publication smoke checks are separate release gates. Case counts summarize bounded observations; they are not a certification that every state or device is defect-free."
+  ],
+  "changes": [
+    "One pure experience transition function owns bill and cost assumptions; economics derives the receipt instead of keeping a second copy.",
+    "Changing accepted usage revokes reviewed costs even if usage later returns to the original amount. Donation changes and unchanged commits preserve review.",
+    "Blank, invalid and explicit-zero cost inputs remain distinct across editing, sharing, restoration and clearing. Percentage precision is preserved until money is rounded.",
+    "Navigation coordinates the visible panel, opened disclosure and focus; history traversal gets one guarded, cancellable post-browser scroll reconciliation.",
+    "Nested scenario links preserve their values; closing the formula writes a compatible closed destination.",
+    "Copy feedback has pending/success/failure states, timeout recovery and stale-completion guards. Research has retry and a static archive escape when loading fails.",
+    "Search edits keep keyboard focus and do not become accidental navigation. A deliberate chapter destination clears a conflicting search.",
+    "Static interaction contracts document 17 families for developers and agents; project guidance requires transition, interruption and recovery evidence before release."
+  ],
+  "cases": [
+    {
+      "id": "I01",
+      "title": "AI usage charge",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Change 86.40 to 86.41 with the range keyboard control, then type an out-of-range 1,000,000.",
+      "expected": "The paired amount and subtotal update; rejected input explains which prior value is still used.",
+      "actual": "[v17 baseline] Subtotal became 106.41. The invalid draft kept 86.41 in use with a range/last-value notice; blur restored it explicitly.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I02",
+      "title": "Donation amount",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Select $1/$5/$10/$0, then enter a custom 2.135 on a 1,000 service bill.",
+      "expected": "Preset and custom choices change only the donation and final payment, with cent rounding.",
+      "actual": "[v17 baseline] Presets produced 101/105/110/100 on the original bill. Custom 2.135 displayed 2.14 and total 1,002.14. Provider balance did not change.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I03",
+      "title": "Formula subtotal",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Type subtotal 525, then load the 524.99 boundary example.",
+      "expected": "The formula and receipt share one meter; adopted half-step behavior remains intact.",
+      "actual": "[v17 baseline] 525 settled to 550; 524.99 settled to 500. Linked receipt and worked formula agreed.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I04",
+      "title": "Serving and infrastructure",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 888, then 888.001.",
+      "expected": "Valid cents are accepted; excess precision is identified and blocks review.",
+      "actual": "[v17 baseline] 888 appeared in the ledger; 888.001 showed the two-decimal correction and no balance.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I05",
+      "title": "Research and development",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 555, then -1.",
+      "expected": "A valid monthly allocation is retained; a negative draft is explicitly invalid.",
+      "actual": "[v17 baseline] 555 appeared in the ledger. -1 showed the allowed range and no balance.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I06",
+      "title": "Company operations",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 555, then 1,000,001.",
+      "expected": "An out-of-range allocation remains a visible draft, not a supplied zero.",
+      "actual": "[v17 baseline] 555 appeared in the ledger. 1,000,001 showed a range error and no balance.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I07",
+      "title": "Payment processing",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter 555%, correct to 3%, then use 2.875%, blank and explicit zero.",
+      "expected": "The rejected value is named; correction restores calculation; blank and zero differ; the percentage is not rounded early.",
+      "actual": "[v17 baseline] 555% showed the requested exact correction. 3% of 1,000 = 30; 2.875% = 28.75; blank withheld the result; explicit zero gave a zero fee after review.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I08",
+      "title": "Comparison · Assumed demand",
+      "kind": "browser",
+      "status": "passed",
+      "action": "154.7 → 180.3",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier contribution 104.90 → 92.10; annual 1,208.80 → 1,055.20. Revenue stays 200 because the subtotal remains in the same settlement band.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I09",
+      "title": "Comparison · Price per comparison unit",
+      "kind": "browser",
+      "status": "passed",
+      "action": "1.25 → 1.35",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Base + metered revenue 220.38 → 236.41; contribution 111.89 → 127.46.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I10",
+      "title": "Comparison · Cost per comparison unit",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0.50 → 0.55",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier contribution 92.10 → 83.08; annual 1,055.20 → 947.02; revenue remains 200.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I11",
+      "title": "Comparison · Customers leaving each month",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0% → 4%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier annual 947.02 → 754.45; monthly contribution stays 83.08.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I12",
+      "title": "Comparison · Fixed-plan allowance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "120 → 140",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Fixed 200 fulfillment 66.6% → 77.6%; contribution 116.25 → 105.25.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I13",
+      "title": "Comparison · $50 plan allowance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "60 → 70",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] $50 fulfillment 33.3% → 38.8%; contribution 3.56 → −1.94. Negative displayed.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I14",
+      "title": "Comparison · Base-plan allowance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "20 → 30",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Base + metered revenue 236.41 → 222.91; contribution 118.44 → 105.33.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I15",
+      "title": "Comparison · Loyalty usage discount",
+      "kind": "browser",
+      "status": "passed",
+      "action": "15% → 20%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Loyalty revenue 192.47 → 182.32; contribution 75.77 → 65.92.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I16",
+      "title": "Comparison · Loyalty churn reduction",
+      "kind": "browser",
+      "status": "passed",
+      "action": "10% → 25% relative",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Loyalty churn 3.6% → 3.0%; annual 601.74 → 622.70; monthly contribution stays 65.92.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I17",
+      "title": "Comparison · Delivery overhead",
+      "kind": "browser",
+      "status": "passed",
+      "action": "8 → 12",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier contribution 83.08 → 79.08; annual 754.45 → 715.72.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I18",
+      "title": "Comparison · Other variable expense",
+      "kind": "browser",
+      "status": "passed",
+      "action": "4 → 6",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier contribution 79.08 → 77.08; annual 715.72 → 696.36.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I19",
+      "title": "Comparison · Payment fee",
+      "kind": "browser",
+      "status": "passed",
+      "action": "2.875% → 3.125%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier contribution 77.08 → 76.58, exactly 0.50 lower on 200 revenue; annual 696.36 → 691.52.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I20",
+      "title": "Comparison · Acquisition cost",
+      "kind": "browser",
+      "status": "passed",
+      "action": "50 → 75",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Tier annual 691.52 → 666.52, exactly 25 lower; monthly contribution unchanged 76.58.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I21",
+      "title": "Comparison · Default probability",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0% → 10%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Risk expected loss 0 → 480 with 12,000 balance and 40% LGD.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I22",
+      "title": "Comparison · Outstanding balance",
+      "kind": "browser",
+      "status": "passed",
+      "action": "12,000 → 18,000",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Risk expected loss 480 → 720.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I23",
+      "title": "Comparison · Loss given default",
+      "kind": "browser",
+      "status": "passed",
+      "action": "40% → 50%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] Risk expected loss 720 → 900.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I24",
+      "title": "Comparison · Investment",
+      "kind": "browser",
+      "status": "passed",
+      "action": "500,000 → 200,000",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] At 0× return, expected proceeds−500,000 → −200,000.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I25",
+      "title": "Comparison · Success gross multiple",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0× → 4×",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] At 25% success, proceeds−200,000 → 0.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I26",
+      "title": "Comparison · Success probability",
+      "kind": "browser",
+      "status": "passed",
+      "action": "25% → 30%",
+      "expected": "A real edit produces the corresponding visible result; unrelated models remain separate.",
+      "actual": "[v17 baseline] At 4× return, proceeds 0 → 40,000. Credit expected loss remained 900.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I27",
+      "title": "Monthly loyalty discount",
+      "kind": "browser",
+      "status": "passed",
+      "action": "5 → 10",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "[v17 baseline] Without-benefit annual 340.13 unchanged; with-benefit 295.55 → 250.96.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I28",
+      "title": "Monthly departures",
+      "kind": "browser",
+      "status": "passed",
+      "action": "5 → 10 out of 100",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "[v17 baseline] Without 340.13 → 265.50; with 250.96 → 195.90.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I29",
+      "title": "Relative departure reduction",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0% → 50%",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "[v17 baseline] Without 265.50 unchanged; with 195.90 → 250.96.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I30",
+      "title": "Additional acquisition cost",
+      "kind": "browser",
+      "status": "passed",
+      "action": "0 → 25",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "[v17 baseline] Without 265.50 → 240.50; with 250.96 → 225.96. Both fell 25.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I31",
+      "title": "Founder investment",
+      "kind": "browser",
+      "status": "passed",
+      "action": "1,000,000 → 2,000,000 with 9m pre-money",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "[v17 baseline] Ownership 10.00% → 18.18%.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "I32",
+      "title": "Founder pre-money valuation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "9,000,000 → 8,000,000 with 2m investment",
+      "expected": "The displayed financial effect follows the labeled control.",
+      "actual": "[v17 baseline] Ownership 18.18% → 20.00%.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N01",
+      "title": "Research → Current pricing formula → next Tab",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research → Current pricing formula → next Tab",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Reproduced body-focus failure; repaired summary focus and next Tab into subtotal verified",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N02",
+      "title": "Economics comparison → Open the fictional comparison",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Economics comparison → Open the fictional comparison",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Reproduced lost focus; final wrapper focus and next Tab into demand verified",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N03",
+      "title": "Nested comparison demand 123.45 → reload",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Nested comparison demand 123.45 → reload",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Reproduced silent restoration to 96.4; revised parser restores 123.45",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N05",
+      "title": "Main tabs: Home from Research, End from Bill",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Main tabs: Home from Research, End from Bill",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Correct destination selected; focus follows the selected tab",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N06",
+      "title": "Research search: nonexistent term",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research search: nonexistent term",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] No chapters shown; visible message offers useful replacement terms",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N07",
+      "title": "Research search: loyalty, switch to Bill and back",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research search: loyalty, switch to Bill and back",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Matching chapters remain filtered; query is retained",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N08",
+      "title": "Direct `#chapter-billing` while search hides Billing",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Direct `#chapter-billing` while search hides Billing",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Search clears, Billing chapter opens, and scroll target is visible",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N09",
+      "title": "Research → Current pricing formula",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research → Current pricing formula",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Billing becomes selected; formula drawer opens; top measured near 119 CSS px",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N10",
+      "title": "Clean archive URL `/archive/pricing-formula`",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Clean archive URL `/archive/pricing-formula`",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Static formula page loads without `.html`; equation and examples are present",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N11",
+      "title": "Static formula → Open interactive drawer",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Static formula → Open interactive drawer",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] App opens the matching disclosure and displays the current calculation",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N12",
+      "title": "Formula Copy link → clipboard and visible feedback",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Formula Copy link → clipboard and visible feedback",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Copy feedback and clipboard preserved the formula route and values. Final retest exposed Open this calculation with use=504.99, gift=0 and formula=1.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N13",
+      "title": "Open this scenario from formula share feedback",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Open this scenario from formula share feedback",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Route retains formula target and encoded values",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N14",
+      "title": "Formula summary → Enter",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Formula summary → Enter",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Drawer collapses; focus remains on its summary",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N15",
+      "title": "Direct `#economics-comparison`",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Direct `#economics-comparison`",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Economics selected; parent worksheet and nested comparison disclosure both open",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N19",
+      "title": "Main-tab ArrowRight at Research; ArrowLeft at Bill",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Main-tab ArrowRight at Research; ArrowLeft at Bill",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Wraps to Bill and Research respectively; selected tab receives focus",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N20",
+      "title": "Main-tab Space, then main/nested Back and Forward",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Main-tab Space, then main/nested Back and Forward",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Space selects Economics; final repair aligns focused and selected main tab; nested Back focuses comparison summary",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N21",
+      "title": "Research index → Loyalty chapter → bounded source",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Research index → Loyalty chapter → bounded source",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Correct static chapter and p-10404 passage open",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N22",
+      "title": "Source passage Next → Previous",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Source passage Next → Previous",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] p-10404 → p-13252 → p-10404",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N23",
+      "title": "Header Sources → next Tab",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Header Sources → next Tab",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Sources region receives focus near 119 CSS px; next Tab reaches original conversation",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N24",
+      "title": "Sibling nested aliases with a nondefault scenario",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Sibling nested aliases with a nondefault scenario",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Public benchmarks, loyalty, method each restore usage/gift/serving draft and correct receipt totals",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "N25",
+      "title": "Static chapter → Interactive chapter → Copy chapter link → conflicting search → shared link",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Static chapter → Interactive chapter → Copy chapter link → conflicting search → shared link",
+      "expected": "The destination, state and next action remain understandable and reachable.",
+      "actual": "[v17 baseline] Loyalty chapter opens and focuses; copy produces `#chapter-loyalty`; opening it clears hidden-result search and restores chapter context",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R01",
+      "title": "Invalid fee recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Activate Correct payment processing from the blocked result.",
+      "expected": "Focus returns to the invalid field without erasing other values.",
+      "actual": "[v17 baseline] Focus reached cost-paymentFee with 555 retained. The field and result both said: 555% is outside this calculator’s 0–20% range. Correct payment processing to calculate.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R02",
+      "title": "Invalid shared-link recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Share and reopen the 888/555/555/555% cost scenario.",
+      "expected": "Invalid input remains invalid through copy/open/reload.",
+      "actual": "[v17 baseline] The v5 link retained the raw 555 draft; the reopened worksheet withheld its balance and showed a correction.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R03",
+      "title": "Valid review and shared restoration",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Correct the fee to 3, review costs, then reopen the link.",
+      "expected": "Current valid reviewed assumptions restore with the same signed result.",
+      "actual": "[v17 baseline] The 1,000 bill minus 888, 555, 555 and 30 produced -1,028.00 and restored consistently.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R04",
+      "title": "Stale assumptions within the same tier",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Change usage 1,000 to 1,001 after reviewing costs.",
+      "expected": "Review invalidates even if the settled bill is unchanged.",
+      "actual": "[v17 baseline] Bill stayed 1,000 but the Usage changed notice appeared and the balance was withheld until review.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R05",
+      "title": "Scoped cost clearing",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Clear costs after editing advanced demand, credit balance and loyalty settings, then re-enter and review the costs.",
+      "expected": "Only the named cost assumptions clear.",
+      "actual": "[v17 baseline] Four cost drafts cleared; demand 180.4, credit 18,000 and loyalty settings remained. Re-review restored the same loyalty comparison.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R06",
+      "title": "Reset with an unchanged canonical value",
+      "kind": "browser",
+      "status": "passed",
+      "action": "At the default receipt, type invalid usage, then reset the example.",
+      "expected": "Reset clears the invalid local draft even when the accepted number was already the default.",
+      "actual": "[v17 baseline] Usage returned to 86.4 and the stale validation hint cleared after rendering.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R07",
+      "title": "Generic invalid input recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter founder valuation 0; then use Escape. Also test invalid credit probability 101.",
+      "expected": "The last valid calculation remains explicitly labeled; recovery restores the accepted entry.",
+      "actual": "[v17 baseline] Valuation 0 showed the valid range and prior 8m; Escape restored 8m and ownership 20%. Credit 101 showed the 0–100 range and prior 10%; correcting to 0 yielded zero expected loss.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R08",
+      "title": "Collapsed worksheet warning",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Collapse the worksheet while a cost draft is invalid.",
+      "expected": "The collapsed summary still identifies a correction needed.",
+      "actual": "[v17 baseline] Summary retained Business assumptions · 1 input needs correction; the result did not display an earnings figure.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R09",
+      "title": "Clipboard failure fallback",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use the local QA harness to force clipboard.writeText rejection, then activate Copy link and Tab through the recovery controls.",
+      "expected": "Failure offers a usable link and a selectable text field.",
+      "actual": "[v17 baseline] Select and copy the link below appeared. Next Tab reached Open this scenario, then the readonly Shareable link field with all 60 characters selected. Controlled failure injection, not a real OS permission prompt.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R10",
+      "title": "Custom donation continuity",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Choose $5 then reveal Custom.",
+      "expected": "Changing the input mode preserves the selected amount.",
+      "actual": "[v17 baseline] Custom retained 5 and the final payment stayed consistent.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R11",
+      "title": "More examples and threshold switch",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Switch to threshold examples, load a boundary, then request more examples.",
+      "expected": "Examples are actionable, vary to cents and use the same settlement rule.",
+      "actual": "[v17 baseline] 524.99 loaded into the linked calculator; more example bills changed the cent-level rows and reconciled.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C01",
+      "title": "All paired ranges",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use ArrowRight on receipt, four advanced ranges and provider retention range.",
+      "expected": "Every range and numeric field stay synchronized.",
+      "actual": "[v17 baseline] Receipt 86.40→86.41; advanced demand 180.3→180.4, price 1.35→1.40, cost 0.55→0.60, churn 4→4.5; retention 50→51 with departures 4.9% and annual 227.26.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C02",
+      "title": "Fixed-plan selection",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Change fixed-plan selection 200→500.",
+      "expected": "The selected price affects revenue and contribution; allowance remains its separately labeled assumption.",
+      "actual": "[v17 baseline] Revenue 200→500 and contribution 98.75→389.38; fulfillment remained 77.6%.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C03",
+      "title": "Relationship stage navigation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Click all four stage tabs; use Home and ArrowLeft from Customer.",
+      "expected": "The selected stage, panel and keyboard focus agree.",
+      "actual": "[v17 baseline] Each stage showed its matching heading; Home selected Customer and ArrowLeft wrapped to Mutual investment.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C04",
+      "title": "Permission preview and revocation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect no selection, select Projects & GitHub, revoke it, then select all four categories.",
+      "expected": "The preview explains what is selected and disappears when permissions change.",
+      "actual": "[v17 baseline] Empty preview was disabled with instructions. Single preview named one category; revocation removed it. All-category preview listed four and stated nothing was connected or sent.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C05",
+      "title": "All ten research chapter drawers",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Open and close each chapter individually.",
+      "expected": "Each disclosure reveals useful text and its relevant evidence, then closes predictably.",
+      "actual": "[v17 baseline] All ten exposed substantive text/source links and closed again. Billing also exposed the current formula link.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C06",
+      "title": "Companion dismissal and origin",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Open the pet note; close by button, Escape and outside click; follow Uber inspiration.",
+      "expected": "Dismissal returns focus or follows the clicked destination; origin link opens its story.",
+      "actual": "[v17 baseline] Close and Escape returned focus to the pet. Outside The idea click dismissed it. Uber inspiration selected Bill and opened the correct founding story.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "C07",
+      "title": "Zero churn and separate speculative models",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Set churn 0; change credit and partnership assumptions.",
+      "expected": "No infinite lifetime claim; credit risk and speculative investment stay separate from subscription earnings.",
+      "actual": "[v17 baseline] Lifetime cells said No finite estimate. Credit example was 480; investment example was-125,000, with negative results preserved and separated.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "V01",
+      "title": "Narrow error recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect 390px layout and use the error recovery control.",
+      "expected": "Fields remain full-width, legible and actionable.",
+      "actual": "[v17 baseline] Cost controls measured 50px high; error and correction action remained readable without page overflow.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "V02",
+      "title": "320px with 200% text",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect the invalid-cost worksheet and recovery focus in the responsive harness at 320px/32px root text.",
+      "expected": "Text and buttons wrap; recovery reaches the invalid field.",
+      "actual": "[v17 baseline] Document width 305 matched available 305; focus recovery brought the invalid field into view. This is enlarged-text emulation, not physical iOS.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "V03",
+      "title": "Desktop error recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Inspect 1280px layout at normal and 200% text.",
+      "expected": "The paired form/result layout reflows when enlarged.",
+      "actual": "[v17 baseline] Normal text showed two columns; enlarged text showed a readable single column. Document width 1265 matched available 1265 in both.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "V04",
+      "title": "Large receipt amounts",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter maximum usage 999,980 and donation 10,000 at 390px and 320px/200% text.",
+      "expected": "The 1,010,000 final amount does not create page-wide overflow.",
+      "actual": "[v17 baseline] 390px was readable. The first 320px enlarged pass exposed nowrap overflow; revised receipt wrapping passed with document and available widths both 305.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A01",
+      "title": "Automated regression suite",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run node --test tests/*.test.mjs.",
+      "expected": "All existing and new calculation/input/source regressions pass.",
+      "actual": "[v17 baseline] 57 tests passed,0 failed. Raw output is included in the source download.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A02",
+      "title": "Malformed and legacy cost links",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Test v4 known-flag variants, rejected numbers, omitted supplied values and v5 raw drafts.",
+      "expected": "No invalid or missing supplied value becomes a trusted zero.",
+      "actual": "[v17 baseline] Independent regression cases pass for 1.0/01/1e0 flags, hex/binary values, missing values and valid/empty/invalid round trips.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A03",
+      "title": "Decimal money and percentage arithmetic",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Test half-cent money and 2.875% of 1,000 without pre-rounding the percentage.",
+      "expected": "Decimal semantics agree with the displayed cents.",
+      "actual": "[v17 baseline] 2.135→2.14;2.875%×1,000→28.75. Tiny and high-precision rates remain finite within supported bounds.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A04",
+      "title": "Tariff boundaries and monotonicity",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Check exact named midpoints, adjacent cents and above 500 half-steps; scan subtotal cents through 10,000.",
+      "expected": "The adopted equation remains consistent and nondecreasing.",
+      "actual": "[v17 baseline] All settlement tests pass;525→550 and 524.99→500. No pricing-policy changes were made.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A05",
+      "title": "All nested scenario aliases",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Round-trip nondefault receipt and economics state through all six economics destinations.",
+      "expected": "Writer, parser and linked receipt agree for every registered target.",
+      "actual": "[v17 baseline] Regression tests pass for economics, cost-scenario, public-benchmarks, economics-loyalty, economics-method and economics-comparison.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A06",
+      "title": "Archive and source contract",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Regenerate archive; test v5 metadata, input states, cost bounds and preserved source digest.",
+      "expected": "Human and machine exports match current behavior; historical evidence stays unchanged.",
+      "actual": "[v17 baseline] Both new archive-contract tests and existing source/model tests pass.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A07",
+      "title": "Static target and JSON integrity",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run final release artifact checker after report and source packaging.",
+      "expected": "Static local destinations/fragments resolve; JSON parses; archive members are valid and current.",
+      "actual": "[v17 baseline] Recorded in review/input-recovery/artifact-checks.json; no broken static destinations, duplicate IDs, invalid JSON or corrupt ZIP members.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "A08",
+      "title": "TypeScript validation",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run ./node_modules/.bin/tsc --noEmit.",
+      "expected": "No type errors.",
+      "actual": "[v17 baseline] Completed with exit 0 and no diagnostics.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "R12",
+      "title": "Loading and saved-value readiness",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Reload a shared bill with a $5 donation; inspect pending controls, then act once ready.",
+      "expected": "Pending controls are disabled and explain loading. Saved values restore before the available control changes the bill.",
+      "actual": "[v17 baseline] During loading aria-busy was true and the $10 button was disabled. Once ready, the saved bill showed $105; clicking the available $10 choice produced $110 and selected that button. Native disabled choices and a visible loading notice now replace the previously active-looking pending buttons.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "D01",
+      "title": "Physical mobile Safari and touch",
+      "kind": "device",
+      "status": "not_run",
+      "action": "Use the released site on physical iPhone/iPad, including drag gestures and the OS keyboard.",
+      "expected": "Confirm native touch and keyboard behavior.",
+      "actual": "[v17 baseline] Not run in this environment. Responsive Chrome checks do not establish Safari behavior.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "D02",
+      "title": "Screen-reader speech output",
+      "kind": "device",
+      "status": "not_run",
+      "action": "Exercise invalid state, recovery and navigation with VoiceOver or NVDA.",
+      "expected": "Verify spoken error context and focus order.",
+      "actual": "[v17 baseline] Not run. DOM labels, invalid state and keyboard focus were inspected, but speech output was not.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "D03",
+      "title": "Real browser zoom, OS text size and permission prompts",
+      "kind": "device",
+      "status": "not_run",
+      "action": "Repeat enlarged-text and clipboard checks using browser zoom, mobile OS text settings and actual denied clipboard permission.",
+      "expected": "Confirm native device preference and permission behavior.",
+      "actual": "[v17 baseline] Not run.200% root-text/reflow and controlled clipboard rejection were tested instead.",
+      "evidence_revision": "v17 input-recovery baseline; retained record, not a claim of a new browser execution"
+    },
+    {
+      "id": "S01",
+      "title": "Shared experience transition regressions",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run tests/state-machines.test.mjs.",
+      "expected": "One receipt owner; guarded events; raw cost states; exact review basis; scoped resets and compatible snapshots.",
+      "actual": "22 transition tests passed, including A→B→A approval revocation, unchanged commits, explicit zero, invalid drafts, immutability and link round trips.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S02",
+      "title": "Asynchronous completion regressions",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run tests/async-state.test.mjs.",
+      "expected": "Only the matching pending request may finish; reset and stale completion cannot change newer feedback.",
+      "actual": "14 request-state tests passed; success, failure, request replacement, reset and stale callbacks remain distinct.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S03",
+      "title": "Nested bill snapshot and formula closure",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Set usage $585.25 and donation $5; follow the pet’s Uber link; refresh. Open the formula, close it and refresh.",
+      "expected": "Nested destinations retain the receipt. Closing a formula destination persists a closed drawer.",
+      "actual": "Uber destination saved usage $585.25 / donation $5 and restored final $605. Formula closure normalized to billing with formula = 0 and stayed closed after reload.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S04",
+      "title": "Review validity follows usage history",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Review serving $50 / development $20 / operations $10 / fee 2.875% with service bill $600. Change donation; commit unchanged usage; change usage $585.25→586.25→585.25.",
+      "expected": "Gift and unchanged commits preserve review; any changed usage revokes it until reviewed again.",
+      "actual": "Fee $17.25 and balance $502.75 were shown after review. Donation and unchanged Enter preserved review. The A→B→A sequence remained stale with no balance.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S05",
+      "title": "Nested economics snapshot",
+      "kind": "browser",
+      "status": "passed",
+      "action": "From a reviewed scenario, follow economics-loyalty and refresh.",
+      "expected": "Raw costs, fee precision, review and receipt restore together.",
+      "actual": "The v5 nested URL retained the costs, fee 2.875% and reviewed balance $502.75 after reload.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S06",
+      "title": "Copy feedback belongs to its snapshot",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Copy the scenario, observe completion, then change its assumptions.",
+      "expected": "Pending is visible, successful copy is acknowledged, and changed assumptions clear old feedback.",
+      "actual": "Observed Copying link then Link copied. Changing the share target returned feedback to idle. Late/failure paths are automated here; controlled browser rejection belongs to the v17 record.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S07",
+      "title": "Research loading failure and retry",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use the preview-only loader fixture: reject first and second load; retry with keyboard; allow the third load.",
+      "expected": "Failure explains recovery, retains the rest of the app, offers static archive and keeps retry keyboard focus.",
+      "actual": "Failure status and static-index link appeared. The second rejection retained retry focus; the third attempt loaded the real ten chapters and focused chapters. Fixture route is removed before packaging.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S08",
+      "title": "Research search is not navigation",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Enter an unmatched query; clear by button and by editing to empty; follow a chapter destination with a conflicting query.",
+      "expected": "Search edits retain focus; deliberate chapter navigation clears conflict and opens the intended chapter.",
+      "actual": "No-match count and clear control appeared. Both clearing paths kept search focus. Chapter navigation cleared the query and opened its destination.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S09",
+      "title": "Same-document navigation ownership",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use main tabs, ArrowRight, browser Back and Forward, then Back to the initial empty fragment. Then change usage, switch to economics and back, and immediately press Reset or a donation choice.",
+      "expected": "Selected tab, keyboard focus and visible destination agree; empty-fragment home returns to the introduction.",
+      "actual": "Tab and keyboard transitions focused the selected tab at explore. Back/Forward retained scroll 1335px in the test viewport instead of jumping to 0. Back to the empty home entry focused main at scroll 0. Returning to the chapters destination focused chapters at scroll 1916px; opening the static index and returning worked across documents. A late production check exposed post-frame scrolling during a new click. The final correction restricts this follow-up to browser history/initial navigation and cancels it on new input. Repeating the quick tab/reset sequence locally restored usage 86.4; quick donation selection applied $5, and Reset cleared it. Back still focused the billing tab at scroll 1335px.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S10",
+      "title": "Narrow layout at enlarged text",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use a 390px responsive frame and 200% root text; set service bill $1,000, donation $10 then custom $12.34; enter invalid fee 555%.",
+      "expected": "Receipt remains readable; no page-wide horizontal overflow; error and recovery remain visible.",
+      "actual": "Content width 375px matched scroll width 375px. Custom donation produced $1,012.34. Invalid 555% showed the exact range/correction explanation and the collapsed warning. Screenshots: sm-mobile-large.png and sm-mobile-error.png.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S11",
+      "title": "Enlarged desktop and negative scenario recovery",
+      "kind": "browser",
+      "status": "passed",
+      "action": "Use a 1280px frame at200% root text; correct fee 555% to2.875 with costs888/555/555 on service bill $1,000, then review.",
+      "expected": "Desktop reflows; correcting inputs allows a transparent negative scenario instead of stale profit.",
+      "actual": "Content width 1265px matched scroll width 1265px; equation remained mounted. Corrected fee $28.75 yielded balance −$1,026.75. Desktop recovery screenshot saved. These are entered assumptions, not OpenAI cost estimates.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S12",
+      "title": "Transition inventory and narrow agent retrieval",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Inventory runtime families; generate static HTML/Markdown/JSON; run artifact validation and source-package checks.",
+      "expected": "Agents can discover state owners, events, guards and recovery without executing the app or fetching the corpus.",
+      "actual": "17 authored interaction families documented with scoped DOM/source owners and retrieval guidance. Generated archive and source package are checked in the release artifact record.",
+      "evidence_revision": "state-machine follow-up"
+    },
+    {
+      "id": "S13",
+      "title": "Calculation and source continuity",
+      "kind": "automated",
+      "status": "passed",
+      "action": "Run the full Node suite, typecheck and source/corpus integrity checks after the state refactor.",
+      "expected": "Tariff, original corpus, rate precision and valid legacy scenario links remain compatible.",
+      "actual": "Full suite: 93 passing automated tests. The historical corpus remains 572 paragraphs with its recorded SHA. Build/type/artifact results are recorded separately; physical Safari and assistive-technology checks remain unrun.",
+      "evidence_revision": "state-machine follow-up"
+    }
+  ],
+  "counts": {
+    "passed": 97,
+    "partial": 0,
+    "not_run": 3
+  }
+}

@@ -1,0 +1,12 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {simulate,defaults,cents,creditLoss} from '../lib/model.mjs';
+import {scenarios,scenarioHash,parseScenario} from '../lib/scenarios.mjs';
+const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
+test('M19 Economics baseline distinguishes revenue, gross profit, contribution',()=>{const r=simulate(defaults)[2];near(r.revenue,106.4);near(r.gp,69.66);near(r.cm,64.468);near(r.annual,542.6413173713022)});
+test('M20 Fixed-plan fulfillment responds to allowance, not imaginary overage',()=>{const rows=simulate({...defaults,demand:200,fixedUnits:100,fiftyUnits:40});assert.equal(rows[0].fulfillment,50);assert.equal(rows[1].fulfillment,20);assert.equal(rows[0].revenue,100);assert.equal(rows[2].fulfillment,100)});
+test('M21 Retail rate and inference cost affect different parts of economics',()=>{const base=simulate(defaults),rate=simulate({...defaults,rate:2}),cost=simulate({...defaults,cost:1});near(rate[2].revenue,192.8);near(rate[2].cogs,base[2].cogs);near(cost[2].revenue,base[2].revenue);assert.ok(cost[2].cm<base[2].cm);assert.equal(rate[0].revenue,100)});
+test('M22 Churn changes horizon value without changing monthly revenue',()=>{const a=simulate(defaults)[2],b=simulate({...defaults,churn:10})[2];near(a.cm,b.cm);near(a.revenue,b.revenue);assert.ok(b.annual<a.annual);near(b.annual,64.468*(1-.9**12)/.1-50)});
+test('M23 Loyalty rate and retention benefits remain separate hypotheses',()=>{const a=simulate(defaults)[4],b=simulate({...defaults,retention:50})[4],c=simulate({...defaults,loyalty:20})[4];near(b.churn,2.5);near(b.revenue,a.revenue);assert.ok(b.annual>a.annual);near(c.churn,a.churn);near(c.revenue,89.12)});
+test('M24 Expense classifications and acquisition cost do not contaminate revenue',()=>{const a=simulate(defaults)[2],delivery=simulate({...defaults,serviceCost:13})[2],variable=simulate({...defaults,variableCost:12})[2],fee=simulate({...defaults,feePercent:4})[2],acq=simulate({...defaults,cac:60})[2];near(delivery.gp,a.gp-10);near(variable.gp,a.gp);near(variable.cm,a.cm-10);near(fee.cm,a.cm-a.revenue*.01);near(acq.annual,a.annual-10);near(acq.cm,a.cm)});
+test('M25 Credit loss corners remain separate from subscription economics',()=>{assert.equal(creditLoss(5000,5,60),150);assert.equal(creditLoss(5000,0,100),0);assert.equal(creditLoss(5000,100,100),5000);assert.equal(creditLoss(0,100,100),0)});

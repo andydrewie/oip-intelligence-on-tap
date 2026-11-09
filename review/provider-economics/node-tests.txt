@@ -1,0 +1,43 @@
+✔ M19 Economics baseline distinguishes revenue, gross profit, contribution (2.359527ms)
+✔ M20 Fixed-plan fulfillment responds to allowance, not imaginary overage (0.5771ms)
+✔ M21 Retail rate and inference cost affect different parts of economics (0.558854ms)
+✔ M22 Churn changes horizon value without changing monthly revenue (0.778479ms)
+✔ M23 Loyalty rate and retention benefits remain separate hypotheses (0.958639ms)
+✔ M24 Expense classifications and acquisition cost do not contaminate revenue (1.704222ms)
+✔ M25 Credit loss corners remain separate from subscription economics (0.458876ms)
+✔ five models reconcile service and contribution economics (2.345333ms)
+✔ zero churn has a finite horizon but no finite perpetual LTV (0.697943ms)
+✔ high cost losses are preserved; no negative value clamping (0.42807ms)
+✔ Provider view starts from the settled receipt, with transparent dollar assumptions (2.410579ms)
+✔ Provider view follows receipt boundaries and high usage; donations cannot enter revenue (1.209378ms)
+✔ Losses, zero fees and fractional-cent payment fees stay honest (0.700095ms)
+✔ Loyalty uses a relative departure reduction, bounded discount and finite 12-month horizon (0.699506ms)
+✔ Provider scenario links restore both the receipt and cost assumptions without donations entering the model (3.476633ms)
+✔ Legacy economics links retain abstract comparisons and clearly migrate their bill (0.658599ms)
+✔ Published benchmark accounting reconciles; inputs are not loaded from the benchmark (0.468372ms)
+✔ receipt amounts reconcile at cent precision and reject non-finite inputs (2.96469ms)
+✔ near-zero churn converges to the zero-churn finite horizon (1.478099ms)
+✔ shared scenarios round-trip every allowed input without leaking extra state (3.565962ms)
+✔ bounded source passages reconstruct every source paragraph without omissions or edits (14.86288ms)
+✔ S01 Adopted totals, exact ties and adjacent cents match author-approved outcomes (2.058716ms)
+✔ S02 Screenshot regression: meter 585.25 includes base exactly once and continues beyond 500 (0.993287ms)
+✔ S03 Original 106.40 → 100 settles before every contribution (0.227202ms)
+✔ S04 Positive adjustments are explicit; no negative discounts or hidden cap (0.931609ms)
+✔ S05 Dollar amounts reconcile to cents even at fractional-cent entry (0.299311ms)
+✔ S06 Settlement is nondecreasing throughout the first $10,000 in cent increments (25.091335ms)
+✔ S07 Above 500, distance to nearest 50 is at most 25 and each band grows by 50 (4.798571ms)
+✔ S08 Invalid monetary inputs remain finite, nonnegative (0.228336ms)
+✔ S09 Example generator provides changing cent-level totals within supported bounds (1.475144ms)
+✔ S10 Formula link restores the same meter, contribution and open drawer (0.802016ms)
+✔ S11 Legacy links retain valid meter and gift, disclose removal of former cap and curve (0.208036ms)
+✔ S12 Scenario validation rejects invalid amounts, flags and unsupported versions (0.361148ms)
+✔ S13 Economic comparison uses the same settlement function for its calculated meter (0.620275ms)
+✔ S14 Published model specification agrees with canonical cases and version (0.683331ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 291.978636

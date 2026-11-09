@@ -1,0 +1,64 @@
+{
+  "id": "p-7922",
+  "first": 7922,
+  "last": 8228,
+  "paragraph_count": 9,
+  "markdown": "/archive/passages/p-7922.md",
+  "json": "/archive/passages/p-7922.json",
+  "html": "/archive/passages/p-7922.html",
+  "ordinal": 3,
+  "source": "Pasta Board",
+  "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+  "classification": "original_source_text",
+  "speaker_attribution": "Not inferred; the document does not consistently label speakers or exact times.",
+  "full_source": "/archive/source.html",
+  "previous": "/archive/passages/p-1327.md",
+  "next": "/archive/passages/p-8287.md",
+  "paragraphs": [
+    {
+      "id": "p-7922",
+      "text": "The AI-native commercial relationship",
+      "source_url": "/archive/source.html#p-7922"
+    },
+    {
+      "id": "p-7960",
+      "text": "$20 Base + Metered Intelligence",
+      "source_url": "/archive/source.html#p-7960"
+    },
+    {
+      "id": "p-7992",
+      "text": "Flexible consumption with transparent pricing",
+      "source_url": "/archive/source.html#p-7992"
+    },
+    {
+      "id": "p-8038",
+      "text": "Loyalty & Compute Credit",
+      "source_url": "/archive/source.html#p-8038"
+    },
+    {
+      "id": "p-8063",
+      "text": "Commitment builds benefits; reliability unlocks credit",
+      "source_url": "/archive/source.html#p-8063"
+    },
+    {
+      "id": "p-8118",
+      "text": "Voluntary Contribution",
+      "source_url": "/archive/source.html#p-8118"
+    },
+    {
+      "id": "p-8141",
+      "text": "Customers choose whether and how much to donate",
+      "source_url": "/archive/source.html#p-8141"
+    },
+    {
+      "id": "p-8189",
+      "text": "Consumption. Trust. Loyalty. Altruism.",
+      "source_url": "/archive/source.html#p-8189"
+    },
+    {
+      "id": "p-8228",
+      "text": "Four independent dimensions of the commercial relationship",
+      "source_url": "/archive/source.html#p-8228"
+    }
+  ]
+}

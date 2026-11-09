@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "title": "Intelligence on Tap",
+  "thesis": "Customer Lifetime Value → Relationship Lifetime Value;",
+  "entrypoint": "/llms.txt",
+  "scope": "Tibo pricing discussion onward. Independent contribution by Andrew Fai. Optional $20 base plus personal metering alongside the $100/$200/$500 fixed plans; Business/Enterprise retain their organizational scope.",
+  "retrieval": "Read this index, then one relevant chapter and its bounded source passage. No JavaScript, login or source-code download is needed.",
+  "source": {
+    "title": "Pasta Board",
+    "canonical_url": "https://docs.google.com/document/d/1CUV-pxvWUYFlNuPRgsjOUy7MSnpTo9KHtdsnwrD1WGw/edit",
+    "revision_id": "AHj4eMSXPuQFijszlY3b1enu8ewUkm1Yi5r31pl4Gl48R-R16m7gwWZBgV5QutG6_QvebsuVOXzBUwBK-F_9Cg",
+    "sha256": "4ff65f0fea0d7dd541dc68a202761ab3b77364c61a2acf365cb671993caf3dbf",
+    "paragraph_count": 572,
+    "completeness": "Author confirmed Pasta Board is complete. Document order retained; speaker labels and exact times not inferred."
+  },
+  "extensions": [
+    {
+      "title": "Interaction state contract",
+      "html": "/archive/interaction-states.html",
+      "markdown": "/archive/interaction-states.md",
+      "json": "/archive/interaction-states.json",
+      "status": "implementation contract; execution evidence is separate"
+    },
+    {
+      "title": "Provider economics and public benchmarks",
+      "html": "/archive/provider-economics.html",
+      "markdown": "/archive/provider-economics.md",
+      "json": "/archive/provider-economics.json",
+      "status": "implementation analysis, explicit assumptions and cited public accounting context"
+    },
+    {
+      "title": "Adopted pricing formula",
+      "html": "/archive/pricing-formula.html",
+      "markdown": "/archive/pricing-formula.md",
+      "status": "author-adopted concept rule after Pasta Board"
+    },
+    {
+      "title": "The Uber inspiration behind the bill",
+      "markdown": "/archive/founding-story.md",
+      "status": "author-reported personal inspiration"
+    },
+    {
+      "title": "The proposed Foundation donation",
+      "markdown": "/archive/charitable-path.md",
+      "status": "author-clarified destination; proposed channel, no donation program verified"
+    }
+  ],
+  "validation": "/testing.json",
+  "classification_guide": "/archive/inventory.json",
+  "models": "/archive/models.json",
+  "chapters": [
+    {
+      "id": "thesis",
+      "title": "The thesis",
+      "summary": "Customer Lifetime Value → Relationship Lifetime Value;",
+      "status": "Author’s proposal",
+      "interactive": "/#chapter-thesis",
+      "html": "/archive/chapters/thesis.html",
+      "markdown": "/archive/chapters/thesis.md",
+      "json": "/archive/chapters/thesis.json",
+      "source_anchor": "/archive/source.html#p-23342",
+      "source_passage": "/archive/passages/p-22631.md"
+    },
+    {
+      "id": "pricing",
+      "title": "Intelligence on Tap",
+      "summary": "Order what you need. Understand what you pay.",
+      "status": "Original proposal",
+      "interactive": "/#chapter-pricing",
+      "html": "/archive/chapters/pricing.html",
+      "markdown": "/archive/chapters/pricing.md",
+      "json": "/archive/chapters/pricing.json",
+      "source_anchor": "/archive/source.html#p-575",
+      "source_passage": "/archive/passages/p-575.md"
+    },
+    {
+      "id": "billing",
+      "title": "The billing experience",
+      "summary": "Consume freely. Pay transparently. Support voluntarily.",
+      "status": "Original mockup & adopted formula",
+      "interactive": "/#chapter-billing",
+      "html": "/archive/chapters/billing.html",
+      "markdown": "/archive/chapters/billing.md",
+      "json": "/archive/chapters/billing.json",
+      "source_anchor": "/archive/source.html#p-138",
+      "source_passage": "/archive/passages/p-1.md"
+    },
+    {
+      "id": "loyalty",
+      "title": "Compounding loyalty",
+      "summary": "Customers are kings. Loyalty should compound.",
+      "status": "Original proposal + design elaboration",
+      "interactive": "/#chapter-loyalty",
+      "html": "/archive/chapters/loyalty.html",
+      "markdown": "/archive/chapters/loyalty.md",
+      "json": "/archive/chapters/loyalty.json",
+      "source_anchor": "/archive/source.html#p-10404",
+      "source_passage": "/archive/passages/p-10404.md"
+    },
+    {
+      "id": "partnership",
+      "title": "Customer → Partner → Investor",
+      "summary": "Relationship building is bidirectional.",
+      "status": "Possible future extension",
+      "interactive": "/#chapter-partnership",
+      "html": "/archive/chapters/partnership.html",
+      "markdown": "/archive/chapters/partnership.md",
+      "json": "/archive/chapters/partnership.json",
+      "source_anchor": "/archive/source.html#p-13252",
+      "source_passage": "/archive/passages/p-13252.md"
+    },
+    {
+      "id": "connected",
+      "title": "Connected personal intelligence",
+      "summary": "Permissioned evidence. Purpose-specific access.",
+      "status": "Existing tools / hypothetical workflow",
+      "interactive": "/#chapter-connected",
+      "html": "/archive/chapters/connected.html",
+      "markdown": "/archive/chapters/connected.md",
+      "json": "/archive/chapters/connected.json",
+      "source_anchor": "/archive/source.html#p-16735",
+      "source_passage": "/archive/passages/p-16735.md"
+    },
+    {
+      "id": "economics",
+      "title": "Economic models & tradeoffs",
+      "summary": "Revenue can expand. Profitability must be demonstrated.",
+      "status": "Explicit assumptions",
+      "interactive": "/#chapter-economics",
+      "html": "/archive/chapters/economics.html",
+      "markdown": "/archive/chapters/economics.md",
+      "json": "/archive/chapters/economics.json",
+      "source_anchor": "/archive/source.html#p-8287",
+      "source_passage": "/archive/passages/p-8287.md"
+    },
+    {
+      "id": "philosophy",
+      "title": "Philosophy & institutional design",
+      "summary": "Trust and reciprocity should be designed into the transaction.",
+      "status": "Normative hypothesis",
+      "interactive": "/#chapter-philosophy",
+      "html": "/archive/chapters/philosophy.html",
+      "markdown": "/archive/chapters/philosophy.md",
+      "json": "/archive/chapters/philosophy.json",
+      "source_anchor": "/archive/source.html#p-9620",
+      "source_passage": "/archive/passages/p-9620.md"
+    },
+    {
+      "id": "journey",
+      "title": "Conversation timeline",
+      "summary": "An idea grows through correction, not just addition.",
+      "status": "Source-grounded evolution",
+      "interactive": "/#chapter-journey",
+      "html": "/archive/chapters/journey.html",
+      "markdown": "/archive/chapters/journey.md",
+      "json": "/archive/chapters/journey.json",
+      "source_anchor": "/archive/source.html#p-10404",
+      "source_passage": "/archive/passages/p-10404.md"
+    },
+    {
+      "id": "questions",
+      "title": "Open questions & next steps",
+      "summary": "Start with the smallest useful test.",
+      "status": "Proposed experiments",
+      "interactive": "/#chapter-questions",
+      "html": "/archive/chapters/questions.html",
+      "markdown": "/archive/chapters/questions.md",
+      "json": "/archive/chapters/questions.json",
+      "source_anchor": "/archive/source.html#p-9312",
+      "source_passage": "/archive/passages/p-8287.md"
+    }
+  ],
+  "source_passages": [
+    {
+      "id": "p-1",
+      "first": 1,
+      "last": 548,
+      "paragraph_count": 25,
+      "markdown": "/archive/passages/p-1.md",
+      "json": "/archive/passages/p-1.json",
+      "html": "/archive/passages/p-1.html"
+    },
+    {
+      "id": "p-575",
+      "first": 575,
+      "last": 1285,
+      "paragraph_count": 14,
+      "markdown": "/archive/passages/p-575.md",
+      "json": "/archive/passages/p-575.json",
+      "html": "/archive/passages/p-575.html"
+    },
+    {
+      "id": "p-1327",
+      "first": 1327,
+      "last": 7902,
+      "paragraph_count": 94,
+      "markdown": "/archive/passages/p-1327.md",
+      "json": "/archive/passages/p-1327.json",
+      "html": "/archive/passages/p-1327.html"
+    },
+    {
+      "id": "p-7922",
+      "first": 7922,
+      "last": 8228,
+      "paragraph_count": 9,
+      "markdown": "/archive/passages/p-7922.md",
+      "json": "/archive/passages/p-7922.json",
+      "html": "/archive/passages/p-7922.html"
+    },
+    {
+      "id": "p-8287",
+      "first": 8287,
+      "last": 9497,
+      "paragraph_count": 16,
+      "markdown": "/archive/passages/p-8287.md",
+      "json": "/archive/passages/p-8287.json",
+      "html": "/archive/passages/p-8287.html"
+    },
+    {
+      "id": "p-9620",
+      "first": 9620,
+      "last": 10302,
+      "paragraph_count": 9,
+      "markdown": "/archive/passages/p-9620.md",
+      "json": "/archive/passages/p-9620.json",
+      "html": "/archive/passages/p-9620.html"
+    },
+    {
+      "id": "p-10404",
+      "first": 10404,
+      "last": 13021,
+      "paragraph_count": 49,
+      "markdown": "/archive/passages/p-10404.md",
+      "json": "/archive/passages/p-10404.json",
+      "html": "/archive/passages/p-10404.html"
+    },
+    {
+      "id": "p-13252",
+      "first": 13252,
+      "last": 16579,
+      "paragraph_count": 48,
+      "markdown": "/archive/passages/p-13252.md",
+      "json": "/archive/passages/p-13252.json",
+      "html": "/archive/passages/p-13252.html"
+    },
+    {
+      "id": "p-16735",
+      "first": 16735,
+      "last": 19366,
+      "paragraph_count": 37,
+      "markdown": "/archive/passages/p-16735.md",
+      "json": "/archive/passages/p-16735.json",
+      "html": "/archive/passages/p-16735.html"
+    },
+    {
+      "id": "p-19474",
+      "first": 19474,
+      "last": 21175,
+      "paragraph_count": 26,
+      "markdown": "/archive/passages/p-19474.md",
+      "json": "/archive/passages/p-19474.json",
+      "html": "/archive/passages/p-19474.html"
+    },
+    {
+      "id": "p-21264",
+      "first": 21264,
+      "last": 22525,
+      "paragraph_count": 14,
+      "markdown": "/archive/passages/p-21264.md",
+      "json": "/archive/passages/p-21264.json",
+      "html": "/archive/passages/p-21264.html"
+    },
+    {
+      "id": "p-22631",
+      "first": 22631,
+      "last": 23660,
+      "paragraph_count": 15,
+      "markdown": "/archive/passages/p-22631.md",
+      "json": "/archive/passages/p-22631.json",
+      "html": "/archive/passages/p-22631.html"
+    },
+    {
+      "id": "p-23720",
+      "first": 23720,
+      "last": 24530,
+      "paragraph_count": 10,
+      "markdown": "/archive/passages/p-23720.md",
+      "json": "/archive/passages/p-23720.json",
+      "html": "/archive/passages/p-23720.html"
+    },
+    {
+      "id": "p-24569",
+      "first": 24569,
+      "last": 31135,
+      "paragraph_count": 124,
+      "markdown": "/archive/passages/p-24569.md",
+      "json": "/archive/passages/p-24569.json",
+      "html": "/archive/passages/p-24569.html"
+    },
+    {
+      "id": "p-31164",
+      "first": 31164,
+      "last": 35427,
+      "paragraph_count": 82,
+      "markdown": "/archive/passages/p-31164.md",
+      "json": "/archive/passages/p-31164.json",
+      "html": "/archive/passages/p-31164.html"
+    }
+  ],
+  "full_corpus": {
+    "html": "/archive/source.html",
+    "json": "/archive/source.json",
+    "editorial_markdown": "/archive/research.md"
+  },
+  "code": "/source-code.zip",
+  "rights": "Original application code MIT. Original authored writing CC0 1.0, adopted 8 November 2026. Third-party material excluded; see /content-license.md."
+}

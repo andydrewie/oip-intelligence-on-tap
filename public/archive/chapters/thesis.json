@@ -1,0 +1,20 @@
+{
+  "id": "thesis",
+  "number": "01",
+  "title": "The thesis",
+  "label": "Author’s proposal",
+  "source": "B1 · project brief",
+  "summary": "Customer Lifetime Value → Relationship Lifetime Value;",
+  "paragraphs": [
+    "The starting point is a choice, not a replacement: keep the $100, $200 and $500 fixed plans and offer a $20 base plus metered intelligence alongside them for personal use. Andrew reaffirmed this scope in a later project discussion. The wider relationship thesis grows from that optional billing relationship.",
+    "A subscription begins with a transaction. Over time, useful service, reliable payment and voluntary collaboration could produce something more valuable to both sides. Relationship Lifetime Value is the proposed name for that wider relationship, not an established financial metric.",
+    "The relationship connects flexible payment, earned loyalty and voluntary generosity. The proposed checkout offers an optional donation to the OpenAI Foundation, supporting AI that benefits humanity. Commercial benefits and possible partnership have their own terms; charitable gifts are separate from earned privileges and service revenue.",
+    "The invitation is deliberately open: consider, challenge, adapt or build on these ideas. This is Andrew Fai’s independent contribution, not a sales pitch, job application, investment solicitation or official OpenAI roadmap."
+  ],
+  "question": "Does this improve customer agency and provider economics at the same time?",
+  "boundary": "Mutual value is a hypothesis to test. Greater spending is not automatically greater trust.",
+  "anchor": "/archive/source.html#p-23342",
+  "provenance": "Editorial reconstruction from author-supplied material; not a verbatim transcript.",
+  "source_passage": "/archive/passages/p-22631.md",
+  "classification_guide": "/archive/inventory.json"
+}

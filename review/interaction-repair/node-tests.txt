@@ -1,0 +1,43 @@
+✔ M01 Canonical bill: discount precedes every voluntary amount (2.393166ms)
+✔ M02 Reported 347.54 input admits 180 and pauses 167.54 (0.305251ms)
+✔ M03 Raising ceiling removes pause; round-down still explains a flat bill (0.425012ms)
+✔ M04 Base-only ceiling pauses all extra use (0.570466ms)
+✔ M05 Ceilings reconcile at cent boundaries (0.670124ms)
+✔ M06 Contribution remains outside spending ceiling (0.223675ms)
+✔ M07 Turning rounding off charges admitted use exactly (0.284658ms)
+✔ M08 Zero and 10 percent discount caps have explicit effects (0.195089ms)
+✔ M09 Source tier discontinuities remain visible, not silently smoothed (2.321948ms)
+✔ M10 Original unrestricted rule above 500 is explicitly a cap (0.415834ms)
+✔ M11 Invalid model monetary inputs cannot create NaN or negative bills (1.869097ms)
+✔ M12 Personal scaling examples: 550, 560, 1000, 2000 subtotals (0.990792ms)
+✔ M13 Continuous scaling does not reset discounts at its breakpoints (3.118135ms)
+✔ M14 Scaling remains nondecreasing over 0 to 10000 metered dollars (55.234727ms)
+✔ M15 One account does not cost more than equal splits in this model (0.696179ms)
+✔ M16 Unequal splits also do not beat combining billable usage (0.418238ms)
+✔ M17 Large personal use continues to add cost, no top price cap (0.082136ms)
+✔ M18 Source checkout and new scaling curve are intentionally distinct (0.315133ms)
+✔ M19 Economics baseline distinguishes revenue, gross profit, contribution (0.592112ms)
+✔ M20 Fixed-plan fulfillment responds to allowance, not imaginary overage (0.656818ms)
+✔ M21 Retail rate and inference cost affect different parts of economics (0.292702ms)
+✔ M22 Churn changes horizon value without changing monthly revenue (0.222792ms)
+✔ M23 Loyalty rate and retention benefits remain separate hypotheses (0.469909ms)
+✔ M24 Expense classifications and acquisition cost do not contaminate revenue (0.20274ms)
+✔ M25 Credit loss corners remain separate from subscription economics (0.083041ms)
+✔ M26 Sharing preserves scale scenario and rejects fractional account counts (1.058577ms)
+✔ reference receipt and voluntary contribution reconcile (2.822461ms)
+✔ discount thresholds, caps and high consumption remain explicit (0.542999ms)
+✔ five models reconcile service and contribution economics (0.85745ms)
+✔ zero churn has a finite horizon but no finite perpetual LTV (0.776849ms)
+✔ high cost losses are preserved; no negative value clamping (0.808354ms)
+✔ receipt amounts reconcile at cent precision and reject non-finite inputs (2.706121ms)
+✔ near-zero churn converges to the zero-churn finite horizon (1.185633ms)
+✔ shared scenarios round-trip every allowed input without leaking extra state (3.74699ms)
+✔ bounded source passages reconstruct every source paragraph without omissions or edits (22.28772ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 327.520049

@@ -1,0 +1,14 @@
+{
+  "html_files": 30,
+  "local_targets_checked": 1434,
+  "application_routes_deferred_to_browser": 42,
+  "external_targets_not_requested": 4,
+  "json_files_parsed": 32,
+  "zip": {
+    "checked": true,
+    "members": 352,
+    "corrupt_member": null,
+    "required_current_files": 7
+  },
+  "errors": []
+}

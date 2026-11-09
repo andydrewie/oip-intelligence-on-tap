@@ -1,0 +1,40 @@
+# Intelligence on Tap
+
+An independent open concept by Andrew Fai.
+
+Customer Lifetime Value → Relationship Lifetime Value;
+
+Tibo’s Pro 50 question prompted an additional personal option: keep the $100/$200/$500 fixed plans and offer a $20 base plus metered intelligence alongside them. Business/Enterprise retain their organizational scope. The relationship could grow into compounding loyalty, trust and separately agreed partnership. The reference bill is $106.40 → $100 adjusted → optional OpenAI Foundation donation. Donations are excluded from commercial revenue. Economics remain unproven.
+
+## Start small
+
+- [Concise manifest](/archive/index.json): chapter map, evidence links, source revision and bounded passages.
+- [Readable index](/archive/index.html): works without JavaScript.
+- [Provider economics](/archive/provider-economics.md): cost coverage, reported company evidence and optional reviewed assumptions; no inferred OpenAI margin.
+- [Interaction state contract](/archive/interaction-states.json): scoped owners, states, events, recovery and persistence for 17 interface families.
+- [Model specification](/archive/models.json): units, formulas, defaults, limits, scenario link schema.
+- [Evidence inventory](/archive/inventory.json): claim-level provenance and status.
+- [Adopted pricing formula](/archive/pricing-formula.md): exact settlement rule, cent-level examples, boundaries and provenance.
+- [Founding inspiration](/archive/founding-story.md): Uber ride checkout and Uber One membership analogy.
+- [Proposed Foundation donation](/archive/charitable-path.md): intended recipient, charitable purpose, separate receipt and eligibility limits.
+
+Retrieve one relevant chapter, then its linked source passage. No browser execution, repeated full-corpus retrieval, or code download is necessary for a narrow question. Read neighbouring passages when context requires it.
+
+## Chapters
+
+- [The thesis](/archive/chapters/thesis.md): Customer Lifetime Value → Relationship Lifetime Value;
+- [Intelligence on Tap](/archive/chapters/pricing.md): Order what you need. Understand what you pay.
+- [The billing experience](/archive/chapters/billing.md): Consume freely. Pay transparently. Support voluntarily.
+- [Compounding loyalty](/archive/chapters/loyalty.md): Customers are kings. Loyalty should compound.
+- [Customer → Partner → Investor](/archive/chapters/partnership.md): Relationship building is bidirectional.
+- [Connected personal intelligence](/archive/chapters/connected.md): Permissioned evidence. Purpose-specific access.
+- [Economic models & tradeoffs](/archive/chapters/economics.md): Revenue can expand. Profitability must be demonstrated.
+- [Philosophy & institutional design](/archive/chapters/philosophy.md): Trust and reciprocity should be designed into the transaction.
+- [Conversation timeline](/archive/chapters/journey.md): An idea grows through correction, not just addition.
+- [Open questions & next steps](/archive/chapters/questions.md): Start with the smallest useful test.
+
+## Interpret carefully
+
+The source explicitly corrects an equality-focused critique: sustained spend + tenure + reliable payments can justify greater commercial privileges. Actual credit underwriting is separate. Tier coverage precedes the later round-down discount. App connection does not authorize investment access. The intended charitable recipient is the OpenAI Foundation; no collection channel or tax eligibility is promised. Proposed workflows and simulated assumptions are not official features. Provider costs start unknown; cost inputs need explicit known flags and review before a balance. The author’s 10–20% remark was a guess; no target margin is adopted. Company-wide ratios never fill customer cost inputs.
+
+Complete source available at /archive/source.html and /archive/source.json only when needed. Source: Pasta Board, author-confirmed complete, 572 paragraphs. Original speaker labels and exact times are not inferred. Code: /source-code.zip (MIT). Original authored writing: CC0 1.0; third-party rights retained. Reuse terms: /content-license.md.
