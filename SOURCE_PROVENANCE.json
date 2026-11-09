@@ -25,6 +25,6 @@
     "date": "2026-11-09",
     "record": "review/github-presentation/REVIEW.md",
     "new_conceptual_extension": "docs/RELATIONSHIP-LIFETIME-VALUE.md",
-    "presentation_revision": "README attention, native math, cover alignment and GitHub interaction-state entry points; application and live Site unchanged."
+    "presentation_revision": "README attention, native GitHub math and renderer-safe Markdown exports, cover alignment and interaction-state entry points; application and live Site unchanged."
   }
 }

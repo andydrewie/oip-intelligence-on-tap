@@ -47,6 +47,12 @@ if archive.exists():
   if corrupt:errors.append('Corrupt ZIP '+corrupt)
   required=['lib/inputs.mjs','lib/money.mjs','tests/input-state.test.mjs','tests/recon-contract.test.mjs','tests/archive-contract.test.mjs','public/archive/models.json','review/input-recovery/cases.json','lib/experience-state.mjs','lib/async-state.mjs','tests/state-machines.test.mjs','tests/async-state.test.mjs','public/archive/interaction-states.json','review/state-machines/cases.json','public/testing.json','PROJECT_GUIDANCE.md']
   required=sorted(set(required+[str(p.relative_to(root)) for folder in ['app','lib','tests'] for p in (root/folder).rglob('*') if p.is_file()]))
+  # A runnable package can still have a stale README, equation or agent handoff.
+  # Keep the repository presentation and its generator in the same release gate.
+  presentation=['README.md','AGENTS.md','CONTRIBUTING.md','SOURCE_PROVENANCE.json','CITATION.cff','scripts/build-archive.mjs','scripts/check-release-artifacts.py','.github/workflows/checks.yml']
+  presentation += [str(p.relative_to(root)) for p in (root/'docs').rglob('*') if p.is_file()]
+  presentation += [str(p.relative_to(root)) for p in (public/'archive').rglob('*.md')]
+  required=sorted(set(required+presentation))
   for name in required:
    if name not in names:errors.append('Missing ZIP member '+name)
    elif z.read(name)!=(root/name).read_bytes():errors.append('Stale ZIP member '+name)

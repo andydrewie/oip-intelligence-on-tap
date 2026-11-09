@@ -1,14 +1,35 @@
 {
-  "checked": 60,
+  "checked": 90,
   "errors": [],
   "wordCounts": {
-    "README.md": 767,
+    "README.md": 795,
+    "AGENTS.md": 289,
     "CONTRIBUTING.md": 306,
+    "docs/DEVELOPMENT.md": 398,
+    "docs/ECONOMICS.md": 761,
+    "docs/INTERACTIONS.md": 898,
     "docs/PROPOSAL.md": 588,
     "docs/RELATIONSHIP-LIFETIME-VALUE.md": 1154,
-    "docs/ECONOMICS.md": 757,
     "docs/RESEARCH.md": 461,
-    "docs/SOURCES.md": 445,
-    "docs/DEVELOPMENT.md": 392
+    "docs/SOURCES.md": 445
+  },
+  "equations_checked": [
+    "README.md",
+    "docs/ECONOMICS.md",
+    "public/archive/pricing-formula.md",
+    "public/archive/research.md",
+    "public/archive/chapters/billing.md"
+  ],
+  "interaction_families": 17,
+  "cover": {
+    "circleCenter": [
+      1025,
+      297
+    ],
+    "inkCenter": [
+      1025.5,
+      297
+    ],
+    "svgPngMatch": true
   }
 }

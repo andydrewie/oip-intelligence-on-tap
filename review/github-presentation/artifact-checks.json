@@ -6,9 +6,9 @@
   "json_files_parsed": 33,
   "zip": {
     "checked": true,
-    "members": 397,
+    "members": 399,
     "corrupt_member": null,
-    "required_current_files": 42
+    "required_current_files": 92
   },
   "errors": []
 }
